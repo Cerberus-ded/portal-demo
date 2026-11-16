@@ -351,6 +351,7 @@ html[data-seek] { overflow: hidden; scrollbar-gutter: stable; }
   width: 48px; height: 48px; border-radius: 2px; background: var(--color-mat-2) no-repeat;
   outline: var(--rule-hair) solid var(--color-mat-edge); outline-offset: -1px;
 }
+.seek__sw[data-photo] { background-color: var(--color-mat); background-size: contain; background-position: center; }
 .seek__sw[data-empty] { background-image: linear-gradient(135deg, transparent 47%, oklch(30% 0.03 55 / 0.12) 48% 52%, transparent 53%); }
 .seek__sw--icon {
   display: grid; place-items: center; background: var(--color-mat-2); color: var(--color-mat-accent);
@@ -436,9 +437,6 @@ html[data-seek] { overflow: hidden; scrollbar-gutter: stable; }
 @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
 @keyframes shimmer { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
 
-/* ---- page to page: the catalogue and the homepage fade into each other ---- */
-@view-transition { navigation: auto; }
-::view-transition-old(root), ::view-transition-new(root) { animation-duration: var(--dur-short); animation-timing-function: var(--ease-out); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto !important; }
@@ -782,7 +780,7 @@ window.PortalDemo = (function () {
 </script>
 <div class="protobar">
   <div class="container protobar__in">
-    <p class="modeline">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию или работу в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</p>
+    <p class="modeline">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</p>
     <a class="protolink" id="adminLink" href="katalog.html#admin" hidden>Админка</a>
     <a class="protolink" href="katalog.html#zayavki">Заявки менеджеру</a>
     <button type="button" class="protolink" data-demo-reset>Начать демо заново</button>
@@ -811,13 +809,13 @@ window.PortalDemo = (function () {
           </span>
           <div class="nav__drop" id="catmenu" hidden>
             <ul>
-              <li><a href="katalog.html#katalog"><b>Весь каталог</b><em>465 коллекций</em><span>Все разделы на одной странице</span></a></li>
-              <li><a href="katalog.html#mezhkomnatnye"><b>Двери межкомнатные</b><em>79 коллекций</em><span>Аэлита, Андора, Лорд, Зодчий и ещё 8</span></a></li>
-              <li><a href="katalog.html#vhodnye"><b>Двери входные</b><em>27 коллекций</em><span>Торекс, TRX, Дорстон, Кова и ещё 6</span></a></li>
-              <li><a href="katalog.html#plitka"><b>Плитка</b><em>226 коллекций</em><span>Alma Ceramica, Global Tile, LB, Kerama Marazzi и ещё 14</span></a></li>
-              <li><a href="katalog.html#poly"><b>Напольные покрытия</b><em>24 коллекции</em><span>Kastamonu, Tarkett, Adelar, Egger и ещё 4</span></a></li>
-              <li><a href="katalog.html#oboi"><b>Обои и фрески</b><em>62 коллекции</em><span>Grandeco, Marburg, Artsimple, Alessandro Allori и ещё 6</span></a></li>
-              <li><a href="katalog.html#santehnika"><b>Сантехника и мебель для ванных</b><em>47 коллекций</em><span>Lemark, Vincea, Aquatek, IDDIS и ещё 15</span></a></li>
+              <li><a href="katalog.html#katalog"><b>Весь каталог</b><em>40 коллекций</em><span>Собираем заново: начали с дверей LORD</span></a></li>
+              <li><a href="katalog.html#mezhkomnatnye"><b>Двери межкомнатные</b><em>40 коллекций</em><span>Лорд</span></a></li>
+              <li><a href="katalog.html#vhodnye"><b>Двери входные</b><em>скоро</em><span>раздел наполняем</span></a></li>
+              <li><a href="katalog.html#plitka"><b>Плитка</b><em>скоро</em><span>раздел наполняем</span></a></li>
+              <li><a href="katalog.html#poly"><b>Напольные покрытия</b><em>скоро</em><span>раздел наполняем</span></a></li>
+              <li><a href="katalog.html#oboi"><b>Обои и фрески</b><em>скоро</em><span>раздел наполняем</span></a></li>
+              <li><a href="katalog.html#santehnika"><b>Сантехника и мебель для ванных</b><em>скоро</em><span>раздел наполняем</span></a></li>
             </ul>
           </div>
         </li>
@@ -875,7 +873,7 @@ window.PortalDemo = (function () {
         <span class="room__body">
           <span class="room__name">Двери</span>
           <span class="room__sub">Межкомнатные и входные из базы салона.</span>
-          <span class="room__fig"><b>106</b><span>коллекций</span></span>
+          <span class="room__fig"><b>40</b><span>коллекций</span></span>
         </span>
       </a>
       <a class="room mat lift" href="katalog.html#plitka">
@@ -883,7 +881,7 @@ window.PortalDemo = (function () {
         <span class="room__body">
           <span class="room__name">Плитка</span>
           <span class="room__sub">Керамогранит и плитка: Alma Ceramica, Global Tile, LB, Kerama Marazzi.</span>
-          <span class="room__fig"><b>226</b><span>коллекций</span></span>
+          <span class="room__fig"><b>Скоро</b><span>наполняем раздел</span></span>
         </span>
       </a>
       <a class="room mat lift" href="katalog.html#poly">
@@ -891,7 +889,7 @@ window.PortalDemo = (function () {
         <span class="room__body">
           <span class="room__name">Полы</span>
           <span class="room__sub">Ламинат, кварцвинил и линолеум: Kastamonu, Tarkett, Egger.</span>
-          <span class="room__fig"><b>24</b><span>коллекции</span></span>
+          <span class="room__fig"><b>Скоро</b><span>наполняем раздел</span></span>
         </span>
       </a>
       <a class="room mat lift" href="katalog.html#oboi">
@@ -899,7 +897,7 @@ window.PortalDemo = (function () {
         <span class="room__body">
           <span class="room__name">Обои</span>
           <span class="room__sub">Обои Grandeco, Marburg, Artsimple, Andrea Rossi.</span>
-          <span class="room__fig"><b>62</b><span>коллекции</span></span>
+          <span class="room__fig"><b>Скоро</b><span>наполняем раздел</span></span>
         </span>
       </a>
       <a class="room mat lift" href="katalog.html#santehnika">
@@ -907,7 +905,7 @@ window.PortalDemo = (function () {
         <span class="room__body">
           <span class="room__name">Сантехника</span>
           <span class="room__sub">Смесители, ванны, унитазы, раковины, мебель для ванных.</span>
-          <span class="room__fig"><b>47</b><span>коллекций</span></span>
+          <span class="room__fig"><b>Скоро</b><span>наполняем раздел</span></span>
         </span>
       </a>
     </div>
@@ -1382,6 +1380,8 @@ window.PortalSeek = function (o) {
   }
   function swatch(it, vi) {
     var sw = mk("span", "seek__sw"), sp = (data.chips || {})[it.s];
+    var pic = o.thumb ? o.thumb(it, vi) : "";
+    if (pic) { sw.style.backgroundImage = 'url("' + pic + '")'; sw.setAttribute("data-photo", "1"); return sw; }
     var x = vi >= 0 && it.vars[vi].si != null ? it.vars[vi] : it.vars.filter(function (v) { return v.si != null; })[0];
     if (x && sp) {
       sw.style.backgroundImage = 'url("' + sp.file + '")';
