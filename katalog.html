@@ -1206,6 +1206,26 @@ html:has(.viewer[open]) { overflow: hidden; }
 .grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
 .overview .soon { grid-column: span 2; align-self: start; }
 @media (max-width: 900px) { .overview .soon { grid-column: 1 / -1; } }
+/* согласие на обработку персональных данных: документ поверх страницы */
+.doc {
+  width: min(760px, calc(100% - 2 * var(--space-md))); max-width: none;
+  max-height: calc(100dvh - 2 * var(--space-lg)); margin: auto; padding: 0;
+  border: 0; border-radius: var(--radius-card); background: var(--color-paper); color: var(--color-ink);
+  box-shadow: var(--shadow-mat-lift); overflow: hidden;
+}
+.doc[open] { display: flex; flex-direction: column; }
+.doc::backdrop { background: oklch(19% 0.024 52 / 0.45); }
+.doc__head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); padding: var(--space-md) var(--space-lg); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.doc__head h2 { font-size: var(--text-lg); text-wrap: balance; }
+.doc__body { overflow: auto; padding: var(--space-lg); display: grid; gap: var(--space-sm); font-size: var(--text-sm); color: var(--color-ink-2); }
+.doc__body > * { max-width: 68ch; }
+.doc__body h3 { margin-top: var(--space-sm); font-size: var(--text-sm); font-weight: 700; color: var(--color-ink); }
+.doc__body ul { display: grid; gap: var(--space-2xs); padding-left: 1.2em; list-style: disc; }
+.doc__ver { font-size: var(--text-xs); color: var(--color-muted); }
+.doc__note { margin-top: var(--space-sm); padding: var(--space-sm) var(--space-md); background: var(--color-paper-2); border-left: 3px solid var(--color-accent); font-size: var(--text-xs); }
+.doc mark.fill { background: color-mix(in oklab, var(--color-accent) 22%, transparent); color: var(--color-ink); padding: 0 0.2em; border-radius: 3px; }
+.order__ok a { color: var(--color-ink); text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 600px) { .doc__head, .doc__body { padding-inline: var(--space-md); } }
 </style>
 
 <style>
@@ -1471,6 +1491,7 @@ window.PortalDemo = (function () {
     <a href="index.html">Главная</a>
     <a href="tel:+79962203622">+7 (996) 220-36-22</a>
     <a href="https://vk.ru/portaldd" target="_blank" rel="noopener">ВКонтакте</a>
+    <a href="#soglasie" data-consent>Согласие на обработку персональных данных</a>
   </nav>
 </footer>
 
@@ -2143,6 +2164,14 @@ window.PortalSeek = function (o) {
       // ссылка «каталог#glavnaya» открывает главную: она лежит рядом с каталогом и читает ту же базу
       try { location.replace("index.html"); return; } catch (e) {}
     }
+    if (id === "soglasie") {
+      // прямая ссылка на согласие: документ поверх каталога
+      if (view !== "section") { view = "root"; openId = null; }
+      pendingActive = null;
+      renderAll();
+      openConsent();
+      return;
+    }
     if (id === "zayavki") {
       view = "inbox"; openId = null;
     } else if (id === "admin") {
@@ -2576,6 +2605,73 @@ window.PortalSeek = function (o) {
     return d;
   }
 
+  // ---- согласие на обработку персональных данных ----
+  // Отдельный документ, как требует ст. 9 152-ФЗ (с 1 сентября 2025 согласие нельзя прятать в другие тексты).
+  // Галочка в заявке ссылается на него, заявка помнит редакцию, которую человек принял. [[...]] заполнит салон.
+  var CONSENT = { v: "18 ноября 2026", blocks: [
+    ["p", "Отправляя заявку на сайте салона отделочных материалов «Портал» и отмечая галочку согласия в форме заявки, я своей волей и в своём интересе даю согласие на обработку моих персональных данных на условиях ниже. Согласие дано в соответствии со статьёй 9 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных»."],
+    ["h3", "1. Кто обрабатывает данные (оператор)"],
+    ["p", "[[Полное наименование: ИП Фамилия Имя Отчество или ООО «…»]], ИНН [[…]], ОГРН/ОГРНИП [[…]]. Адрес: Ульяновская область, г. Димитровград, ул. Гончарова, д. 11, салон «Портал». Телефон: +7 (996) 220-36-22, электронная почта: [[e-mail салона]]."],
+    ["h3", "2. Какие данные"],
+    ["ul", ["имя (как ко мне обращаться);", "номер телефона;", "удобный способ связи: звонок или сообщение в мессенджере MAX;",
+      "комментарий к заявке, если я его написал;", "состав заявки: выбранные модели и количество, дата и время отправки."]],
+    ["h3", "3. Зачем"],
+    ["p", "Чтобы принять и выполнить мою заявку: связаться со мной по телефону или в MAX, уточнить наличие, цену, размеры, замер, доставку и установку. Для рекламы и рассылок данные не используются."],
+    ["h3", "4. Что с данными делают"],
+    ["p", "Сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, блокирование, удаление и уничтожение, с использованием средств автоматизации и без них. Заявка приходит сотрудникам салона на электронную почту салона и в рабочий чат менеджеров в MAX, доступ к ней есть только у сотрудников, которые её обрабатывают."],
+    ["h3", "5. Передача другим лицам"],
+    ["p", "Оператор не передаёт и не распространяет мои данные, кроме случаев, предусмотренных законом. Обработку по поручению оператора ведёт: [[если работу сайта или доставку заявок обеспечивает другая организация, её наименование и адрес; если нет, этот пункт убрать]]."],
+    ["h3", "6. Сколько действует согласие"],
+    ["p", "Один год с даты отправки заявки или до отзыва согласия, если я отзову его раньше. После этого данные уничтожаются, кроме случаев, когда закон требует хранить их дольше."],
+    ["h3", "7. Как отозвать согласие"],
+    ["p", "В любой момент: письменным заявлением по адресу оператора или письмом на электронную почту [[e-mail салона]]. Оператор прекращает обработку и уничтожает данные в сроки, установленные статьёй 21 Закона № 152-ФЗ."],
+    ["p", "Без согласия заявку через сайт отправить нельзя. Можно позвонить в салон или прийти лично: Димитровград, ул. Гончарова, 11."],
+    ["note", "Поля, выделенные цветом, салон заполнит своими реквизитами. Перед запуском сайта текст стоит показать юристу."]
+  ] };
+  var consentBox = null;
+  function rich(tag, cls, s) {
+    var n = el(tag, cls);
+    s.split(/(\[\[.*?\]\])/).forEach(function (part) {
+      if (/^\[\[/.test(part)) n.appendChild(text("mark", "fill", part.slice(2, -2)));
+      else if (part) n.appendChild(document.createTextNode(part));
+    });
+    return n;
+  }
+  function openConsent() {
+    if (!consentBox) {
+      var d = el("dialog", "doc");
+      d.setAttribute("aria-labelledby", "doc-h");
+      var head = el("div", "doc__head"), h = text("h2", null, "Согласие на обработку персональных данных");
+      h.id = "doc-h";
+      var shut = text("button", "btn btn--outline btn--mini", "Закрыть");
+      shut.type = "button";
+      shut.addEventListener("click", function () { d.close(); });
+      head.appendChild(h);
+      head.appendChild(shut);
+      d.appendChild(head);
+      var body = el("div", "doc__body");
+      body.appendChild(text("p", "doc__ver", "Редакция от " + CONSENT.v));
+      CONSENT.blocks.forEach(function (b) {
+        if (b[0] === "ul") {
+          var ul = el("ul");
+          b[1].forEach(function (s) { ul.appendChild(rich("li", null, s)); });
+          body.appendChild(ul);
+        } else if (b[0] === "note") body.appendChild(rich("p", "doc__note", b[1]));
+        else body.appendChild(rich(b[0], null, b[1]));
+      });
+      d.appendChild(body);
+      // клик мимо документа закрывает; закрыли открытый по прямой ссылке: адрес снова каталог
+      d.addEventListener("click", function (ev) { if (ev.target === d) d.close(); });
+      d.addEventListener("close", function () {
+        if (readHash() === "soglasie") { lastHash = "katalog"; try { history.replaceState(null, "", "#katalog"); } catch (e) {} }
+      });
+      document.body.appendChild(d);
+      consentBox = d;
+    }
+    if (!consentBox.open) consentBox.showModal();
+    consentBox.querySelector(".doc__body").scrollTop = 0;
+  }
+
   // o.key: приставка id полей. o.lines(qty): позиции заявки. o.qty: {unit, one} поле количества для одной позиции.
   // o.what(): подпись выбранного. o.done(order): что показать после отправки. o.hint: подсказка к комментарию.
   function orderForm(o) {
@@ -2665,7 +2761,15 @@ window.PortalSeek = function (o) {
       var okLabel = el("label", "order__ok"), okBox = el("input");
       okBox.type = "checkbox"; okBox.checked = draft.ok; okBox.id = o.key + "-ok";
       okLabel.appendChild(okBox);
-      okLabel.appendChild(text("span", null, "Даю согласие на обработку имени и телефона, чтобы менеджер ответил на эту заявку"));
+      var okText = el("span");
+      okText.appendChild(document.createTextNode("Даю согласие на обработку моих персональных данных (имя, телефон, комментарий), чтобы менеджер ответил на эту заявку, на условиях "));
+      var okDoc = text("a", null, "Согласия на обработку персональных данных");
+      okDoc.href = "#soglasie";
+      // ссылка внутри подписи открывает документ и не ставит галочку
+      okDoc.addEventListener("click", function (ev) { ev.preventDefault(); ev.stopPropagation(); openConsent(); });
+      okText.appendChild(okDoc);
+      okText.appendChild(document.createTextNode("."));
+      okLabel.appendChild(okText);
       var okErr = el("p", "field__err");
       okErr.id = o.key + "-ok-err"; okErr.hidden = true;
       okBox.addEventListener("change", function () { draft.ok = okBox.checked; okErr.hidden = true; okBox.removeAttribute("aria-invalid"); });
@@ -2706,9 +2810,12 @@ window.PortalSeek = function (o) {
         if (bad) { bad.focus(); return; }
         var q = qty && qty.value !== "" ? Number(qty.value) : null;
         var how = preset && q === preset.q ? preset.note : null;
+        var at = new Date().toISOString();
         var order = {
-          id: orderNo(), at: new Date().toISOString(), lines: o.lines(q, how),
-          name: name.value.trim(), phone: phoneNice(phone.value), via: draft.via, comment: note.value.trim(), consent: true
+          id: orderNo(), at: at, lines: o.lines(q, how),
+          name: name.value.trim(), phone: phoneNice(phone.value), via: draft.via, comment: note.value.trim(),
+          // какую редакцию согласия человек принял и когда
+          consent: { given: true, v: CONSENT.v, at: at }
         };
         send.disabled = true; send.textContent = "Отправляем заявку";
         fail.hidden = true;
@@ -3195,6 +3302,7 @@ window.PortalSeek = function (o) {
       line("Телефон", String(order.phone || ""), "tel:+" + phoneDigits(order.phone || ""));
       line("Связаться", viaText(order.via));
       if (order.comment) line("Комментарий", String(order.comment));
+      if (order.consent) line("Согласие на обработку данных", order.consent.v ? "дано, редакция от " + order.consent.v : "дано");
       t.appendChild(dl);
       box.appendChild(t);
     });
@@ -4022,6 +4130,10 @@ window.PortalSeek = function (o) {
   });
   // обложки коллекций нужны и сетке, и поиску: берём их сразу
   packDirs().forEach(function (d) { pack(d + "/covers").catch(function () {}); });
+  // ссылки на согласие в подвале открывают документ здесь же
+  [].forEach.call(document.querySelectorAll("[data-consent]"), function (a) {
+    a.addEventListener("click", function (ev) { ev.preventDefault(); openConsent(); });
+  });
 
   // Ссылки на рабочие материалы видит только владелец: у клиента по ссылке они открыли бы страницу входа.
   cap("user").then(function (u) { return u && u.isOwner ? u.isOwner() : false; }).then(function (own) {

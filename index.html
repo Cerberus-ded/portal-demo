@@ -630,6 +630,9 @@ h3 { font-size: var(--text-lg); }
   .promo { grid-template-columns: minmax(0, 1fr); }
   .steps li { grid-template-columns: 2.25rem minmax(0, 1fr); }
 }
+.foot__legal { margin-top: var(--space-xl); }
+.foot__legal a { font-size: var(--text-xs); text-decoration: underline; text-underline-offset: 2px; }
+.foot__legal + .foot__credit { margin-top: var(--space-md); }
 </style>
 
 <style>
@@ -1121,6 +1124,7 @@ window.PortalDemo = (function () {
       </ul>
     </section>
   </div>
+  <p class="foot__legal"><a href="katalog.html#soglasie">Согласие на обработку персональных данных</a></p>
   <p class="foot__credit">Фотографии временные, из каталогов и с сайтов фабрик: LORD, Двери мира, Global Tile, Marburg, Vincea, Kastamonu. Для рабочего сайта нужно разрешение фабрик или ваши снимки.</p>
 </footer>
 
