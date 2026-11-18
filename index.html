@@ -630,9 +630,16 @@ h3 { font-size: var(--text-lg); }
   .promo { grid-template-columns: minmax(0, 1fr); }
   .steps li { grid-template-columns: 2.25rem minmax(0, 1fr); }
 }
-.foot__legal { margin-top: var(--space-xl); }
+/* документы, реквизиты продавца и оговорка про оферту */
+.foot__legal { margin-top: var(--space-xl); display: grid; gap: var(--space-2xs); font-size: var(--text-xs); color: var(--color-muted); max-width: 100ch; }
+.foot__legal p { line-height: 1.5; }
+.foot__docs { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-lg); margin-bottom: var(--space-2xs); }
 .foot__legal a { font-size: var(--text-xs); text-decoration: underline; text-underline-offset: 2px; }
 .foot__legal + .foot__credit { margin-top: var(--space-md); }
+mark.legal-fill { background: color-mix(in oklab, var(--color-accent) 22%, transparent); color: var(--color-ink); padding: 0 0.2em; border-radius: 3px; }
+/* организатор и условия акций (закон о рекламе) */
+.promos__terms { margin-top: var(--space-md); font-size: var(--text-xs); color: var(--color-muted); max-width: 90ch; line-height: 1.5; }
+.promo__terms { grid-column: 1 / -1; margin-top: calc(-1 * var(--space-2xs)); font-size: var(--text-xs); color: var(--color-muted); }
 </style>
 
 <style>
@@ -937,6 +944,7 @@ window.PortalDemo = (function () {
           <a class="promo__go" href="katalog.html#oboi">Смотреть обои</a>
         </article>
       </div>
+      <p class="promos__terms" id="akcii-terms">Организатор акций: <mark class="legal-fill">полное наименование ИП или ООО</mark>, Димитровград, ул. Гончарова, 11. Сроки указаны у каждой акции. Подробные условия, количество товара по акции, порядок и место получения скидки или подарка можно узнать у менеджера по телефону +7 (996) 220-36-22 и в салоне.</p>
     </section>
   </div>
 
@@ -1124,7 +1132,11 @@ window.PortalDemo = (function () {
       </ul>
     </section>
   </div>
-  <p class="foot__legal"><a href="katalog.html#soglasie">Согласие на обработку персональных данных</a></p>
+  <div class="foot__legal">
+    <p class="foot__docs"><a href="katalog.html#soglasie">Согласие на обработку персональных данных</a> <a href="katalog.html#politika">Политика обработки персональных данных</a></p>
+    <p>Продавец: <mark class="legal-fill">полное наименование ИП или ООО</mark>, ИНН <mark class="legal-fill">…</mark>, ОГРН/ОГРНИП <mark class="legal-fill">…</mark>. Адрес: Ульяновская обл., г. Димитровград, ул. Гончарова, 11. Режим работы: будни с 10:00 до 18:00, суббота и воскресенье с 10:00 до 16:00. Телефон +7 (996) 220-36-22, e-mail <mark class="legal-fill">e-mail салона</mark>.</p>
+    <p>Информация на сайте справочная и не является публичной офертой (ст. 437 ГК РФ). Цену, наличие и условия продажи называет менеджер.</p>
+  </div>
   <p class="foot__credit">Фотографии временные, из каталогов и с сайтов фабрик: LORD, Двери мира, Global Tile, Marburg, Vincea, Kastamonu. Для рабочего сайта нужно разрешение фабрик или ваши снимки.</p>
 </footer>
 
@@ -1802,6 +1814,7 @@ window.PortalSeek = function (o) {
     var box = document.querySelector(".promos");
     box.textContent = "";
     $("akcii-note").textContent = list.length ? "Каждая строка ведёт в каталог." : "Сейчас акций нет. Загляните позже или спросите в салоне.";
+    $("akcii-terms").hidden = !list.length;
     list.forEach(function (p) {
       if (!p || !p.title) return;
       var art = make("article", "promo");
@@ -1810,6 +1823,8 @@ window.PortalSeek = function (o) {
       var a = make("a", "promo__go", p.label || "Смотреть в каталоге");
       a.href = CAT + "#" + (p.sec || "katalog");
       art.appendChild(a);
+      // условия акции строкой под ней, на всю ширину
+      if (p.terms) art.appendChild(make("p", "promo__terms", p.terms));
       box.appendChild(art);
     });
   }
