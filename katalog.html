@@ -444,6 +444,21 @@ html[data-seek] { overflow: hidden; scrollbar-gutter: stable; }
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
 }
 
+/* ---- окно о cookie и Яндекс Метрике (src31/cookies.js): карточка внизу, две равные кнопки ---- */
+.cookies {
+  position: fixed; z-index: 60;
+  left: max(var(--space-md), env(safe-area-inset-left, 0px)); bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0px));
+  width: min(560px, calc(100% - 2 * var(--space-md))); display: grid; gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg); background: var(--color-paper); color: var(--color-ink);
+  border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); box-shadow: var(--shadow-mat-lift);
+  font-size: var(--text-sm); line-height: 1.5;
+}
+.cookies p { max-width: 62ch; color: var(--color-ink-2); }
+.cookies a { color: var(--color-ink); text-decoration: underline; text-underline-offset: 2px; }
+.cookies__acts { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+.cookies__acts .btn { flex: 1 1 140px; }
+@media (max-width: 600px) { .cookies { padding: var(--space-md); } }
+
 /* Hallmark · shape: app screen, a catalogue browser · genre: editorial · theme: Atelier (by request: the client picked this direction, light only) · job: visit · draw: n/a
  * screen: breadcrumbs, a filter rail on the left, a sorted grid on the right, a collection sheet over them · states: full, filtered, empty, section not loaded, detail · nav: the same conventional bar as the homepage, menu centred · footer: mast · imagery: factory photographs and scans · signature: the collection card opening to every variant at once, each material moving like itself under the cursor: a door swings into the room, a roll runs out, a floor lies down · atelier: limewash
  * axes: light/high-contrast-serif/warm · posture: restrained · contrast: pass · fold: pass · v2.1.0 */
@@ -1499,6 +1514,7 @@ window.PortalDemo = (function () {
     <a href="https://vk.ru/portaldd" target="_blank" rel="noopener">ВКонтакте</a>
     <a href="#soglasie" data-doc="soglasie">Согласие на обработку персональных данных</a>
     <a href="#politika" data-doc="politika">Политика обработки персональных данных</a>
+    <a href="#cookie" data-cookie-settings>Настройки cookie</a>
   </nav>
   <div class="foot__legal">
     <p>Продавец: <mark class="legal-fill">полное наименование ИП или ООО</mark>, ИНН <mark class="legal-fill">…</mark>, ОГРН/ОГРНИП <mark class="legal-fill">…</mark>. Адрес: Ульяновская обл., г. Димитровград, ул. Гончарова, 11. Режим работы: будни с 10:00 до 18:00, суббота и воскресенье с 10:00 до 16:00. Телефон +7 (996) 220-36-22, e-mail <mark class="legal-fill">e-mail салона</mark>.</p>
@@ -1506,6 +1522,112 @@ window.PortalDemo = (function () {
   </div>
 </footer>
 
+<script>
+window.PortalCookieDoc = "#cookie";
+/* Окно о cookie и Яндекс Метрика: счётчик грузится только после «Разрешить» (152-ФЗ, согласие отдельным документом).
+   Выбор хранится в браузере посетителя; «Настройки cookie» в подвале снова открывают окно, отказ удаляет cookie Метрики.
+   Номер счётчика подставляет сборка из r31/legal.json (поле metrika); пока его нет, счётчик не грузится вовсе.
+   Цели: PortalCookies.goal("order") после отправки заявки, "call" по нажатию на телефон. */
+(function () {
+  "use strict";
+  if (window.PortalCookies) return;
+  var VERSION = "2026-11-18";      // редакция согласия на cookie: новая редакция спрашивает заново
+  var KEY = "cookie-choice";
+  var ID = String(window.PortalMetrikaId || "");
+  var DOC = window.PortalCookieDoc || "#cookie";
+  var loaded = false, box = null;
+
+  function read() {
+    try { var c = JSON.parse(localStorage.getItem(KEY) || "null"); return c && c.v === VERSION ? c : null; } catch (e) { return null; }
+  }
+  function write(choice) {
+    try { localStorage.setItem(KEY, JSON.stringify({ v: VERSION, choice: choice, at: new Date().toISOString() })); } catch (e) {}
+  }
+  function load() {
+    if (loaded || !/^\d+$/.test(ID)) return;
+    loaded = true;
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t); a = e.getElementsByTagName(t)[0];
+      k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    // без Вебвизора: запись действий на странице в согласии не описана
+    window.ym(Number(ID), "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: false });
+  }
+  function dropCookies() {
+    document.cookie.split(";").forEach(function (c) {
+      var name = c.split("=")[0].trim();
+      if (/^_ym|^yandexuid|^yuidss|^ymex|^i$/.test(name)) {
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=" + location.hostname;
+      }
+    });
+  }
+  function choose(choice) {
+    var was = read();
+    write(choice);
+    hide();
+    if (choice === "yes") load();
+    else if (was && was.choice === "yes") { dropCookies(); if (loaded) location.reload(); }
+  }
+  function hide() { if (box) box.hidden = true; }
+  function show() {
+    if (!box) {
+      box = document.createElement("section");
+      box.className = "cookies";
+      box.setAttribute("role", "dialog");
+      box.setAttribute("aria-label", "Cookie и Яндекс Метрика");
+      var p = document.createElement("p");
+      p.appendChild(document.createTextNode("Мы хотим использовать cookie и Яндекс Метрику, чтобы видеть, какие разделы сайта нужны покупателям, и улучшать его. Нажимая «Разрешить», вы даёте "));
+      var a = document.createElement("a");
+      a.href = DOC;
+      if (/^https?:/.test(DOC)) { a.target = "_blank"; a.rel = "noopener"; }
+      a.textContent = "согласие на обработку данных с помощью cookie и Метрики";
+      a.addEventListener("click", function (ev) {
+        if (window.PortalOpenDoc) { ev.preventDefault(); window.PortalOpenDoc("cookie"); }
+      });
+      p.appendChild(a);
+      p.appendChild(document.createTextNode(". Если откажетесь, сайт будет работать так же, без Метрики."));
+      box.appendChild(p);
+      var acts = document.createElement("div");
+      acts.className = "cookies__acts";
+      [["yes", "Разрешить"], ["no", "Отказаться"]].forEach(function (b) {
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "btn btn--outline btn--mini";
+        btn.textContent = b[1];
+        btn.setAttribute("data-cookie", b[0]);
+        btn.addEventListener("click", function () { choose(b[0]); });
+        acts.appendChild(btn);
+      });
+      box.appendChild(acts);
+      document.body.appendChild(box);
+    }
+    box.hidden = false;
+  }
+  window.PortalCookies = {
+    open: show,
+    choice: function () { var c = read(); return c ? c.choice : null; },
+    goal: function (name) { if (loaded && window.ym) try { window.ym(Number(ID), "reachGoal", name); } catch (e) {} },
+    version: VERSION
+  };
+  function start() {
+    var c = read();
+    if (!c) show(); else if (c.choice === "yes") load();
+    // «Настройки cookie» в подвале
+    [].forEach.call(document.querySelectorAll("[data-cookie-settings]"), function (el) {
+      el.addEventListener("click", function (ev) { ev.preventDefault(); show(); });
+    });
+    // цель «звонок»: любое нажатие на телефон салона
+    document.addEventListener("click", function (ev) {
+      var t = ev.target && ev.target.closest && ev.target.closest('a[href^="tel:"]');
+      if (t) window.PortalCookies.goal("call");
+    }, true);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
+})();
+</script>
 <script>
 /* Поиск по каталогу. Одна строка ищет коллекцию, фабрику, размер, цвет или артикул,
    а запрос из одних фильтров («керамогранит 60×60», «белая дверь») ведёт в раздел с этими фильтрами.
@@ -2650,25 +2772,27 @@ window.PortalSeek = function (o) {
       ["p", "Ответственный за организацию обработки персональных данных: [[responsible|фамилия, имя, отчество и контакт ответственного]]."],
       ["h3", "2. Цели обработки"],
       ["ul", ["принять заявку с сайта и ответить на неё: связаться по телефону или в MAX, уточнить наличие, цену, размеры, замер, доставку и установку;",
-        "заключить и исполнить договор купли-продажи, если покупатель решит купить товар."]],
-      ["p", "Для рекламы, рассылок и оценки посетителей данные не используются."],
+        "заключить и исполнить договор купли-продажи, если покупатель решит купить товар;",
+        "вести статистику посещаемости сайта с помощью Яндекс Метрики, чтобы улучшать сайт, если посетитель на это согласился."]],
+      ["p", "Для рекламы конкретному человеку и для рассылок данные не используются."],
       ["h3", "3. Правовые основания"],
-      ["p", "Согласие субъекта персональных данных (п. 1 ч. 1 ст. 6 Закона № 152-ФЗ), его дают галочкой в форме заявки, текст: {soglasie}. Заключение и исполнение договора, стороной которого является субъект (п. 5 ч. 1 ст. 6)."],
+      ["p", "Согласие субъекта персональных данных (п. 1 ч. 1 ст. 6 Закона № 152-ФЗ), его дают галочкой в форме заявки, текст: {soglasie}. Заключение и исполнение договора, стороной которого является субъект (п. 5 ч. 1 ст. 6). Для cookie и Яндекс Метрики отдельное согласие: его дают кнопкой «Разрешить» в окне о cookie, текст: {cookie}."],
       ["h3", "4. Чьи данные и какие"],
       ["p", "Данные посетителей сайта, которые оставили заявку:"],
       ["ul", DATA_LIST],
-      ["p", "Специальные категории данных (о здоровье, убеждениях и т. п.) и биометрические данные не обрабатываются. Сайт не использует файлы cookie для отслеживания и сервисы веб-аналитики. Корзина и недописанная заявка хранятся только в браузере посетителя и оператору не передаются, пока заявку не отправили."],
+      ["p", "Если посетитель разрешил cookie и Метрику, сервис Яндекс Метрика собирает: файлы cookie и идентификаторы посетителя, IP-адрес, сведения о браузере, устройстве и операционной системе, адреса просмотренных страниц и откуда посетитель пришёл, время и действия на сайте (нажатия, прокрутку, отправку заявки, нажатие на телефон), примерное местоположение по IP-адресу. Запись действий на странице (Вебвизор) не ведётся. Без согласия Метрика не загружается."],
+      ["p", "Корзина, недописанная заявка и выбор посетителя о cookie хранятся только в его браузере: это нужно для работы сайта и оператору не передаётся, пока заявку не отправили. Специальные категории данных (о здоровье, убеждениях и т. п.) и биометрические данные не обрабатываются."],
       ["h3", "5. Как обрабатываются данные"],
       ["p", "Сбор, запись, систематизация, накопление, хранение, уточнение, извлечение, использование, блокирование, удаление и уничтожение, с использованием средств автоматизации и без них. Запись, систематизация, накопление, хранение, уточнение и извлечение данных граждан России ведутся с использованием баз данных, находящихся в России (ч. 5 ст. 18 Закона № 152-ФЗ)."],
-      ["p", "Заявка приходит на электронную почту салона и в рабочий чат менеджеров в мессенджере MAX. Доступ к данным есть только у сотрудников, которые обрабатывают заявки. Оператор не передаёт и не распространяет данные, кроме случаев, предусмотренных законом. Обработку по поручению оператора ведёт: [[processor|если работу сайта или доставку заявок обеспечивает другая организация, её наименование и адрес; если нет, этот пункт убрать]]. Трансграничная передача данных не ведётся."],
+      ["p", "Заявка приходит на электронную почту салона и в рабочий чат менеджеров в мессенджере MAX. Доступ к данным есть только у сотрудников, которые обрабатывают заявки. Оператор не передаёт и не распространяет данные, кроме случаев, предусмотренных законом. Обработку по поручению оператора ведёт: [[processor|если работу сайта или доставку заявок обеспечивает другая организация, её наименование и адрес; если нет, этот пункт убрать]]. Сервис Яндекс Метрика предоставляет ООО «ЯНДЕКС» (Москва, ул. Льва Толстого, д. 16): данные о посещениях оно обрабатывает по поручению оператора на серверах в России. Трансграничная передача данных не ведётся."],
       ["h3", "6. Как данные защищены"],
       ["p", "Оператор назначил ответственного за обработку данных, ограничил доступ к ним кругом сотрудников, которым они нужны для работы, защищает учётные записи почты, чата и сайта паролями, передаёт заявки с сайта по защищённому соединению (HTTPS) и знакомит сотрудников с этой политикой (ст. 18.1 и 19 Закона № 152-ФЗ)."],
       ["h3", "7. Сроки"],
-      ["p", "Данные обрабатываются, пока это нужно для цели: не дольше одного года с даты заявки или до отзыва согласия, если оно отозвано раньше. Если с покупателем заключён договор, данные хранятся столько, сколько требует закон о бухгалтерском учёте и налогах. Затем они уничтожаются в течение 30 дней (ст. 21 Закона № 152-ФЗ)."],
+      ["p", "Данные обрабатываются, пока это нужно для цели: не дольше одного года с даты заявки или до отзыва согласия, если оно отозвано раньше. Если с покупателем заключён договор, данные хранятся столько, сколько требует закон о бухгалтерском учёте и налогах. Затем они уничтожаются в течение 30 дней (ст. 21 Закона № 152-ФЗ). Cookie Метрики хранятся в браузере посетителя не дольше года, удалить их можно в любой момент: отказом в «Настройках cookie» внизу страницы или в настройках браузера."],
       ["h3", "8. Права посетителя"],
       ["ul", ["узнать, обрабатываются ли его данные, какие, зачем и как (ст. 14);",
         "потребовать уточнить, заблокировать или уничтожить данные, если они неполные, устарели, неточны или не нужны для цели;",
-        "отозвать согласие в любой момент;",
+        "отозвать согласие в любой момент, в том числе отказаться от cookie и Метрики в «Настройках cookie» внизу любой страницы сайта;",
         "обжаловать действия оператора в Роскомнадзоре или в суде."]],
       ["h3", "9. Как обратиться"],
       ["p", "Письмом на электронную почту [[email|e-mail салона]], письменно по адресу салона или по телефону +7 (996) 220-36-22. Оператор отвечает в течение 10 рабочих дней с даты обращения, срок можно продлить ещё на 5 рабочих дней, объяснив причину (ст. 14 и 20 Закона № 152-ФЗ)."],
@@ -2676,17 +2800,38 @@ window.PortalSeek = function (o) {
       ["p", "Действующая редакция политики всегда опубликована на этом сайте. Дата редакции указана в начале документа."]
     ] }
   };
+  DOCS.cookie = { title: "Согласие на обработку данных с помощью cookie и Яндекс Метрики", v: "18 ноября 2026", blocks: [
+    ["p", "Нажимая «Разрешить» в окне о cookie на сайте салона отделочных материалов «Портал», я своей волей и в своём интересе даю согласие на обработку моих данных с помощью файлов cookie и сервиса Яндекс Метрика на условиях ниже, в соответствии со статьёй 9 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных». Это согласие отдельно от согласия на обработку данных из заявки."],
+    ["h3", "1. Оператор"],
+    ["p", OPERATOR],
+    ["h3", "2. Какие данные"],
+    ["ul", ["файлы cookie и идентификаторы, которые Метрика присваивает браузеру;", "IP-адрес и примерное местоположение по нему;",
+      "сведения о браузере, устройстве, операционной системе, языке и размере экрана;",
+      "адреса просмотренных страниц, откуда я пришёл на сайт, время посещения;",
+      "действия на сайте: нажатия, прокрутка, отправка заявки, нажатие на номер телефона."]],
+    ["p", "Запись действий на странице (Вебвизор) не ведётся."],
+    ["h3", "3. Зачем"],
+    ["p", "Чтобы вести статистику посещаемости: видеть, какие разделы и коллекции нужны покупателям, откуда приходят посетители и где сайт неудобен, и улучшать его. Для рекламы конкретному человеку данные не используются."],
+    ["h3", "4. Что с данными делают и кто ещё их обрабатывает"],
+    ["p", "Сбор, запись, систематизация, накопление, хранение, уточнение, извлечение, использование, обезличивание, удаление и уничтожение с использованием средств автоматизации. Сервис Яндекс Метрика предоставляет ООО «ЯНДЕКС» (Москва, ул. Льва Толстого, д. 16): оно обрабатывает данные по поручению оператора на серверах в России, оператор видит их в виде обезличенной статистики. Трансграничная передача не ведётся."],
+    ["h3", "5. Сколько действует согласие"],
+    ["p", "До отзыва, но cookie Метрики хранятся в браузере не дольше года. Когда в этот текст вносятся изменения, сайт спрашивает согласие заново."],
+    ["h3", "6. Как отозвать согласие"],
+    ["p", "В любой момент: «Настройки cookie» внизу любой страницы сайта, кнопка «Отказаться». Cookie Метрики при этом удаляются, счётчик больше не загружается. Можно также удалить cookie в настройках браузера или написать на электронную почту [[email|e-mail салона]]."],
+    ["p", "Без этого согласия сайт работает полностью, только без Метрики. Как салон обращается с данными, описано в {politika}."]
+  ] };
   var docBox = null, docAt = null;
   // [[ключ|подсказка]]: реквизит салона или выделенная подсказка; {soglasie} и {politika}: ссылка на другой документ
   function rich(tag, cls, s) {
     var n = el(tag, cls);
-    s.split(/(\[\[.*?\]\]|\{soglasie\}|\{politika\})/).forEach(function (part) {
+    s.split(/(\[\[.*?\]\]|\{soglasie\}|\{politika\}|\{cookie\})/).forEach(function (part) {
       if (/^\[\[/.test(part)) {
         var bits = part.slice(2, -2).split("|"), key = bits.length > 1 ? bits[0] : null, hint = bits[bits.length - 1];
         if (key && LEGAL[key]) n.appendChild(document.createTextNode(LEGAL[key]));
         else n.appendChild(text("mark", "legal-fill", hint));
-      } else if (part === "{soglasie}" || part === "{politika}") {
-        var k = part.slice(1, -1), a = text("a", null, k === "soglasie" ? "Согласии на обработку персональных данных" : "Политике обработки персональных данных");
+      } else if (part === "{soglasie}" || part === "{politika}" || part === "{cookie}") {
+        var k = part.slice(1, -1), a = text("a", null, { soglasie: "Согласии на обработку персональных данных", politika: "Политике обработки персональных данных",
+          cookie: "Согласии на обработку данных с помощью cookie и Яндекс Метрики" }[k]);
         a.href = "#" + k;
         a.addEventListener("click", function (ev) { ev.preventDefault(); openDoc(k); });
         n.appendChild(a);
@@ -2736,6 +2881,8 @@ window.PortalSeek = function (o) {
     docBox.querySelector(".doc__body").scrollTop = 0;
   }
   function openConsent() { openDoc("soglasie"); }
+  // окно о cookie (src31/cookies.js) открывает документы здесь же
+  window.PortalOpenDoc = openDoc;
   var CONSENT = DOCS.soglasie;
 
   // o.key: приставка id полей. o.lines(qty): позиции заявки. o.qty: {unit, one} поле количества для одной позиции.
@@ -2895,6 +3042,7 @@ window.PortalSeek = function (o) {
         send.disabled = true; send.textContent = "Отправляем заявку";
         fail.hidden = true;
         sendOrder(order).then(function () {
+          if (window.PortalCookies) window.PortalCookies.goal("order");
           draft.comment = ""; draft.ok = false; preset = null;
           o.done(order, box, mount);
         }, function (err) {
