@@ -278,7 +278,7 @@ h3 { font-family: var(--font-body); font-weight: 600; font-size: var(--text-md);
 }
 .seekbtn:hover { background: var(--color-accent-soft); border-color: var(--color-ink); }
 .seekfield {
-  display: flex; align-items: center; gap: var(--space-sm); width: 100%; max-width: 640px; min-height: 56px;
+  display: flex; align-items: center; gap: var(--space-sm); width: 100%; min-width: 0; max-width: 640px; min-height: 56px;
   padding: 0 var(--space-md); background: var(--color-mat); color: var(--color-muted);
   border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl);
   font-family: var(--font-body); font-size: var(--text-md); text-align: left; cursor: text;
@@ -483,7 +483,7 @@ h3 { font-size: var(--text-lg); }
 
 /* ---- hero: the headline beside a matted photograph ---- */
 .hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--space-xl) var(--space-2xl); align-items: center; padding-block: var(--space-2xl) var(--space-3xl); }
-.hero__text { display: grid; gap: var(--space-lg); align-content: center; }
+.hero__text { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-lg); align-content: center; min-width: 0; }
 .hero .lead { font-size: var(--text-lead); color: var(--color-ink-2); max-width: 42ch; }
 .hero__act { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-xs); }
 .hero__note { font-size: var(--text-xs); color: var(--color-muted); max-width: 46ch; }
@@ -492,7 +492,7 @@ h3 { font-size: var(--text-lg); }
 .hero__text > :nth-child(3) { animation-delay: 70ms; }
 .hero__text > :nth-child(4) { animation-delay: 140ms; }
 .hero__text > :nth-child(5) { animation-delay: 210ms; }
-.hero .seekfield { max-width: 520px; }
+.hero .seekfield { max-width: 520px; width: 100%; min-width: 0; }
 
 .mat { padding: clamp(var(--space-md), 2vw, var(--space-xl)); }
 .mat__fig { margin: 0; overflow: hidden; background: var(--color-mat-2); }
@@ -655,6 +655,11 @@ mark.legal-fill { background: color-mix(in oklab, var(--color-accent) 22%, trans
 /* организатор и условия акций (закон о рекламе) */
 .promos__terms { margin-top: var(--space-md); font-size: var(--text-xs); color: var(--color-muted); max-width: 90ch; line-height: 1.5; }
 .promo__terms { grid-column: 1 / -1; margin-top: calc(-1 * var(--space-2xs)); font-size: var(--text-xs); color: var(--color-muted); }
+/* телефон: ссылки-строки в подвале получают поле под палец, текст при этом не сдвигается */
+@media (max-width: 720px) {
+  .foot a { padding-block: 10px; }
+  .foot li a, .foot__docs a { display: inline-block; }
+}
 </style>
 
 <style>
@@ -834,9 +839,9 @@ window.PortalDemo = (function () {
           </span>
           <div class="nav__drop" id="catmenu" hidden>
             <ul>
-              <li><a href="katalog.html#katalog"><b>Весь каталог</b><em>163 коллекции</em><span>Собираем заново: начали с межкомнатных дверей</span></a></li>
+              <li><a href="katalog.html#katalog"><b>Весь каталог</b><em>169 коллекций</em><span>Собираем заново: межкомнатные и входные двери</span></a></li>
               <li><a href="katalog.html#mezhkomnatnye"><b>Двери межкомнатные</b><em>163 коллекции</em><span>Лорд, Зодчий, Андора, Хамелеон, Адема, Разные производители</span></a></li>
-              <li><a href="katalog.html#vhodnye"><b>Двери входные</b><em>скоро</em><span>раздел наполняем</span></a></li>
+              <li><a href="katalog.html#vhodnye"><b>Двери входные</b><em>6 коллекций</em><span>Торекс</span></a></li>
               <li><a href="katalog.html#plitka"><b>Плитка</b><em>скоро</em><span>раздел наполняем</span></a></li>
               <li><a href="katalog.html#poly"><b>Напольные покрытия</b><em>скоро</em><span>раздел наполняем</span></a></li>
               <li><a href="katalog.html#oboi"><b>Обои и фрески</b><em>скоро</em><span>раздел наполняем</span></a></li>
@@ -897,8 +902,8 @@ window.PortalDemo = (function () {
         <figure class="mat__fig"><img src="photos/k-dveri-1200.webp" srcset="photos/k-dveri-640.webp 640w, photos/k-dveri-1200.webp 1200w" alt="Синие межкомнатные двери в светлом коридоре" width="1600" height="1120" sizes="(max-width: 480px) 90vw, (max-width: 720px) 45vw, (max-width: 1100px) 30vw, 18vw" loading="lazy" decoding="async"></figure>
         <span class="room__body">
           <span class="room__name">Двери</span>
-          <span class="room__sub">Межкомнатные и входные из базы салона.</span>
-          <span class="room__fig"><b>163</b><span>коллекции</span></span>
+          <span class="room__sub">Межкомнатные и входные, коллекциями фабрик.</span>
+          <span class="room__fig"><b>169</b><span>коллекций</span></span>
         </span>
       </a>
       <a class="room mat lift" href="katalog.html#plitka">
