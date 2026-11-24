@@ -459,6 +459,7 @@ html[data-seek] { overflow: hidden; scrollbar-gutter: stable; }
 .cookies__acts .btn { flex: 1 1 140px; }
 @media (max-width: 600px) { .cookies { padding: var(--space-md); } }
 
+
 /* Hallmark · shape: app screen, a catalogue browser · genre: editorial · theme: Atelier (by request: the client picked this direction, light only) · job: visit · draw: n/a
  * screen: breadcrumbs, a filter rail on the left, a sorted grid on the right, a collection sheet over them · states: full, filtered, empty, section not loaded, detail · nav: the same conventional bar as the homepage, menu centred · footer: mast · imagery: factory photographs and scans · signature: the collection card opening to every variant at once, each material moving like itself under the cursor: a door swings into the room, a roll runs out, a floor lies down · atelier: limewash
  * axes: light/high-contrast-serif/warm · posture: restrained · contrast: pass · fold: pass · v2.1.0 */
@@ -1191,10 +1192,21 @@ html:has(.viewer[open]) { overflow: hidden; }
   padding: calc(var(--space-md) + env(safe-area-inset-top, 0px)) max(var(--space-md), env(safe-area-inset-right, 0px)) var(--space-md) max(var(--space-md), env(safe-area-inset-left, 0px));
   touch-action: pan-y pinch-zoom;
 }
-.viewer__img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; cursor: zoom-in; }
-.viewer[data-zoom="1"] .viewer__stage { display: block; overflow: auto; touch-action: auto; }
-.viewer[data-zoom="1"] .viewer__img { max-width: none; max-height: none; margin: 0 auto; cursor: zoom-out; }
-.viewer[data-zoomable="0"]:not([data-zoom="1"]) .viewer__img { cursor: default; }
+.viewer__img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; cursor: zoom-in; -webkit-user-drag: none; user-select: none; }
+.viewer[data-zoom="1"] .viewer__stage { display: block; overflow: auto; touch-action: pan-x pan-y; overscroll-behavior: contain; }
+.viewer[data-zoom="1"] .viewer__img { max-width: none; max-height: none; height: auto; margin: 0 auto; cursor: grab; }
+.viewer[data-pan="1"] .viewer__img { cursor: grabbing; }
+/* лупа: кнопка в правом верхнем углу снимка */
+.viewer__lens {
+  position: absolute; z-index: 2; top: calc(var(--space-md) + env(safe-area-inset-top, 0px)); right: max(var(--space-md), env(safe-area-inset-right, 0px));
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 var(--space-md) 0 var(--space-sm);
+  border: var(--rule-hair) solid var(--color-show-btn-on); border-radius: 999px; background: var(--color-show); color: var(--color-show-ink);
+  font: inherit; font-size: var(--text-sm); font-weight: 600; cursor: pointer; box-shadow: 0 2px 10px oklch(10% 0.01 50 / 0.35);
+}
+.viewer__lens:hover { background: var(--color-show-btn); }
+.viewer__lens:focus-visible { outline: 2px solid var(--color-show-ink); outline-offset: 2px; }
+.viewer__lens[aria-pressed="true"] { background: var(--color-show-ink); color: var(--color-show); border-color: var(--color-show-ink); }
+.viewer__lens[aria-pressed="true"] .viewer__lens-plus { display: none; }
 .viewer__bar {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-sm) var(--space-lg);
   padding: var(--space-sm) max(var(--space-lg), env(safe-area-inset-right, 0px)) calc(var(--space-sm) + env(safe-area-inset-bottom, 0px)) max(var(--space-lg), env(safe-area-inset-left, 0px));
@@ -1203,6 +1215,7 @@ html:has(.viewer[open]) { overflow: hidden; }
 .viewer__what { display: grid; gap: var(--space-3xs); min-width: 0; flex: 1 1 220px; }
 .viewer__name { font-family: var(--font-display); font-weight: 500; font-size: var(--text-xl); line-height: 1.15; }
 .viewer__sub { font-size: var(--text-sm); color: var(--color-show-ink-2); font-variant-numeric: tabular-nums; }
+.viewer__hint { font-size: var(--text-xs); color: var(--color-show-ink-2); }
 .viewer__acts { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
 .viewer__btn {
   min-height: 44px; padding: 0 var(--space-md); border: var(--rule-hair) solid var(--color-show-btn-on); border-radius: var(--radius-ctl);
@@ -1251,7 +1264,7 @@ mark.legal-fill { background: color-mix(in oklab, var(--color-accent) 22%, trans
 .grid.grid--pair { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
 .card--pair .pic { aspect-ratio: 1 / 1.02; padding: var(--space-sm); }
 .models--pair { grid-template-columns: minmax(0, 1fr); max-width: 640px; }
-.model--pair .model__pic { aspect-ratio: 1588 / 1600; }
+.model--pair .model__pic { aspect-ratio: 1560 / 1600; }
 .pick__note { flex-basis: 100%; padding: var(--space-sm) var(--space-md); background: var(--color-paper-2); border-left: 3px solid var(--color-accent); font-size: var(--text-sm); line-height: 1.5; color: var(--color-ink); }
 /* телефон: всё, что нажимают пальцем, не ниже 40–44 px. Ссылки-строки (крошки, подвал, «Посмотреть вживую», сайт фабрики)
    получают поле сверху и снизу; у строчных оно не сдвигает текст */
@@ -2150,7 +2163,7 @@ window.PortalSeek = function (o) {
   var SOON = "Каталог собираем заново, по коллекциям фабрик. Начали с дверей, этот раздел добавим следующим. Пока ассортимент можно посмотреть в салоне или спросить по телефону.";
   var SECTIONS = [
     { id: "mezhkomnatnye", name: "Двери межкомнатные", short: "Межкомнатные двери",
-      intro: "Коллекции фабрик Лорд, Зодчий, Андора, Хамелеон и Адема, антивандальная серия «Лайн». Карточка показывает одну модель коллекции, внутри все модели: нажмите на дверь, чтобы рассмотреть её крупно.",
+      intro: "Коллекции фабрик Лорд, Зодчий, Андора, Хамелеон и Адема, антивандальная серия «Лайн». Карточка показывает одну модель коллекции, внутри все модели: нажмите на дверь, чтобы рассмотреть её крупно и приблизить лупой.",
       facets: [
         { id: "brand", label: "Фабрика", opts: ["Лорд", "Зодчий", "Андора", "Хамелеон", "Адема", "Разные производители"] },
         { id: "style", label: "Стиль", opts: ["Классика", "Неоклассика", "Современные", "Минимализм", "Дизайн", "С декором", "Лучшая Италия", "Скрытые", "Алюминиевые"] },
@@ -3135,6 +3148,9 @@ window.PortalSeek = function (o) {
   }
 
 
+  // мышь или палец: подсказка у лупы говорит, чем двигать приближенный снимок
+  var MOUSE = !!(window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches);
+
   // ---- дверь крупно: снимок на весь экран, листание, заявка и корзина прямо отсюда ----
   var viewer = null;
   function buildViewer() {
@@ -3144,9 +3160,15 @@ window.PortalSeek = function (o) {
     img.decoding = "async";
     stage.appendChild(img);
     d.appendChild(stage);
+    // лупа: кнопка в углу снимка приближает сам снимок, ещё нажатие возвращает его целиком
+    var lens = el("button", "viewer__lens");
+    lens.type = "button";
+    lens.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.25" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.2 15.2 20.5 20.5M7.75 10.5h5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path class="viewer__lens-plus" d="M10.5 7.75v5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span></span>';
+    d.appendChild(lens);
     var bar = el("div", "viewer__bar"), what = el("div", "viewer__what");
     var name = text("p", "viewer__name", ""), sub = text("p", "viewer__sub", "");
-    what.appendChild(name); what.appendChild(sub);
+    var hint = text("p", "viewer__hint", "");
+    what.appendChild(name); what.appendChild(sub); what.appendChild(hint);
     bar.appendChild(what);
     var acts = el("div", "viewer__acts");
     function btn(label, cls) { var b = text("button", cls || "viewer__btn", label); b.type = "button"; acts.appendChild(b); return b; }
@@ -3180,26 +3202,48 @@ window.PortalSeek = function (o) {
       choose(st.at);
       paint();
     }
-    // нажатие по двери: настоящий размер снимка, ещё нажатие: снова целиком
-    function setZoom(on) {
+    // лупа: снимок крупнее в 2,5 раза (если сам снимок ещё крупнее, то до его настоящего размера, но не больше 4 раз);
+    // точка, по которой нажали (кнопкой: середина двери), встаёт в середину экрана, дальше снимок двигают мышью или пальцем
+    function setZoom(on, fx, fy) {
+      var r = img.getBoundingClientRect();
       st.zoom = on;
+      if (on && r.width > 0) {
+        var z = Math.min(4, Math.max(2.5, (img.naturalWidth || 0) / r.width));
+        img.style.width = Math.round(r.width * z) + "px";
+      } else img.style.width = "";
       d.setAttribute("data-zoom", on ? "1" : "0");
-      stage.scrollTop = 0;
+      lens.setAttribute("aria-pressed", on ? "true" : "false");
+      lens.setAttribute("aria-label", on ? "Отдалить: снимок целиком" : "Лупа: приблизить снимок");
+      lens.lastChild.textContent = on ? "Отдалить" : "Приблизить";
+      hint.textContent = on ? (MOUSE ? "Двигайте снимок мышью или колесом. «Отдалить» или нажатие по снимку: снова целиком." : "Двигайте снимок пальцем. «Отдалить» или нажатие по снимку: снова целиком.")
+        : "Лупа в углу снимка или нажатие по двери приближают снимок.";
+      if (on) {
+        stage.scrollLeft = Math.max(0, (fx == null ? 0.5 : fx) * img.offsetWidth - stage.clientWidth / 2);
+        stage.scrollTop = Math.max(0, (fy == null ? 0.45 : fy) * img.offsetHeight - stage.clientHeight / 2);
+      } else { stage.scrollTop = 0; stage.scrollLeft = 0; }
     }
-    // увеличивать есть смысл, только если снимок крупнее экрана: мелкий (у некоторых фабрик фото около 500 px) так и стоит целиком
-    function zoomable() { return img.naturalHeight > img.getBoundingClientRect().height * 1.15 || img.naturalWidth > img.getBoundingClientRect().width * 1.15; }
-    function markZoom() { if (!st.zoom) d.setAttribute("data-zoomable", zoomable() ? "1" : "0"); }
-    img.addEventListener("load", markZoom);
-    window.addEventListener("resize", markZoom);
+    lens.addEventListener("click", function () { setZoom(!st.zoom); });
+    var dragged = false;
     img.addEventListener("click", function (ev) {
-      var r = img.getBoundingClientRect(), fy = (ev.clientY - r.top) / Math.max(1, r.height), fx = (ev.clientX - r.left) / Math.max(1, r.width);
-      if (!st.zoom && !zoomable()) return;
-      setZoom(!st.zoom);
-      if (st.zoom) {
-        stage.scrollTop = Math.max(0, fy * img.offsetHeight - stage.clientHeight / 2);
-        stage.scrollLeft = Math.max(0, fx * img.offsetWidth - stage.clientWidth / 2);
-      }
+      if (dragged) { dragged = false; return; }
+      var r = img.getBoundingClientRect();
+      setZoom(!st.zoom, (ev.clientX - r.left) / Math.max(1, r.width), (ev.clientY - r.top) / Math.max(1, r.height));
     });
+    // мышью приближенный снимок тянут, как лист бумаги; пальцем он двигается прокруткой
+    var pan = null;
+    stage.addEventListener("pointerdown", function (ev) {
+      if (!st.zoom || ev.pointerType !== "mouse" || ev.button !== 0) return;
+      ev.preventDefault();
+      pan = { x: ev.clientX, y: ev.clientY, l: stage.scrollLeft, t: stage.scrollTop };
+      dragged = false;
+    });
+    window.addEventListener("pointermove", function (ev) {
+      if (!pan) return;
+      var dx = ev.clientX - pan.x, dy = ev.clientY - pan.y;
+      if (Math.abs(dx) + Math.abs(dy) > 4) { dragged = true; d.setAttribute("data-pan", "1"); }
+      stage.scrollLeft = pan.l - dx; stage.scrollTop = pan.t - dy;
+    });
+    window.addEventListener("pointerup", function () { if (pan) { pan = null; d.removeAttribute("data-pan"); } });
     prev.addEventListener("click", function () { move(-1); });
     next.addEventListener("click", function () { move(1); });
     shut.addEventListener("click", function () { d.close(); });
@@ -3215,6 +3259,8 @@ window.PortalSeek = function (o) {
     d.addEventListener("keydown", function (ev) {
       if (ev.key === "ArrowLeft") { ev.preventDefault(); move(-1); }
       if (ev.key === "ArrowRight") { ev.preventDefault(); move(1); }
+      if ((ev.key === "+" || ev.key === "=") && !st.zoom) { ev.preventDefault(); setZoom(true); }
+      if (ev.key === "-" && st.zoom) { ev.preventDefault(); setZoom(false); }
     });
     // пальцем вбок: соседняя модель
     var downX = null;
@@ -3227,7 +3273,11 @@ window.PortalSeek = function (o) {
       if (Math.abs(dx) > 48) move(dx < 0 ? 1 : -1);
     });
     // клик мимо снимка и панели закрывает
-    d.addEventListener("click", function (ev) { if (ev.target === d || ev.target === stage) d.close(); });
+    // (под лупой фон вокруг снимка не закрывает: снимок только что тянули мышью)
+    d.addEventListener("click", function (ev) {
+      if (st.zoom && (dragged || ev.target === stage)) { dragged = false; return; }
+      if (ev.target === d || ev.target === stage) d.close();
+    });
     st.open = function (item, at, form) {
       st.item = item; st.at = at; st.form = form;
       paint();
