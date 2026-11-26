@@ -1282,7 +1282,6 @@ mark.legal-fill { background: color-mix(in oklab, var(--color-accent) 22%, trans
 .kit__grp { display: grid; gap: var(--space-2xs); min-width: 0; }
 .kit__name { margin: 0; font-size: var(--text-md); font-weight: 600; line-height: 1.35; text-wrap: balance; }
 .kit__what { font-size: var(--text-sm); line-height: 1.45; color: var(--color-ink-2); }
-.kit__soon { justify-self: start; padding: 2px var(--space-xs); border-radius: var(--radius-ctl); background: var(--color-accent-soft); color: var(--color-accent-ink); font-size: var(--text-2xs); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
 .kit__tiles { list-style: none; margin: var(--space-2xs) 0 0; padding: var(--space-sm); display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--space-sm) var(--space-xs); background: oklch(100% 0 0); border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); }
 .kit__tile { display: grid; gap: 4px; justify-items: center; align-content: start; min-width: 0; max-width: 100%; }
 .kit__img { display: block; max-width: 100%; height: auto; }
@@ -3549,7 +3548,7 @@ window.PortalSeek = function (o) {
   // ---- комплектация серии по прайсу фабрики (Торекс): справа что входит в дверь, слева что можно добавить ----
   // Картинки и подписи взяты из розничного прайса фабрики, цен и доплат нет: цену с опциями называет менеджер.
   // Ничего не нажимается. Пачка torex/k-<серия>: m исполнения, dev разрез двери, hw фурнитура в комплекте,
-  // base блоки базовой комплектации, opts опции с картинками (c раздел прайса, t название, x строки, s скоро в продаже),
+  // base блоки базовой комплектации, opts опции с картинками (c раздел прайса, t название, x строки; плашку «Скоро в продаже» из прайса не показываем),
   // more опции без картинок. Плитка: u картинка, w и h её размер, c подпись, sw образец цвета (квадратом), k вырезана из сборной.
   var KIT_CAT = { "цвета отделки": "Цвета", "рисунок отделки": "Рисунки отделки", "защита": "Замки и защита", "прочие": "Фурнитура и другое" };
   function kitTiles(list) {
@@ -3598,12 +3597,11 @@ window.PortalSeek = function (o) {
     sec.appendChild(cols);
     var wait = text("p", "kit__wait", "Загружаем картинки из каталога фабрики…");
     sec.appendChild(wait);
-    function group(into, title, lines, tiles, soon) {
+    function group(into, title, lines, tiles) {
       if (!tiles.length && !(lines && lines.length)) return;
       var g = el("div", "kit__grp");
       if (title) g.appendChild(text("h4", "kit__name", title));
       (lines || []).forEach(function (x) { g.appendChild(text("p", "kit__what", x)); });
-      if (soon) g.appendChild(text("p", "kit__soon", "Скоро в продаже"));
       if (tiles.length) g.appendChild(kitTiles(tiles));
       into.appendChild(g);
     }
@@ -3621,8 +3619,8 @@ window.PortalSeek = function (o) {
           opts.appendChild(text("p", "kit__cat", KIT_CAT[o.c] || (o.c ? o.c.charAt(0).toUpperCase() + o.c.slice(1) : "Ещё")));
         }
         // одна строка без своего названия — сама и есть название блока
-        if (!o.t && o.x.length === 1) group(opts, o.x[0], null, o.i, o.s);
-        else group(opts, o.t || null, o.x, o.i, o.s);
+        if (!o.t && o.x.length === 1) group(opts, o.x[0], null, o.i);
+        else group(opts, o.t || null, o.x, o.i);
       });
       if (k.more && k.more.length) {
         opts.appendChild(text("p", "kit__cat", "Ещё можно заказать"));
