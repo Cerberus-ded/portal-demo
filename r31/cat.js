@@ -352,7 +352,7 @@
       now.hidden = true; secLi.hidden = true; cat.setAttribute("aria-current", "page");
       $("title").textContent = "Каталог";
       $("intro").textContent = "Каталог собираем заново, по коллекциям фабрик. Межкомнатные двери: Лорд, Зодчий, Андора, Хамелеон, Адема и серия «Лайн», у каждой коллекции все её модели. Входные: квартирные и уличные двери Торекс, дизайн любой на выбор.";
-      document.title = "Каталог салона Портал, Димитровград";
+      document.title = "Каталог салона «Портал», Димитровград: межкомнатные и входные двери";
     } else if (view === "admin") {
       now.hidden = false; secLi.hidden = true; cat.removeAttribute("aria-current");
       now.textContent = "Админка";
@@ -372,7 +372,8 @@
       now.textContent = it ? it.name : section().short;
       $("title").textContent = section().name;
       $("intro").textContent = section().intro;
-      document.title = (it ? it.name + ", " + it.brand : section().name) + ": каталог салона Портал";
+      document.title = it ? it.name + ", " + it.brand + ": " + section().short.toLowerCase() + " в салоне «Портал», Димитровград"
+        : section().name + " в Димитровграде: каталог салона «Портал»";
     }
   }
 
