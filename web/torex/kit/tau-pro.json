@@ -1,0 +1,939 @@
+{
+ "sheet": "TAU PRO",
+ "specs": [
+  [
+   "Назначение",
+   "квартирная"
+  ],
+  [
+   "Уровень шумоизоляции, дБ",
+   "МР 27,7, РР 36,6"
+  ],
+  [
+   "Средний вес, кг",
+   "МР 73, РР 89"
+  ],
+  [
+   "Размерный ряд",
+   null
+  ],
+  [
+   "Высота, мм",
+   "2050, 2100, 2150*, 2200*, 2250*"
+  ],
+  [
+   "Ширина, мм",
+   "860, 950, 1000*, 1050*"
+  ],
+  [
+   "Полотно",
+   null
+  ],
+  [
+   "Толщина полотна, мм",
+   "МР 90, РР 100"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,2"
+  ],
+  [
+   "Усиление полотна",
+   "вертикальные П-образные ребра жесткости, горизонтальные стяжки, замковый карман"
+  ],
+  [
+   "Наполнение полотна",
+   "базальтовая плита + пенополистирол"
+  ],
+  [
+   "Уплотнитель",
+   "резиновый, 2 контура"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Короб",
+   null
+  ],
+  [
+   "Глубина короба, мм",
+   "106"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,4"
+  ],
+  [
+   "Тип короба",
+   "цельногнутый профиль"
+  ],
+  [
+   "Ширина металл. наличника, мм",
+   "75"
+  ],
+  [
+   "Ширина перекрываемого зазора, мм",
+   "61"
+  ],
+  [
+   "Световой проем (для ширины 950мм)",
+   "830"
+  ],
+  [
+   "Высота порога, мм",
+   "50"
+  ],
+  [
+   "Регулятор притвора",
+   "эксцентрик"
+  ],
+  [
+   "Уплотнитель",
+   "резиновый, 1 контур"
+  ],
+  [
+   "Порог из нержавеющей стали",
+   "нет"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Замковая система",
+   null
+  ],
+  [
+   "Основной замок",
+   "Avers T-32-CR"
+  ],
+  [
+   "Дополнительный замок",
+   "Avers T-37/S6-CR"
+  ],
+  [
+   "Цилиндровый механизм",
+   "Avers ZM"
+  ],
+  [
+   "Ночная задвижка",
+   "Intecron"
+  ],
+  [
+   "Внутренняя панель - съемная",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Внешняя панель - вариант РР",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Ручка",
+   "ALFA, хром"
+  ],
+  [
+   "Фурнитура",
+   "МОН, хром"
+  ],
+  [
+   "Петли",
+   "разнесенные, 2 шт"
+  ],
+  [
+   "Противосъемные ригели",
+   "2 шт"
+  ],
+  [
+   "Глазок",
+   "есть, в центре"
+  ]
+ ],
+ "note": "* с доплатой",
+ "notes": [
+  "* с доплатой"
+ ],
+ "models": [
+  "TAU PRO МР",
+  "TAU PRO PР"
+ ],
+ "device": [
+  {
+   "img": "web/torex/kit/tau-pro/01.webp",
+   "w": 336,
+   "h": 726
+  },
+  {
+   "img": "web/torex/kit/tau-pro/02.webp",
+   "w": 277,
+   "h": 306
+  }
+ ],
+ "hw": [
+  {
+   "img": "web/torex/kit/tau-pro/03.webp",
+   "w": 177,
+   "h": 66
+  },
+  {
+   "img": "web/torex/kit/tau-pro/04.webp",
+   "w": 285,
+   "h": 77
+  }
+ ],
+ "base": [
+  {
+   "title": "Наружная отделка",
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/05.webp",
+     "w": 140,
+     "h": 293,
+     "cap": "без рисунка"
+    },
+    {
+     "img": "web/torex/kit/tau-pro/06.webp",
+     "w": 89,
+     "h": 96,
+     "cap": "темно-серый букле графит"
+    }
+   ]
+  },
+  {
+   "title": "Внутренняя/наружная отделка: цвета ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/07.webp",
+     "w": 12,
+     "h": 47,
+     "cap": "ПВХ санторини белый",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/08.webp",
+     "w": 284,
+     "h": 272,
+     "cap": "ПВХ лиственница белая",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/09.webp",
+     "w": 95,
+     "h": 100,
+     "cap": "ПВХ лиственница крем",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/10.webp",
+     "w": 95,
+     "h": 100,
+     "cap": "ПВХ ларче орех",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/11.webp",
+     "w": 95,
+     "h": 100,
+     "cap": "ПВХ дуб коньяк",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/12.webp",
+     "w": 95,
+     "h": 100,
+     "cap": "ПВХ лиственница темная",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/13.webp",
+     "w": 95,
+     "h": 100,
+     "cap": "ПВХ бетон темный",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/14.webp",
+     "w": 95,
+     "h": 100,
+     "cap": "ПВХ бетон известковый",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/15.webp",
+     "w": 99,
+     "h": 95,
+     "cap": "ПВХ ферро",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/16.webp",
+     "w": 92,
+     "h": 89,
+     "cap": "ПВХ бьянко",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/17.webp",
+     "w": 91,
+     "h": 97,
+     "cap": "ПВХ айвори",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/18.webp",
+     "w": 95,
+     "h": 100,
+     "cap": "ПВХ дуб белый матовый",
+     "sw": 1
+    }
+   ]
+  },
+  {
+   "title": "Наружная и внутренняя: панель МДФ 10 мм",
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/19.webp",
+     "w": 87,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/20.webp",
+     "w": 87,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/21.webp",
+     "w": 86,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/22.webp",
+     "w": 86,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/23.webp",
+     "w": 86,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/24.webp",
+     "w": 87,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/25.webp",
+     "w": 88,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/26.webp",
+     "w": 88,
+     "h": 205,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/27.webp",
+     "w": 87,
+     "h": 205,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/28.webp",
+     "w": 88,
+     "h": 205,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/29.webp",
+     "w": 89,
+     "h": 205,
+     "cut": 1
+    }
+   ]
+  }
+ ],
+ "opts": [
+  {
+   "nums": [
+    1
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/30.webp",
+     "w": 159,
+     "h": 232
+    }
+   ],
+   "texts": [
+    "Цвет металла Букле коричневый, Колоре неро, Колоре гриджио"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    2,
+    3
+   ],
+   "name": "Коллекция ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/31.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/32.webp",
+     "w": 64,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/33.webp",
+     "w": 76,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/34.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/35.webp",
+     "w": 73,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/36.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/37.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/38.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/39.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/40.webp",
+     "w": 64,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/41.webp",
+     "w": 70,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/42.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/43.webp",
+     "w": 76,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/44.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/45.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/46.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/47.webp",
+     "w": 64,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/48.webp",
+     "w": 75,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/49.webp",
+     "w": 68,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/50.webp",
+     "w": 66,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/51.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Цвет ПВХ (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    4
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/52.webp",
+     "w": 93,
+     "h": 226,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/53.webp",
+     "w": 99,
+     "h": 226,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/54.webp",
+     "w": 98,
+     "h": 226,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/55.webp",
+     "w": 98,
+     "h": 226,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный рисунок на металле SP"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    5
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/56.webp",
+     "w": 122,
+     "h": 262,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/57.webp",
+     "w": 122,
+     "h": 262,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/58.webp",
+     "w": 122,
+     "h": 262,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/59.webp",
+     "w": 122,
+     "h": 262,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/60.webp",
+     "w": 119,
+     "h": 262,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/61.webp",
+     "w": 119,
+     "h": 262,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/62.webp",
+     "w": 120,
+     "h": 262,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный рисунок T-S, SL (сборная панель)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    6,
+    7
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/63.webp",
+     "w": 89,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/64.webp",
+     "w": 89,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/65.webp",
+     "w": 90,
+     "h": 202,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/66.webp",
+     "w": 89,
+     "h": 203,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/67.webp",
+     "w": 89,
+     "h": 203,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/68.webp",
+     "w": 89,
+     "h": 203,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/69.webp",
+     "w": 90,
+     "h": 203,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/70.webp",
+     "w": 90,
+     "h": 205,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/71.webp",
+     "w": 90,
+     "h": 203,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/72.webp",
+     "w": 90,
+     "h": 203,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок коллекции LINE или Dynamic L (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    8,
+    9
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/73.webp",
+     "w": 89,
+     "h": 201,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/74.webp",
+     "w": 89,
+     "h": 201,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/75.webp",
+     "w": 89,
+     "h": 201,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/76.webp",
+     "w": 88,
+     "h": 199,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/77.webp",
+     "w": 89,
+     "h": 199,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/78.webp",
+     "w": 88,
+     "h": 199,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/79.webp",
+     "w": 89,
+     "h": 199,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок коллекции LINE или Dynamic L с молдингом (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    10,
+    11
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/80.webp",
+     "w": 423,
+     "h": 216
+    }
+   ],
+   "texts": [
+    "Рисунок из коллекции Кристалл со вставкой из стекла (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    12,
+    13,
+    14
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/81.webp",
+     "w": 88,
+     "h": 200,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/82.webp",
+     "w": 88,
+     "h": 200,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/tau-pro/83.webp",
+     "w": 88,
+     "h": 200,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Внутренний рисунок T-СM (классическое зеркало)",
+    "Внутренний рисунок RM-M10 (овальное зеркало)",
+    "Внутренний рисунок T-MM (большое зеркало) на панели МДФ 16мм с покрытием РТ Шелк белый, ПВХ Бьянко, Ферро, Крема, Оскуро, Айвори"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    17
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/84.webp",
+     "w": 354,
+     "h": 370
+    }
+   ],
+   "texts": [
+    "Замок электронный полуавтоматический HOGO P02"
+   ],
+   "soon": false,
+   "cat": "защита"
+  },
+  {
+   "nums": [
+    19
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/85.webp",
+     "w": 289,
+     "h": 162
+    }
+   ],
+   "texts": [
+    "Комплект фурнитуры в чёрном цвете на квадратном основании вместо базового"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    20
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/86.webp",
+     "w": 274,
+     "h": 144
+    }
+   ],
+   "soon": true,
+   "texts": [
+    "Комплект фурнитуры в цвете золото сатин на квадратном основании вместо базового"
+   ],
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    21,
+    22
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/87.webp",
+     "w": 377,
+     "h": 67
+    }
+   ],
+   "texts": [
+    "Ручка BOSTON вместо базовой",
+    "Ручка LARGO вместо базовой"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    18
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/tau-pro/88.webp",
+     "w": 102,
+     "h": 150
+    }
+   ],
+   "texts": [
+    "Броненакладка круглая хром"
+   ],
+   "soon": false,
+   "cat": "защита"
+  }
+ ],
+ "more": [
+  {
+   "n": 15,
+   "text": "Цилиндр Apecs PM с 5-летней гарантией",
+   "cat": "защита"
+  },
+  {
+   "n": 16,
+   "text": "Комплект замков Гардиан вместо базовых замков",
+   "cat": "защита"
+  },
+  {
+   "n": 23,
+   "text": "Глазок с улучшенной оптикой APECS",
+   "cat": "прочие"
+  },
+  {
+   "n": 24,
+   "text": "Стальной нержавеюший порог",
+   "cat": "прочие"
+  },
+  {
+   "n": 25,
+   "text": "Утепление короба",
+   "cat": "прочие"
+  },
+  {
+   "n": 26,
+   "text": "Третья петля",
+   "cat": "прочие"
+  },
+  {
+   "n": 27,
+   "text": "Ширина 1000 мм",
+   "cat": "прочие"
+  },
+  {
+   "n": 28,
+   "text": "Ширина 1050 мм (при высоте до 2100 мм включительно)",
+   "cat": "прочие"
+  },
+  {
+   "n": 29,
+   "text": "Высота 2150, 2200, 2250 мм (при ширине до 1000 мм включительно)",
+   "cat": "прочие"
+  }
+ ]
+}

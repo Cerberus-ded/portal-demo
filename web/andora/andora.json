@@ -1,0 +1,2865 @@
+[
+ {
+  "slug": "kollektsiya_amelia",
+  "name": "Амелия",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_amelia/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Гренадилло",
+   "Дуб бодега золотой",
+   "Дуб бодега натуральный",
+   "Дуб мадейра жемчуг",
+   "Дуб мадейра янтарь",
+   "Дуб узелковый светлый",
+   "Дуб мадейра песок",
+   "Дуб шведский",
+   "Дуб кварц золотой",
+   "Дуб санремо",
+   "Секвойя милк",
+   "Ясень белый софт",
+   "Шпон дуб коньяк",
+   "Шпон дуб санд",
+   "Шпон дуб натур",
+   "Палдао",
+   "Палдао дымка",
+   "Санома темный",
+   "Эвкалипт испанский",
+   "Эвкалипт филиппинский",
+   "Орех европейский натур",
+   "Чесура светлая",
+   "Твил флай",
+   "Холст латте",
+   "Бетон Лофт натур",
+   "Бетон снежный",
+   "Лофт графит",
+   "Монте белый софт"
+  ],
+  "models": [
+   {
+    "code": "and-ameliya-1",
+    "title": "Амелия 1",
+    "img": "https://andora-doors.ru/upload/iblock/452/7oygdzrwr0bgidu7h3e2xdea4fj0sld9/ameliya_1_orekh_evropeyskiy_natur.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_amelia/ameliya_1/?oid=81323"
+   },
+   {
+    "code": "and-ameliya-2",
+    "title": "Амелия 2",
+    "img": "https://andora-doors.ru/upload/iblock/816/8v9856w1td93ci54y09w8pgmveb0e63r/ameliya_2_orekh_evropeyskiy_natur.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_amelia/ameliya_2/?oid=81324"
+   },
+   {
+    "code": "and-ameliya-3",
+    "title": "Амелия 3",
+    "img": "https://andora-doors.ru/upload/iblock/3d5/3keqz0rzvt81ll1dp0kqeaih9w0c5z5x/ameliya_3_orekh_evropeyskiy_natur.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_amelia/ameliya_3/?oid=81325"
+   },
+   {
+    "code": "and-ameliya-4",
+    "title": "Амелия 4",
+    "img": "https://andora-doors.ru/upload/iblock/2e2/tjxf8ddoum63yvmd5o2r3zh17gzl4isw/ameliya_4_orekh_evropeyskiy_natur.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_amelia/ameliya_4/?oid=81326"
+   },
+   {
+    "code": "and-ameliya-5",
+    "title": "Амелия 5",
+    "img": "https://andora-doors.ru/upload/iblock/4f3/mz6gnv1bgp17of89ny1obmp4ck44bram/ameliya_5_orekh_evropeyskiy_natur.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_amelia/ameliya_5/?oid=81327"
+   },
+   {
+    "code": "and-ameliya-6",
+    "title": "Амелия 6",
+    "img": "https://andora-doors.ru/upload/iblock/fad/wwxnfpq2doruh1m9dxbz1gjp0lxa06bl/ameliya_6_orekh_evropeyskiy_natur.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_amelia/ameliya_6/?oid=81328"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_astra",
+  "name": "Астра",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_astra/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-astra-1",
+    "title": "Астра 1",
+    "img": "https://andora-doors.ru/upload/iblock/dff/awkl0we0q453bn9s3ziqtjw7v1stxc99/Astra_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra/astra_1/?oid=73369"
+   },
+   {
+    "code": "and-astra-2",
+    "title": "Астра 2",
+    "img": "https://andora-doors.ru/upload/iblock/0a3/diw6alwdfksqhul2hz2zo5ont9pzgwuy/astra_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra/astra_2/?oid=73370"
+   },
+   {
+    "code": "and-astra-3",
+    "title": "Астра 3",
+    "img": "https://andora-doors.ru/upload/iblock/f49/svldi4t4t3l9dvu5oqqsgbo39bdt3vl3/astra_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra/astra_3/?oid=73371"
+   },
+   {
+    "code": "and-astra-4",
+    "title": "Астра 4",
+    "img": "https://andora-doors.ru/upload/iblock/cec/qa6qiyjqc5lhu3yn857dvs4aoejozsva/astra_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra/astra_4/?oid=73372"
+   },
+   {
+    "code": "and-astra-5",
+    "title": "Астра 5",
+    "img": "https://andora-doors.ru/upload/iblock/1d2/x0xxatcbc1aybye84znon2y8kjprmyrw/astra_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra/astra_5/?oid=73373"
+   },
+   {
+    "code": "and-astra-6",
+    "title": "Астра 6",
+    "img": "https://andora-doors.ru/upload/iblock/3c4/cwxk117xz3fz4t2ccxn40dxpunr1hpcs/astra_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra/astra_6/?oid=73374"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_astra_lux",
+  "name": "Астра Люкс",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_astra_lux/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "Молдинг 10мм",
+    "черный/золото/серебро"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка; аллюминевый молдинг"
+   ],
+   [
+    "ПВХ пленка",
+    "Шарли керамика"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-astra-lyuks-1-",
+    "title": "Астра Люкс 1",
+    "img": "https://andora-doors.ru/upload/iblock/9c7/yqmrpib77d0jxt33o32b0lopn3t3caxb/astra_lyuks_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra_lux/astra_lyuks_1_/?oid=74153"
+   },
+   {
+    "code": "and-astra-lyuks-2",
+    "title": "Астра Люкс 2",
+    "img": "https://andora-doors.ru/upload/iblock/658/td31ozu3iq6b46ad5hsjcp6f972pw6ny/astra_lyuks_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra_lux/astra_lyuks_2/?oid=74152"
+   },
+   {
+    "code": "and-astra-lyuks-3",
+    "title": "Астра Люкс 3",
+    "img": "https://andora-doors.ru/upload/iblock/fc9/1ejtmz8a0stv4pbxksk07j6fgsw52pqo/astra_lyuks_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra_lux/astra_lyuks_3/?oid=74155"
+   },
+   {
+    "code": "and-astra-lyuks-4",
+    "title": "Астра Люкс 4",
+    "img": "https://andora-doors.ru/upload/iblock/daf/id44kq0bzgmqzybskq6atqw9lzk6pvf2/astra_lyuks_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra_lux/astra_lyuks_4/?oid=74157"
+   },
+   {
+    "code": "and-astra-lyuks-5",
+    "title": "Астра Люкс 5",
+    "img": "https://andora-doors.ru/upload/iblock/5d9/o88u4cvguctvxmplswaz1a8i3vf1k33b/astra_lyuks_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra_lux/astra_lyuks_5/?oid=74159"
+   },
+   {
+    "code": "and-astra-lyuks-6",
+    "title": "Астра Люкс 6",
+    "img": "https://andora-doors.ru/upload/iblock/c0b/aesrtaqk8tykkb3korssl3itp1czfsqn/astra_lyuks_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_astra_lux/astra_lyuks_6/?oid=74161"
+   }
+  ]
+ },
+ {
+  "slug": "aesthetic",
+  "name": "Аэстетик",
+  "url": "https://andora-doors.ru/catalog/aesthetic/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ],
+   [
+    "Стекло",
+    "рифленое/сатинат/сатинат с рисунком/бронза/графит/фацет"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-aestetik-1",
+    "title": "Аэстетик 1",
+    "img": "https://andora-doors.ru/upload/iblock/a00/i69pilrgc7sbkefe1dtpg772k63zdg1l/aestetik_1.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_1/?oid=74352"
+   },
+   {
+    "code": "and-aestetik-1-do",
+    "title": "Аэстетик 1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/44d/b3ydv8l26ka2j33y0p84yqfzcbtd465m/aestetik_1_do_romb.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_1_do/?oid=74353"
+   },
+   {
+    "code": "and-aestetik-2",
+    "title": "Аэстетик 2",
+    "img": "https://andora-doors.ru/upload/iblock/c49/kb1krymenzk39txrimqh2ih8almnjn1e/aestetik_2.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_2/?oid=74354"
+   },
+   {
+    "code": "and-aestetik-2-do",
+    "title": "Аэстетик 2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/1bc/buj1zwz9wh0odkqtt6q4jzov6whbbil8/aestetik_2_do_romb.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_2_do/?oid=74355"
+   },
+   {
+    "code": "and-aestetik-3",
+    "title": "Аэстетик 3",
+    "img": "https://andora-doors.ru/upload/iblock/839/9kweas86ml5kk5zt4jxnxmpruktptrd0/aestetik_3.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_3/?oid=74357"
+   },
+   {
+    "code": "and-aestetik-3-do",
+    "title": "Аэстетик 3 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/2f6/4s90d9gyhoeip09t6yzxus9qqk9kdtnq/aestetik_3_do_romb.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_3_do/?oid=74358"
+   },
+   {
+    "code": "and-aestetik-4",
+    "title": "Аэстетик 4",
+    "img": "https://andora-doors.ru/upload/iblock/951/8km24ugpqp25aqcqrncpot6dbtuarexz/aestetik_4.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_4/?oid=74359"
+   },
+   {
+    "code": "and-aestetik-4-do",
+    "title": "Аэстетик 4 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/b19/m3k3jiyuvgqj8oebwwawty3k3vj5tar7/aestetik_4_do_romb.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_4_do/?oid=74360"
+   },
+   {
+    "code": "and-aestetik-5",
+    "title": "Аэстетик 5",
+    "img": "https://andora-doors.ru/upload/iblock/b24/u1sw79qhha0qgb8mu2sxik204o9xtaxl/aestetik_5.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_5/?oid=74361"
+   },
+   {
+    "code": "and-aestetik-5-do",
+    "title": "Аэстетик 5 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/2af/qh9fix8o5m8fchr5c67d3w1deuwthcy8/aestetik_5_do_romb.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_5_do/?oid=74362"
+   },
+   {
+    "code": "and-aestetik-6",
+    "title": "Аэстетик 6",
+    "img": "https://andora-doors.ru/upload/iblock/4fb/u269rq9ugep91g5mkkcbvg113pjkbn98/aestetik_6.png",
+    "page": "https://andora-doors.ru/catalog/aesthetic/aestetik_6/?oid=74363"
+   }
+  ]
+ },
+ {
+  "slug": "basconi",
+  "name": "Баскони",
+  "url": "https://andora-doors.ru/catalog/basconi/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-baskoni-1",
+    "title": "Баскони 1",
+    "img": "https://andora-doors.ru/upload/iblock/e28/3p46twpm6qdnktrbpke2r26r4sqqpkqs/baskoni_1.png",
+    "page": "https://andora-doors.ru/catalog/basconi/baskoni_1/?oid=73921"
+   },
+   {
+    "code": "and-baskoni-2",
+    "title": "Баскони 2",
+    "img": "https://andora-doors.ru/upload/iblock/a92/p70er9h8pkcv87zbilkryvjk9jnpvnp2/baskoni_2.png",
+    "page": "https://andora-doors.ru/catalog/basconi/baskoni_2/?oid=73922"
+   },
+   {
+    "code": "and-baskoni-3",
+    "title": "Баскони 3",
+    "img": "https://andora-doors.ru/upload/iblock/a65/m5dgsrgutu9eqss4vs73y2p7rkoyusg7/baskoni_3.png",
+    "page": "https://andora-doors.ru/catalog/basconi/baskoni_3/?oid=73923"
+   },
+   {
+    "code": "and-baskoni-4",
+    "title": "Баскони 4",
+    "img": "https://andora-doors.ru/upload/iblock/861/2h03lmrukf0bk7vbpv05sdnx9ikcd0df/baskoni_4.png",
+    "page": "https://andora-doors.ru/catalog/basconi/baskoni_4/?oid=73924"
+   },
+   {
+    "code": "and-baskoni-5",
+    "title": "Баскони 5",
+    "img": "https://andora-doors.ru/upload/iblock/6b9/q1y3pccotqyeihd38cstrd3gikbh2bpy/baskoni_5.png",
+    "page": "https://andora-doors.ru/catalog/basconi/baskoni_5/?oid=73925"
+   },
+   {
+    "code": "and-baskoni-6",
+    "title": "Баскони 6",
+    "img": "https://andora-doors.ru/upload/iblock/d9c/2fttsc3qn7spo5ewze2fahofsug9e0sp/baskoni_6.png",
+    "page": "https://andora-doors.ru/catalog/basconi/baskoni_6/?oid=73926"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_bryut",
+  "name": "Брют",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_bryut/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "Шарли серый",
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-bryut-1",
+    "title": "Брют 1",
+    "img": "https://andora-doors.ru/upload/iblock/419/29ddwvh90lpz28ytp0e178mpmpmpzqqy/bryut_1_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_1/?oid=74692"
+   },
+   {
+    "code": "and-bryut-2",
+    "title": "Брют 2",
+    "img": "https://andora-doors.ru/upload/iblock/3f1/m1phmoes69xo19rocfmxg7qigu21g2bv/bryut_2_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_2/?oid=74694"
+   },
+   {
+    "code": "and-bryut-3",
+    "title": "Брют 3",
+    "img": "https://andora-doors.ru/upload/iblock/e4d/sf0je4foh5g2wenovotbblqq7anx5854/bryut_3_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_3/?oid=74695"
+   },
+   {
+    "code": "and-bryut-4",
+    "title": "Брют 4",
+    "img": "https://andora-doors.ru/upload/iblock/586/wfvxdt6pn79nfssoii8r59kj54j6y7se/bryut_4_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_4/?oid=74696"
+   },
+   {
+    "code": "and-bryut-5",
+    "title": "Брют 5",
+    "img": "https://andora-doors.ru/upload/iblock/7e2/1z1w9enbi0meug0ciazwzfum6nn95kes/bryut_5_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_5/?oid=74697"
+   },
+   {
+    "code": "and-bryut-6",
+    "title": "Брют 6",
+    "img": "https://andora-doors.ru/upload/iblock/47b/il7q39k48bn5irv26otjicw2pc9gkaga/bryut_6_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_6/?oid=74698"
+   },
+   {
+    "code": "and-bryut-7",
+    "title": "Брют 7",
+    "img": "https://andora-doors.ru/upload/iblock/026/82do4lb9rd6w915vho3rjc09wb3lw28o/bryut_7_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_7/?oid=74699"
+   },
+   {
+    "code": "and-bryut-8",
+    "title": "Брют 8",
+    "img": "https://andora-doors.ru/upload/iblock/201/ha08w7g59dl3qtjk0gj2gj8o27npoy33/bryut_8_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_8/?oid=74700"
+   },
+   {
+    "code": "and-bryut-9",
+    "title": "Брют 9",
+    "img": "https://andora-doors.ru/upload/iblock/2f0/359jvqfvwcywc55hzigvkuq94bsl64h7/bryut_9_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_9/?oid=74701"
+   },
+   {
+    "code": "and-bryut-10",
+    "title": "Брют 10",
+    "img": "https://andora-doors.ru/upload/iblock/c16/v66tdupcnqqtnu4cat3q7b8xw3b8q37x/bryut_10_sharli_seryy.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_bryut/bryut_10/?oid=74693"
+   }
+  ]
+ },
+ {
+  "slug": "waves",
+  "name": "Вейвес",
+  "url": "https://andora-doors.ru/catalog/waves/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-veyves-1",
+    "title": "Вейвес 1",
+    "img": "https://andora-doors.ru/upload/iblock/6a7/25pn7pmhth8bg81ol343a3vwv0yftvri/veyves_1.png",
+    "page": "https://andora-doors.ru/catalog/waves/veyves_1/?oid=74455"
+   },
+   {
+    "code": "and-veyves-2",
+    "title": "Вейвес 2",
+    "img": "https://andora-doors.ru/upload/iblock/831/vqzry8i3b4pipu96b3unzhkhgov9infb/veyves_2.png",
+    "page": "https://andora-doors.ru/catalog/waves/veyves_2/?oid=74456"
+   },
+   {
+    "code": "and-veyves-3",
+    "title": "Вейвес 3",
+    "img": "https://andora-doors.ru/upload/iblock/1be/dhnmunsluad58lq7br8pbt2t00d1d55n/veyves_3.png",
+    "page": "https://andora-doors.ru/catalog/waves/veyves_3/?oid=74457"
+   },
+   {
+    "code": "and-veyves-4",
+    "title": "Вейвес 4",
+    "img": "https://andora-doors.ru/upload/iblock/8cd/vlbny470ilgin6kdwx8u03386ihpdoix/veyves_4.png",
+    "page": "https://andora-doors.ru/catalog/waves/veyves_4/?oid=74458"
+   },
+   {
+    "code": "and-veyves-5",
+    "title": "Вейвес 5",
+    "img": "https://andora-doors.ru/upload/iblock/a94/gm63vqfvv8kxfh2nrgn02c4u7efnm8vp/veyves_5.png",
+    "page": "https://andora-doors.ru/catalog/waves/veyves_5/?oid=74459"
+   }
+  ]
+ },
+ {
+  "slug": "velvet",
+  "name": "Вельвет",
+  "url": "https://andora-doors.ru/catalog/velvet/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-velvet-1",
+    "title": "Вельвет 1",
+    "img": "https://andora-doors.ru/upload/iblock/65c/43b0uuy3lpgyaoltwugdnp1s0r7qs62u/velvet_1.png",
+    "page": "https://andora-doors.ru/catalog/velvet/velvet_1/?oid=74827"
+   },
+   {
+    "code": "and-velvet-2",
+    "title": "Вельвет 2",
+    "img": "https://andora-doors.ru/upload/iblock/d3c/iaqukl6k65qsvn76i4941jv8xwhdp5xe/velvet_2.png",
+    "page": "https://andora-doors.ru/catalog/velvet/velvet_2/?oid=74828"
+   },
+   {
+    "code": "and-velvet-3",
+    "title": "Вельвет 3",
+    "img": "https://andora-doors.ru/upload/iblock/671/076n99lt0ow8m6bqlg7vpl6scjgg1yep/velvet_3.png",
+    "page": "https://andora-doors.ru/catalog/velvet/velvet_3/?oid=74829"
+   },
+   {
+    "code": "and-velvet-4",
+    "title": "Вельвет 4",
+    "img": "https://andora-doors.ru/upload/iblock/975/sw078dinqhff8v1rdk6698vv1w4rcuar/velvet_4.png",
+    "page": "https://andora-doors.ru/catalog/velvet/velvet_4/?oid=74830"
+   },
+   {
+    "code": "and-velvet-5",
+    "title": "Вельвет 5",
+    "img": "https://andora-doors.ru/upload/iblock/03a/6koxjagpzy35b4nonur6kqbun62ew1zg/velvet_5.png",
+    "page": "https://andora-doors.ru/catalog/velvet/velvet_5/?oid=74831"
+   },
+   {
+    "code": "and-velvet-6",
+    "title": "Вельвет 6",
+    "img": "https://andora-doors.ru/upload/iblock/baa/05jvq8qwaw6nrups6vpmnj9uz8n74nms/velvet_6.png",
+    "page": "https://andora-doors.ru/catalog/velvet/velvet_6/?oid=74832"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_velvet_lyuks",
+  "name": "Вельвет Люкс",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_velvet_lyuks/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка; аллюминевый молдинг; фальшфрамуга; стеновые панели с рисунком как у двери"
+   ]
+  ],
+  "coat": [],
+  "film": "",
+  "colours": [],
+  "models": [
+   {
+    "code": "and-velvet-lyuks-1",
+    "title": "Вельвет Люкс 1",
+    "img": "https://andora-doors.ru/upload/iblock/bf2/f20to6w50ivbmbgvg6czw1mpr2qyefwq/velvet_lyuks_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_velvet_lyuks/velvet_lyuks_1/"
+   },
+   {
+    "code": "and-velvet-lyuks-2",
+    "title": "Вельвет Люкс 2",
+    "img": "https://andora-doors.ru/upload/iblock/c2a/d0sepwwxfgs4zea8ucnvkujavt9492wt/velvet_lyuks_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_velvet_lyuks/velvet_lyuks_2/"
+   },
+   {
+    "code": "and-velvet-lyuks-3",
+    "title": "Вельвет Люкс 3",
+    "img": "https://andora-doors.ru/upload/iblock/2be/8t3ake2bzbrep9822pdsihjm363xtelo/velvet_lyuks_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_velvet_lyuks/velvet_lyuks_3/"
+   },
+   {
+    "code": "and-velvet-lyuks-4",
+    "title": "Вельвет Люкс 4",
+    "img": "https://andora-doors.ru/upload/iblock/29e/icoq4m3lvt0klgvr0u4obo8r64t0fa12/velvet_lyuks_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_velvet_lyuks/velvet_lyuks_4/"
+   },
+   {
+    "code": "and-velvet-lyuks-5",
+    "title": "Вельвет Люкс 5",
+    "img": "https://andora-doors.ru/upload/iblock/baf/0jmvcfub4j8c0bfueoiyxoyx5xuo4fas/velvet_lyuks_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_velvet_lyuks/velvet_lyuks_5/"
+   },
+   {
+    "code": "and-velvet-lyuks-6",
+    "title": "Вельвет Люкс 6",
+    "img": "https://andora-doors.ru/upload/iblock/2c3/eci9530475yx44lmw2zqso0clgf2abtv/velvet_lyuks_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_velvet_lyuks/velvet_lyuks_6/"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_geometry",
+  "name": "Геометрия",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_geometry/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-geometriya-1",
+    "title": "Геометрия 1",
+    "img": "https://andora-doors.ru/upload/iblock/f83/ljengb1097wg1v8uzd1gpgkuasp5mowv/geometriya_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_1/?oid=74047"
+   },
+   {
+    "code": "and-geometriya-2",
+    "title": "Геометрия 2",
+    "img": "https://andora-doors.ru/upload/iblock/168/by0s41u384mz7w3h01qitjijybupb4a9/geometriya_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_2/?oid=74048"
+   },
+   {
+    "code": "and-geometriya-3",
+    "title": "Геометрия 3",
+    "img": "https://andora-doors.ru/upload/iblock/de4/i1mjyup0y16iirpnexuq676cct25wr9g/geometriya_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_3/?oid=74049"
+   },
+   {
+    "code": "and-geometriya-4",
+    "title": "Геометрия 4",
+    "img": "https://andora-doors.ru/upload/iblock/353/l3jjyn7t0v9z4q180oefm167vz2cj032/geometriya_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_4/?oid=74050"
+   },
+   {
+    "code": "and-geometriya-5",
+    "title": "Геометрия 5",
+    "img": "https://andora-doors.ru/upload/iblock/eb3/0aclh667nc9usz0s7irjmcmoj2t6yo28/geometriya_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_5/?oid=74051"
+   },
+   {
+    "code": "and-geometriya-6",
+    "title": "Геометрия 6",
+    "img": "https://andora-doors.ru/upload/iblock/1ff/t3fxci9tdbvg0niuyd9rc2kvgnpengb0/geometriya_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_6/?oid=74052"
+   },
+   {
+    "code": "and-geometriya-7",
+    "title": "Геометрия 7",
+    "img": "https://andora-doors.ru/upload/iblock/a03/60ba4qp2ox3fd53cyt9lg0j1v1zq2g4b/geometriya_7.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_7/?oid=74053"
+   },
+   {
+    "code": "and-geometriya-8",
+    "title": "Геометрия 8",
+    "img": "https://andora-doors.ru/upload/iblock/0dc/0ub0hbp4w91114u9z400afhj7ujy9nfl/geometriya_8.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_8/?oid=74873"
+   },
+   {
+    "code": "and-geometriya-9",
+    "title": "Геометрия 9",
+    "img": "https://andora-doors.ru/upload/iblock/8b9/23emyjixjige3d7y04mm6whdoz15y3ni/geometriya_9.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_geometry/geometriya_9/?oid=74874"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_klassik",
+  "name": "Классик",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_klassik/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ],
+   [
+    "Стекло",
+    "рифленое/сатинат/сатинат с рисунком/бронза/графит/фацет"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-klassik-1",
+    "title": "Классик 1",
+    "img": "https://andora-doors.ru/upload/iblock/e78/h646fm34m89tf583lkcab2op0uwu926m/klassik_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_1/?oid=75526"
+   },
+   {
+    "code": "and-klassik-1-do",
+    "title": "Классик 1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/1d9/9nv5f32hhl2gthgumcaarlzffu2f05y5/klassik_1_do.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_1_do/?oid=75527"
+   },
+   {
+    "code": "and-klassik-2",
+    "title": "Классик 2",
+    "img": "https://andora-doors.ru/upload/iblock/a91/dosq72al3dqa7x2zzb7o403qkzlynlig/klassik_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_2/?oid=75528"
+   },
+   {
+    "code": "and-klassik-2-do",
+    "title": "Классик 2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/d3d/cia7mu86i95eg9fslluozjj842vxth4s/klassik_2_do.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_2_do/?oid=75529"
+   },
+   {
+    "code": "and-klassik-3",
+    "title": "Классик 3",
+    "img": "https://andora-doors.ru/upload/iblock/326/7qh7km8r9i72iip5mzuqf6vcl9rjouer/klassik_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_3/?oid=75530"
+   },
+   {
+    "code": "and-klassik-3-do",
+    "title": "Классик 3 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/d04/1b9eyam360ewpup52opnd3141bb5eg5p/klassik_3_do.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_3_do/?oid=75531"
+   },
+   {
+    "code": "and-klassik-4",
+    "title": "Классик 4",
+    "img": "https://andora-doors.ru/upload/iblock/279/ueqc4s2qxy9x7s0orznii4644nxum39m/klassik_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_4/?oid=80806"
+   },
+   {
+    "code": "and-klassik-4-1-do",
+    "title": "Классик 4.1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/f35/4lfn5075350qgfxx82l2v4yd4a9f4iy6/klassik_4.1_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_4_1_do/?oid=80809"
+   },
+   {
+    "code": "and-klassik-4-2-do",
+    "title": "Классик 4.2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/0dd/a39t61061201ue61kzy27feay4iopuib/klassik_4.2_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_4_2_do/?oid=80810"
+   },
+   {
+    "code": "and-klassik-4-1",
+    "title": "Классик 4.1",
+    "img": "https://andora-doors.ru/upload/iblock/fb6/onm3x5h86n7roetsx5wqfn6jqhpbu202/klassik_4_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_4_1/"
+   },
+   {
+    "code": "and-klassik-5",
+    "title": "Классик 5",
+    "img": "https://andora-doors.ru/upload/iblock/0e6/svr2dq19pxbak6lpb5ciqkxj175qvrb4/klassik_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_5/?oid=80807"
+   },
+   {
+    "code": "and-klassik-5-do",
+    "title": "Классик 5 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/97e/nkbgxzsv9gboe5yq3tqtl8z6y1f6f35e/klassik_5_do.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_5_do/?oid=80811"
+   },
+   {
+    "code": "and-klassik-6",
+    "title": "Классик 6",
+    "img": "https://andora-doors.ru/upload/iblock/f22/p109belchcgbi7fgysbkv2j729rg7qzy/klassik_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_klassik/klassik_6/?oid=80808"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_kosmo",
+  "name": "Космо",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_kosmo/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ],
+   [
+    "Стекло",
+    "рифленое/сатинат/сатинат с рисунком/бронза/графит/фацет"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Океан софт",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк",
+   "Смоки софт"
+  ],
+  "models": [
+   {
+    "code": "and-kosmo-1",
+    "title": "Космо 1",
+    "img": "https://andora-doors.ru/upload/iblock/4ae/1741ma3cj08ahjgnhjv0k1a2we2u9epk/kosmo-1-.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_1/?oid=75217"
+   },
+   {
+    "code": "and-kosmo-1-do",
+    "title": "Космо 1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/79e/718k5c5lordjowuzv1tdxc9ukkgas3ul/kosmo_1_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_1_do/?oid=75225"
+   },
+   {
+    "code": "and-kosmo-2",
+    "title": "Космо 2",
+    "img": "https://andora-doors.ru/upload/iblock/5c0/e8jmlx6ea7ydi1yahxem8j1ywzo4gnpn/kosmo-2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_2/?oid=75218"
+   },
+   {
+    "code": "and-kosmo-2-do",
+    "title": "Космо 2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/7b0/jraim1f8t06p0si1e2grjkxjp5pia8bs/kosmo_2_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_2_do/?oid=75226"
+   },
+   {
+    "code": "and-kosmo-3",
+    "title": "Космо 3",
+    "img": "https://andora-doors.ru/upload/iblock/8d0/kr0mju6zvtg8hr1cdp9jxxor15m6mib6/kosmo_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_3/?oid=75219"
+   },
+   {
+    "code": "and-kosmo-3-do",
+    "title": "Космо 3 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/6b5/z0j5j2e5zcjq0479t2eyvb6k6e5tagvn/kosmo_3_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_3_do/?oid=75227"
+   },
+   {
+    "code": "and-kosmo-4",
+    "title": "Космо 4",
+    "img": "https://andora-doors.ru/upload/iblock/110/vo1dq7yj53rbhdpqdxsnhr25zs70z5om/kosmo_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_4/?oid=75220"
+   },
+   {
+    "code": "and-kosmo-4-do",
+    "title": "Космо 4 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/e00/v2lwfazxs35t4qpapn7dszx491hwcf73/kosmo_4_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_4_do/?oid=75228"
+   },
+   {
+    "code": "and-kosmo-5",
+    "title": "Космо 5",
+    "img": "https://andora-doors.ru/upload/iblock/c98/wcm5a7flb94ubxox38c55gqsgm9c4lug/kosmo_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_5/?oid=75221"
+   },
+   {
+    "code": "and-kosmo-5-1-do",
+    "title": "Космо 5.1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/7aa/9wo3t5nc0daw7y62wh1et34jzsen4dpm/kosmo_5_1_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_5_1_do/?oid=75229"
+   },
+   {
+    "code": "and-kosmo-5-2-do",
+    "title": "Космо 5.2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/9ca/33x6g3b21zw9gfcri0s524xmf0mv9rpg/kosmo_5_2_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_5_2_do/?oid=75230"
+   },
+   {
+    "code": "and-kosmo-6",
+    "title": "Космо 6",
+    "img": "https://andora-doors.ru/upload/iblock/189/4hc5djil3t5bjs3cd97i2dyv38lkg8z4/kosmo_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_6/?oid=75222"
+   },
+   {
+    "code": "and-kosmo-6-do",
+    "title": "Космо 6 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/a9d/omzmgepdo2q02yhm8abegftd8jh1qdol/kosmo_6_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_6_do/?oid=75231"
+   },
+   {
+    "code": "and-kosmo-7",
+    "title": "Космо 7",
+    "img": "https://andora-doors.ru/upload/iblock/f1b/ua1a2vtktcns9ml2k5jkr7a2i0kwqtvb/kosmo_7.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_7/?oid=75223"
+   },
+   {
+    "code": "and-kosmo-7-do",
+    "title": "Космо 7 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/cf4/eqjegrkhjy3pgcdhgo0k7tl1wsp26g47/kosmo_7_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_7_do/?oid=75232"
+   },
+   {
+    "code": "and-kosmo-8",
+    "title": "Космо 8",
+    "img": "https://andora-doors.ru/upload/iblock/3a0/qnqus6q2qnsnz82wmq1avzfdkzdlq6xf/kosmo_8.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_8/?oid=75224"
+   },
+   {
+    "code": "and-kosmo-8-do",
+    "title": "Космо 8 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/06a/9ef4o55px96lzoxjw6qkjhji2mce6lb4/kosmo_8_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_kosmo/kosmo_8_do/?oid=75233"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_light",
+  "name": "Лайт",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_light/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ],
+   [
+    "Стекло",
+    "рифленое/сатинат/сатинат с рисунком/бронза/графит/фацет"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-layt-1",
+    "title": "Лайт 1",
+    "img": "https://andora-doors.ru/upload/iblock/b13/oe6y3onyh5ps31dxjh8afv5cz2brkwd4/layt_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_1/?oid=73483"
+   },
+   {
+    "code": "and-layt-1-do",
+    "title": "Лайт 1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/01a/h0z9nwekcdaw3e8gxq6vcuwgkm1of51o/layt_1_matovoe_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_1_do/?oid=73486"
+   },
+   {
+    "code": "and-layt-2",
+    "title": "Лайт 2",
+    "img": "https://andora-doors.ru/upload/iblock/aa6/4vbdvcyvulyxas8m4yppmw9y3elc1hit/layt_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_2/?oid=73484"
+   },
+   {
+    "code": "and-layt-2-do",
+    "title": "Лайт 2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/786/j8m2v1rcwaheliklh4sjhw658edc5qdz/layt_2_matovoe_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_2_do/?oid=73487"
+   },
+   {
+    "code": "and-layt-3",
+    "title": "Лайт 3",
+    "img": "https://andora-doors.ru/upload/iblock/caf/xakg0lwj8h8r55we8vyu4u1gw7jv2nv7/layt_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_3/?oid=73485"
+   },
+   {
+    "code": "and-layt-3-do",
+    "title": "Лайт 3 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/ec5/x4w7pswe57vf3bsmk1d3cd5fuebh3339/layt_3_matovoe_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_3_do/?oid=73488"
+   },
+   {
+    "code": "and-layt-4",
+    "title": "Лайт 4",
+    "img": "https://andora-doors.ru/upload/iblock/2f2/j0p75ypcbxrzgegs8ze9r64aljcntmkg/layt_4_vse_kruglye.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_4/?oid=80914"
+   },
+   {
+    "code": "and-layt-4-1-do",
+    "title": "Лайт 4.1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/3a4/ydrzxtbdwkzr1j6idl5g2wipfcots913/layt_4_1_DO_vse_kruglye.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_4_1_do/?oid=80917"
+   },
+   {
+    "code": "and-layt-4-2-do",
+    "title": "Лайт 4.2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/c79/160yj1saci90qpqwzyuxfc3mkiayhlc0/layt_4_2_DO_vse_kruglye.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_4_2_do/?oid=80918"
+   },
+   {
+    "code": "and-layt-4-1",
+    "title": "Лайт 4.1",
+    "img": "https://andora-doors.ru/upload/iblock/3ac/63pplj91ze5boihlmcrhzmixh4tq24oe/layt_4.1_.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_4_1/"
+   },
+   {
+    "code": "and-layt-5-",
+    "title": "Лайт 5",
+    "img": "https://andora-doors.ru/upload/iblock/0f5/gho1dg3ee9sub3jebfobaqr3jzggwfh6/layt_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_5_/?oid=80915"
+   },
+   {
+    "code": "and-layt-5-do",
+    "title": "Лайт 5 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/216/vo4t1oe84lssfrx95nxspe7cm420kitr/layt_5_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_5_do/?oid=80919"
+   },
+   {
+    "code": "and-layt-6",
+    "title": "Лайт 6",
+    "img": "https://andora-doors.ru/upload/iblock/302/11wa9xbfy7i9oiwr3gerdb69iff6r0p4/layt_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_light/layt_6/?oid=80916"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_laura",
+  "name": "Лаура",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_laura/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-laura-1",
+    "title": "Лаура 1",
+    "img": "https://andora-doors.ru/upload/iblock/d4e/1rq56zp0jpkns4rh19w319mhyz3tln7d/laura_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_laura/laura_1/?oid=75319"
+   },
+   {
+    "code": "and-laura-2",
+    "title": "Лаура 2",
+    "img": "https://andora-doors.ru/upload/iblock/c51/2mxfkx8gfd9zi4rhhi6h7t1npdacvxm3/laura_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_laura/laura_2/?oid=75320"
+   },
+   {
+    "code": "and-laura-3",
+    "title": "Лаура 3",
+    "img": "https://andora-doors.ru/upload/iblock/2ab/vja9id805j2bnwtm7ju632sa4rhjwzp3/laura_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_laura/laura_3/?oid=75321"
+   },
+   {
+    "code": "and-laura-4",
+    "title": "Лаура 4",
+    "img": "https://andora-doors.ru/upload/iblock/e2d/my859qdf0agbbybc3pcrgu49c17kgb45/laura_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_laura/laura_4/?oid=75322"
+   },
+   {
+    "code": "and-laura-5",
+    "title": "Лаура 5",
+    "img": "https://andora-doors.ru/upload/iblock/9ed/nanzydox4ytwkmygsahes97gglamyomn/laura_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_laura/laura_5/?oid=75323"
+   }
+  ]
+ },
+ {
+  "slug": "laura_lyuks",
+  "name": "Лаура Люкс",
+  "url": "https://andora-doors.ru/catalog/laura_lyuks/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "Молдинг 25мм",
+    "черный/золото/серебро"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Молдинг",
+    "2,5мм- черный/серебро/золото"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-laura-lyuks-1",
+    "title": "Лаура люкс 1",
+    "img": "https://andora-doors.ru/upload/iblock/01c/nui2zqxco7f5z082we8dgtjc1o3ij3h1/laura_lyuks_1_amorok_soft.png",
+    "page": "https://andora-doors.ru/catalog/laura_lyuks/laura_lyuks_1/?oid=75419"
+   },
+   {
+    "code": "and-laura-lyuks-2",
+    "title": "Лаура люкс 2",
+    "img": "https://andora-doors.ru/upload/iblock/39a/pu7cls2s3sujsf5lorolnrw1fqm6zxk9/laura_lyuks_2_amorok_soft.png",
+    "page": "https://andora-doors.ru/catalog/laura_lyuks/laura_lyuks_2/?oid=75420"
+   },
+   {
+    "code": "and-laura-lyuks-3",
+    "title": "Лаура люкс 3",
+    "img": "https://andora-doors.ru/upload/iblock/58e/fa0x9yfts950fg1nw6baxxuhphsbs6qj/laura_lyuks_3_amorok_soft.png",
+    "page": "https://andora-doors.ru/catalog/laura_lyuks/laura_lyuks_3/?oid=75421"
+   },
+   {
+    "code": "and-laura-lyuks-4",
+    "title": "Лаура люкс 4",
+    "img": "https://andora-doors.ru/upload/iblock/34f/sxt5dily2m81uo71h6ck8bjq7tw2gm61/laura_lyuks_4_amorok_soft.png",
+    "page": "https://andora-doors.ru/catalog/laura_lyuks/laura_lyuks_4/?oid=75422"
+   },
+   {
+    "code": "and-laura-lyuks-5",
+    "title": "Лаура люкс 5",
+    "img": "https://andora-doors.ru/upload/iblock/5b0/66tvu6x47qe9riiiwch3c79dcsq983ba/laura_lyuks_5_amorok_soft.png",
+    "page": "https://andora-doors.ru/catalog/laura_lyuks/laura_lyuks_5/?oid=75423"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_linea",
+  "name": "Линея",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_linea/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-lineya-1",
+    "title": "Линея 1",
+    "img": "https://andora-doors.ru/upload/iblock/26f/otlzvr3zoaditjmp2qvda4ugwxumfip1/lineya_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_linea/lineya_1/?oid=73579"
+   },
+   {
+    "code": "and-lineya-2",
+    "title": "Линея 2",
+    "img": "https://andora-doors.ru/upload/iblock/100/677xlmqoqxszczfefj87iuqr2d8c8ccg/lineya_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_linea/lineya_2/?oid=73580"
+   },
+   {
+    "code": "and-lineya-3",
+    "title": "Линея 3",
+    "img": "https://andora-doors.ru/upload/iblock/42c/pxq1a7ok0fdx1a57muu2rytbhtcl8k2c/lineya_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_linea/lineya_3/?oid=73581"
+   },
+   {
+    "code": "and-lineya-4",
+    "title": "Линея 4",
+    "img": "https://andora-doors.ru/upload/iblock/4a8/qgj1eak5qdf9f4lpe1irbiig3h6jhlcm/lineya_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_linea/lineya_4/?oid=73582"
+   },
+   {
+    "code": "and-lineya-5",
+    "title": "Линея 5",
+    "img": "https://andora-doors.ru/upload/iblock/66d/ecrfjzmhm3pascny3bjirac7va3rj391/lineya_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_linea/lineya_5/?oid=73583"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_lineya_molding",
+  "name": "Линея Молдинг",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "Молдинг 10мм",
+    "черный/золото/серебро"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка; аллюминевый молдинг; фальшфрамуга; стеновые панели с рисунком как у двери"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "Атлантик софт"
+  ],
+  "models": [
+   {
+    "code": "and-lineya-molding-1",
+    "title": "Линея Молдинг 1",
+    "img": "https://andora-doors.ru/upload/iblock/234/cddcwaorkyrdnybookrvuefou1v410ih/lineya_molding_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/lineya_molding_1/?oid=81110"
+   },
+   {
+    "code": "and-lineya-molding-2",
+    "title": "Линея Молдинг 2",
+    "img": "https://andora-doors.ru/upload/iblock/a0e/oqoasj1heg3kuwb7rp9ji10daxxr1khr/lineya_molding_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/lineya_molding_2/?oid=81111"
+   },
+   {
+    "code": "and-lineya-molding-3",
+    "title": "Линея Молдинг 3",
+    "img": "https://andora-doors.ru/upload/iblock/2fa/77d3xipuv0919jnz7jf15i9avk5evwtj/lineya_molding_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/lineya_molding_3/?oid=81112"
+   },
+   {
+    "code": "and-lineya-molding-4",
+    "title": "Линея Молдинг 4",
+    "img": "https://andora-doors.ru/upload/iblock/e23/v3t1ar7l2uxsynxwy0bo1c9ymq6zrq9p/lineya_molding_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/lineya_molding_4/?oid=81113"
+   },
+   {
+    "code": "and-lineya-molding-5",
+    "title": "Линея Молдинг 5",
+    "img": "https://andora-doors.ru/upload/iblock/5d7/62ip9ac7knjxjtnyf5cv7rdsuwrpf5fk/lineya_molding_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/lineya_molding_5/?oid=81114"
+   },
+   {
+    "code": "and-lineya-molding-6",
+    "title": "Линея Молдинг 6",
+    "img": "https://andora-doors.ru/upload/iblock/16a/zhxl58fhy62f33twywe5rmbr6boh8jds/lineya_molding_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/lineya_molding_6/?oid=81115"
+   },
+   {
+    "code": "and-lineya-molding-7",
+    "title": "Линея Молдинг 7",
+    "img": "https://andora-doors.ru/upload/iblock/a6a/8wwagu4jw1sd3fyv9v3hnl2ojciets23/lineya_molding_7.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/lineya_molding_7/?oid=81116"
+   },
+   {
+    "code": "and-lineya-molding-8",
+    "title": "Линея Молдинг 8",
+    "img": "https://andora-doors.ru/upload/iblock/f3e/qyxwqsit05x9p15eh9vv85oy65d0otcy/lineya_molding_8.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_lineya_molding/lineya_molding_8/?oid=81117"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_milenia",
+  "name": "Миления",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_milenia/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ],
+   [
+    "Стекло",
+    "рифленое/сатинат/сатинат с рисунком/бронза/графит/фацет"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-mileniya-1",
+    "title": "Миления 1",
+    "img": "https://andora-doors.ru/upload/iblock/8a7/8hzj9vwrwva054r08ph3cg9khgd498cw/mileniya_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_1/?oid=73686"
+   },
+   {
+    "code": "and-mileniya-2",
+    "title": "Миления 2",
+    "img": "https://andora-doors.ru/upload/iblock/35a/c502vdnbh3wunxla6t1y2he2krz49mfb/mileniya_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_2/?oid=73687"
+   },
+   {
+    "code": "and-mileniya-3",
+    "title": "Миления 3",
+    "img": "https://andora-doors.ru/upload/iblock/fb8/bfmadkvsxixggwocvhsknvol8du8abio/mileniya_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_3/?oid=73688"
+   },
+   {
+    "code": "and-mileniya-4",
+    "title": "Миления 4",
+    "img": "https://andora-doors.ru/upload/iblock/da2/9gbxt2z1k48iheu6lsch0r5pazmtttuk/mileniya_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_4/?oid=73689"
+   },
+   {
+    "code": "and-mileniya-5",
+    "title": "Миления 5",
+    "img": "https://andora-doors.ru/upload/iblock/808/zuqp62aoh08rpasbmir1ot2dtwjf9nem/mileniya_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_5/?oid=73690"
+   },
+   {
+    "code": "and-mileniya-6",
+    "title": "Миления 6",
+    "img": "https://andora-doors.ru/upload/iblock/efa/jkshf864958obyxxfnqpvgwby3t1asij/mileniya_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_6/?oid=73691"
+   },
+   {
+    "code": "and-mileniya-7",
+    "title": "Миления 7",
+    "img": "https://andora-doors.ru/upload/iblock/fdb/h7ntjcklomz6dgox9j7id10mt821gnk2/mileniya_7.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_7/?oid=80926"
+   },
+   {
+    "code": "and-mileniya-8",
+    "title": "Миления 8",
+    "img": "https://andora-doors.ru/upload/iblock/755/00fqvjepbaa0k8hn0jnf0gftgtnpyj1l/mileniya_8.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_8/?oid=80991"
+   },
+   {
+    "code": "and-mileniya-8-do",
+    "title": "Миления 8 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/aae/p5whue1z5dzohnf8vahdc7d2moy1wv07/mileniya_1_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_8_do/?oid=80994"
+   },
+   {
+    "code": "and-mileniya-9",
+    "title": "Миления 9",
+    "img": "https://andora-doors.ru/upload/iblock/80b/wcs3bs8ilqnaff4gjds2ejyuqz7w9cyf/mileniya_9.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_9/?oid=80992"
+   },
+   {
+    "code": "and-mileniya-10",
+    "title": "Миления 10",
+    "img": "https://andora-doors.ru/upload/iblock/0c5/6e29e71rtkj3m96jaqtbjydlgwlch90d/mileniya_10.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_milenia/mileniya_10/?oid=80993"
+   }
+  ]
+ },
+ {
+  "slug": "molding",
+  "name": "Молдинг",
+  "url": "https://andora-doors.ru/catalog/molding/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "Молдинг 10мм",
+    "черный/золото/серебро"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка; _аллюминевый молдинг"
+   ],
+   [
+    "ПВХ пленка",
+    "zb капучино"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-molding-1",
+    "title": "Молдинг 1",
+    "img": "https://andora-doors.ru/upload/iblock/e0e/cfjt9gfew6r7x0mhenp3u7tbujwiny6f/molding_1.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_1/?oid=75622"
+   },
+   {
+    "code": "and-molding-2",
+    "title": "Молдинг 2",
+    "img": "https://andora-doors.ru/upload/iblock/003/ybwmada03wsyhgir2dubf23i6z4jgej1/molding_2.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_2/?oid=75623"
+   },
+   {
+    "code": "and-molding-3",
+    "title": "Молдинг 3",
+    "img": "https://andora-doors.ru/upload/iblock/f89/1kj5jlwlhg0rcq0l2os97aqgomjdzhyr/molding_3.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_3/?oid=75624"
+   },
+   {
+    "code": "and-molding-4",
+    "title": "Молдинг 4",
+    "img": "https://andora-doors.ru/upload/iblock/03a/rqmzmfh3c6zyh3i2xb0sv8ohljbvp05x/molding_4.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_4/?oid=75625"
+   },
+   {
+    "code": "and-molding-5",
+    "title": "Молдинг 5",
+    "img": "https://andora-doors.ru/upload/iblock/9d4/m6gjd7c74gr6cof19u0klq19pp7enxu7/molding_5.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_5/?oid=75626"
+   },
+   {
+    "code": "and-molding-6",
+    "title": "Молдинг 6",
+    "img": "https://andora-doors.ru/upload/iblock/f72/uu7sz2y34f0a2xe19smtg9cd0yw9lulx/molding_6.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_6/"
+   },
+   {
+    "code": "and-molding-7",
+    "title": "Молдинг 7",
+    "img": "https://andora-doors.ru/upload/iblock/caa/yfzkmb31tykjmpppe88khl1occe698zp/molding_7.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_7/"
+   },
+   {
+    "code": "and-molding-8",
+    "title": "Молдинг 8",
+    "img": "https://andora-doors.ru/upload/iblock/69c/79lqd1qfgkl85bclbir1hhadx5mf6g6m/molding_8.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_8/"
+   },
+   {
+    "code": "and-molding-9",
+    "title": "Молдинг 9",
+    "img": "https://andora-doors.ru/upload/iblock/2d0/ur9txfeu0vkh0xcaz9cyzagwpnt75gya/molding_9.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_9/"
+   },
+   {
+    "code": "and-molding-10",
+    "title": "Молдинг 10",
+    "img": "https://andora-doors.ru/upload/iblock/1de/h8dwz62ypvecmgo84lmg21mb0o20u099/molding_10.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_10/"
+   },
+   {
+    "code": "and-molding-11",
+    "title": "Молдинг 11",
+    "img": "https://andora-doors.ru/upload/iblock/256/g13z2cccp5zks4jakmjpqd5po9oqplfh/molding_11.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_11/"
+   },
+   {
+    "code": "and-molding-12",
+    "title": "Молдинг 12",
+    "img": "https://andora-doors.ru/upload/iblock/eec/b475lsfghet1njvk7kwzxmpv6wqzvnkf/molding_12.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_12/"
+   },
+   {
+    "code": "and-molding-13",
+    "title": "Молдинг 13",
+    "img": "https://andora-doors.ru/upload/iblock/7c8/2r5d7p0i97o0e5wcu49i0nu78x05hjzj/molding_13.png",
+    "page": "https://andora-doors.ru/catalog/molding/molding_13/"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_molding_khl",
+  "name": "Молдинг ХЛ",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_molding_khl/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "Молдинг 25мм",
+    "черный/золото/серебро"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-molding-khl-1",
+    "title": "Молдинг ХЛ 1",
+    "img": "https://andora-doors.ru/upload/iblock/010/16pbjfgyqt6b7rsk85t52r86vlhkzh0j/molding_khl_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_molding_khl/molding_khl_1/?oid=75752"
+   },
+   {
+    "code": "and-molding-khl-2",
+    "title": "Молдинг ХЛ 2",
+    "img": "https://andora-doors.ru/upload/iblock/df9/9pz4alt7fauqfcet7xplz9h67ov6noqo/molding_khl_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_molding_khl/molding_khl_2/?oid=75753"
+   },
+   {
+    "code": "and-molding-khl-3",
+    "title": "Молдинг ХЛ 3",
+    "img": "https://andora-doors.ru/upload/iblock/09f/g0b0ib9an3c9ez06qpssdabdfhhi6t7q/molding_khl_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_molding_khl/molding_khl_3/?oid=75754"
+   },
+   {
+    "code": "and-molding-khl-4",
+    "title": "Молдинг ХЛ 4",
+    "img": "https://andora-doors.ru/upload/iblock/76d/smjmj09jqn8ungetys9bfhvtx27u9umc/molding_khl_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_molding_khl/molding_khl_4/?oid=75755"
+   },
+   {
+    "code": "and-molding-khl-5",
+    "title": "Молдинг ХЛ 5",
+    "img": "https://andora-doors.ru/upload/iblock/5c4/muut3kmfdlrnw5f07ih6eccgei9bk1xv/molding_khl_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_molding_khl/molding_khl_5/?oid=75756"
+   },
+   {
+    "code": "and-molding-khl-6",
+    "title": "Молдинг ХЛ 6",
+    "img": "https://andora-doors.ru/upload/iblock/96b/0qmzrb5julzsb5i4n0gzn6uh23gl9a4o/molding_khl_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_molding_khl/molding_khl_6/?oid=75757"
+   },
+   {
+    "code": "and-molding-khl-7",
+    "title": "Молдинг ХЛ 7",
+    "img": "https://andora-doors.ru/upload/iblock/4fc/5et20s1vxnlb0to0eg7firemts7ux2ad/molding_khl_7.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_molding_khl/molding_khl_7/?oid=75758"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_neo",
+  "name": "Нео",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_neo/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка; аллюминевый молдинг"
+   ],
+   [
+    "Стекло",
+    "рифленое/сатинат/сатинат с рисунком/бронза/графит/фацет"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-neo-1",
+    "title": "Нео 1",
+    "img": "https://andora-doors.ru/upload/iblock/34f/chp6922vg021h68gf2wroycdgpa1z9o9/neo_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_1/?oid=73799"
+   },
+   {
+    "code": "and-neo-1-do",
+    "title": "Нео 1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/4de/qtut58ocdvbufnc28pi206ptidc1584d/neo_1_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_1_do/?oid=73800"
+   },
+   {
+    "code": "and-neo-2",
+    "title": "Нео 2",
+    "img": "https://andora-doors.ru/upload/iblock/3ae/nilq0400z2mdeml3u92fswyqmg6p2gkf/neo_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_2/?oid=73801"
+   },
+   {
+    "code": "and-neo-2-do",
+    "title": "Нео 2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/baf/zez2y160gknwlod6pvz5ae1ccfnl1d4a/neo_2_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_2_do/?oid=73803"
+   },
+   {
+    "code": "and-neo-3",
+    "title": "Нео 3",
+    "img": "https://andora-doors.ru/upload/iblock/277/l4w2genanysh52020ma5ujuaq4mywgtw/neo_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_3/?oid=73802"
+   },
+   {
+    "code": "and-neo-3-do",
+    "title": "Нео 3 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/27a/ss1ueiufj1yfiq49aymr9uz6l9ewu2w1/neo_3_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_3_do/?oid=73806"
+   },
+   {
+    "code": "and-neo-4",
+    "title": "Нео 4",
+    "img": "https://andora-doors.ru/upload/iblock/842/k5fycqe81odktb7os84d6r9d3qgd4vm2/neo_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_4/?oid=81097"
+   },
+   {
+    "code": "and-neo-4-1-do",
+    "title": "Нео 4.1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/b89/rv2vt0va6fakruh9z8vm11o1tf3kdp9f/neo_4_1_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_4_1_do/?oid=81100"
+   },
+   {
+    "code": "and-neo-4-2-do",
+    "title": "Нео 4.2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/c89/bxxpjgmmx3qsvakgz6llmhkjd7wkaill/neo_4_2_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_4_2_do/?oid=81101"
+   },
+   {
+    "code": "and-neo-4-1",
+    "title": "Нео 4.1",
+    "img": "https://andora-doors.ru/upload/iblock/042/1gglvzjno73h9anmyfz925ldzv32znpe/neo_4.1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_4_1/"
+   },
+   {
+    "code": "and-neo-5",
+    "title": "Нео 5",
+    "img": "https://andora-doors.ru/upload/iblock/a35/kx4elbyx3wdv868hnwkr5h49dds6v2qs/neo_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_5/?oid=81098"
+   },
+   {
+    "code": "and-neo-5-do",
+    "title": "Нео 5 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/33c/1j14p0482cf826sf55k0v46w8xc2mqb3/neo_5_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_5_do/?oid=81102"
+   },
+   {
+    "code": "and-neo-6",
+    "title": "Нео 6",
+    "img": "https://andora-doors.ru/upload/iblock/93b/1whwr0v0hkt1e5h03rqvrbio4rp3gj5p/neo_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_neo/neo_6/?oid=81099"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_parma",
+  "name": "Парма",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_parma/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка; аллюминевый молдинг"
+   ],
+   [
+    "Стекло",
+    "рифленое/сатинат/сатинат с рисунком/бронза/графит/фацет"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-parma-1",
+    "title": "Парма 1",
+    "img": "https://andora-doors.ru/upload/iblock/414/xw5sv02y9ex1khpytj224x3so502v32u/Parma_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_1/?oid=80690"
+   },
+   {
+    "code": "and-parma-1-do",
+    "title": "Парма 1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/947/pht6639kgd8u3y4qiv6v0jr67ho735m1/Parma_1_riflenoe_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_1_do/?oid=80691"
+   },
+   {
+    "code": "and-parma-2",
+    "title": "Парма 2",
+    "img": "https://andora-doors.ru/upload/iblock/fa6/y1cvykbtjwodmgpi7o9bbxydkj5oq7mf/Parma_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_2/?oid=80692"
+   },
+   {
+    "code": "and-parma-2-do",
+    "title": "Парма 2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/ca4/1i9nesojuplt5c9i6utvllsm71rage38/Parma_2_riflenoe_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_2_do/?oid=80693"
+   },
+   {
+    "code": "and-parma-3",
+    "title": "Парма 3",
+    "img": "https://andora-doors.ru/upload/iblock/dfd/d1keo4y6d4yl6q5mfch2tr3ntobiezfo/Parma_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_3/?oid=80694"
+   },
+   {
+    "code": "and-parma-3-do",
+    "title": "Парма 3 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/144/7cic5t36vhq6dxecvgye93hvpygxn3h3/Parma_3_riflenoe_steklo.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_3_do/?oid=80698"
+   },
+   {
+    "code": "and-parma-4",
+    "title": "Парма 4",
+    "img": "https://andora-doors.ru/upload/iblock/f9b/mfftdjm3w2isltn3sxra2vymfdkp3w9k/parma_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_4/?oid=80695"
+   },
+   {
+    "code": "and-parma-4-1-do",
+    "title": "Парма 4.1 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/815/400puu3ir4k239qx9gsyeub8bo2322zu/parma_4.1_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_4_1_do/?oid=80699"
+   },
+   {
+    "code": "and-parma-4-2-do",
+    "title": "Парма 4.2 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/e33/t62opxd53coohvoctjxvc1zyj1m3xdwx/parma_4.2_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_4_2_do/?oid=80700"
+   },
+   {
+    "code": "and-parma-4-1",
+    "title": "Парма 4.1",
+    "img": "https://andora-doors.ru/upload/iblock/d9c/7szwbfj4d9m5gvktl63mp4569zkr731j/parma_4.1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_4_1/"
+   },
+   {
+    "code": "and-parma-5",
+    "title": "Парма 5",
+    "img": "https://andora-doors.ru/upload/iblock/da8/2m4fidij4fztsp3fm16k2x9a4kjiukj3/parma_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_5/?oid=80696"
+   },
+   {
+    "code": "and-parma-5-do",
+    "title": "Парма 5 ДО",
+    "img": "https://andora-doors.ru/upload/iblock/dc9/d9fx5tn2rc95ebezybcf2zmj807nhe8q/parma_5_DO.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_5_do/?oid=80701"
+   },
+   {
+    "code": "and-parma-6",
+    "title": "Парма 6",
+    "img": "https://andora-doors.ru/upload/iblock/f57/9ay4quqpez7851e7onb9onywt4x3rl0z/parma_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_parma/parma_6/?oid=80697"
+   }
+  ]
+ },
+ {
+  "slug": "ultra",
+  "name": "Ультра",
+  "url": "https://andora-doors.ru/catalog/ultra/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "Стекло",
+    "зеркало графит/бронза,лакобель черный/белый/коричневый"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ],
+   [
+    "Стекло лакобель",
+    "черный/белый/коричневый"
+   ],
+   [
+    "Зеркало",
+    "графит/бронза"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-ultra-1",
+    "title": "Ультра 1",
+    "img": "https://andora-doors.ru/upload/iblock/7f4/z4uhpx6nrzixwr9rf24wxiefdi6rpj92/ultra_1.png",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_1/?oid=75895"
+   },
+   {
+    "code": "and-ultra-2",
+    "title": "Ультра 2",
+    "img": "https://andora-doors.ru/upload/iblock/c7d/26sx2megaen703xr9sc4v3t6qennv5d6/ultra_2.png",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_2/?oid=75896"
+   },
+   {
+    "code": "and-ultra-3",
+    "title": "Ультра 3",
+    "img": "https://andora-doors.ru/upload/iblock/397/won5uspt63tskyx9xz8uyjfz4r3tqd7j/ultra_3.png",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_3/?oid=75897"
+   },
+   {
+    "code": "and-ultra-4",
+    "title": "Ультра 4",
+    "img": "https://andora-doors.ru/upload/iblock/6ab/5fou5814x2ga4jeescq5bvcoeae7h888/ultra_4.png",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_4/?oid=75898"
+   },
+   {
+    "code": "and-ultra-5",
+    "title": "Ультра 5",
+    "img": "https://andora-doors.ru/upload/iblock/8e0/p6n0fz7htykk42gkgbuy2e9wyrcwo6r9/ultra_5.png",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_5/?oid=75899"
+   },
+   {
+    "code": "and-ultra-6",
+    "title": "Ультра 6",
+    "img": "https://andora-doors.ru/upload/iblock/4d7/h2kxvb3ry37buuk90dn0pvqmh3eo65da/ultra_6.png",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_6/?oid=75900"
+   },
+   {
+    "code": "and-ultra-7",
+    "title": "Ультра 7",
+    "img": "https://andora-doors.ru/upload/iblock/54b/lla6f4j9mxezzy4jbls6x5gx7q9zdrbu/ultra_7.png",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_7/?oid=75901"
+   },
+   {
+    "code": "and-ultra-8",
+    "title": "Ультра 8",
+    "img": "https://andora-doors.ru/upload/iblock/c99/2k7hyoy5wfzhq88kkc8hfim0mk6xm3hh/ultra_8.png",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_8/?oid=75902"
+   },
+   {
+    "code": "and-ultra-9",
+    "title": "Ультра 9",
+    "img": "https://andora-doors.ru/upload/iblock/f87/rywzwixxidbgllevbqzrazgmihcylrkz/e2adsI5K1uQqT3AxHq7bkr_0csrOp191p0NA_rqf7HSILq5iL56VdjXYfo7waUnhkuARtQrH5f67OEEUB2Fin1OA.jpg",
+    "page": "https://andora-doors.ru/catalog/ultra/ultra_9/?oid=75672"
+   }
+  ]
+ },
+ {
+  "slug": "kollektsiya_edget",
+  "name": "Эджет",
+  "url": "https://andora-doors.ru/catalog/kollektsiya_edget/",
+  "styles": [],
+  "about": "",
+  "specs": [
+   [
+    "Реализуемая высота",
+    "1000мм-2300мм"
+   ],
+   [
+    "Реализуемая ширина",
+    "300мм-1000мм"
+   ],
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ],
+   [
+    "Наполнение дверного полотна",
+    "по периметру полотна - LVL сендвич-брус; наполнение - МДФ Рейки; плита МДФ - 8 мм"
+   ],
+   [
+    "Стандартные размеры",
+    "толщина-38мм.; высота-от 1700мм до 2100мм.; ширина-от 550мм до 800мм."
+   ],
+   [
+    "Нестандартные размеры",
+    "высота - от 1000мм до 1690мм , от 2110мм до 2300мм.; ширина -от 300мм до 540мм , от 810мм до 1000мм."
+   ],
+   [
+    "Дополнительно погонаж",
+    "телескопический; компланарный; аллюминевая кромка"
+   ]
+  ],
+  "coat": [
+   "ПВХ пленка"
+  ],
+  "film": "ПВХ пленка",
+  "colours": [
+   "ZB белый",
+   "zb капучино",
+   "Грей беж",
+   "Лайн шале",
+   "Авори",
+   "Аморок софт",
+   "Графит",
+   "Санд графит",
+   "Шарли керамика",
+   "Софт бордо",
+   "Лайт хаки софт",
+   "Лиловый софт",
+   "Какао нубук",
+   "Терракот",
+   "Санд лайт грей",
+   "Императорское дерево светлое",
+   "Гренадилло темное",
+   "Шпон дуб коньяк"
+  ],
+  "models": [
+   {
+    "code": "and-edzhet-1",
+    "title": "Эджет 1",
+    "img": "https://andora-doors.ru/upload/iblock/b68/03yqf11wneytqedxvqxqcynp2yev9tr1/edzhet_1.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_edget/edzhet_1/?oid=80486"
+   },
+   {
+    "code": "and-edzhet-2",
+    "title": "Эджет 2",
+    "img": "https://andora-doors.ru/upload/iblock/234/32jf01yqco2mu3ai9jxq3btar2s93hjv/edzhet_2.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_edget/edzhet_2/?oid=80487"
+   },
+   {
+    "code": "and-edget-3",
+    "title": "Эджет 3",
+    "img": "https://andora-doors.ru/upload/iblock/9bb/9gc8wsx3pdo7yacjca868i53a9j510jl/edzhet_3.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_edget/edget_3/?oid=80488"
+   },
+   {
+    "code": "and-edzhet-4",
+    "title": "Эджет 4",
+    "img": "https://andora-doors.ru/upload/iblock/856/2wgki9ok5b2a0so6nu1ctn4w9c29abc0/edzhet_4.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_edget/edzhet_4/?oid=80489"
+   },
+   {
+    "code": "and-edzhet-5",
+    "title": "Эджет 5",
+    "img": "https://andora-doors.ru/upload/iblock/218/qb1ahm5i4ab04dw08r2ir9x0ntktnley/edzhet_5.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_edget/edzhet_5/?oid=80490"
+   },
+   {
+    "code": "and-edzhet-6",
+    "title": "Эджет 6",
+    "img": "https://andora-doors.ru/upload/iblock/c90/na25emf0c96vx29jqxut3381m0x7dqpw/edzhet_6.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_edget/edzhet_6/?oid=80491"
+   },
+   {
+    "code": "and-edzhet-7",
+    "title": "Эджет 7",
+    "img": "https://andora-doors.ru/upload/iblock/47b/861bar7q1jxcx8r68jnlmul19zznvi55/edzhet_7.png",
+    "page": "https://andora-doors.ru/catalog/kollektsiya_edget/edzhet_7/?oid=80492"
+   }
+  ]
+ },
+ {
+  "slug": "simpl",
+  "name": "Скрытая дверь Симпл",
+  "url": "https://andora-doors.ru/catalog/simpl/",
+  "styles": [],
+  "about": "Любая дверь из коллекций Андора может исполняться в скрытом коробе.",
+  "specs": [
+   [
+    "#PROP_TITLE#",
+    "#PROP_VALUE#"
+   ]
+  ],
+  "coat": [],
+  "film": "",
+  "colours": [],
+  "models": [
+   {
+    "code": "and-simpl-gladkaya-dver",
+    "title": "Симпл гладкая дверь",
+    "img": "https://andora-doors.ru/upload/iblock/8d5/3t0v365m1jz0c6905y13m6zetm8fuyto/gladkaya-ssimpl.png",
+    "page": "https://andora-doors.ru/catalog/simpl/simpl_gladkaya_dver/"
+   },
+   {
+    "code": "and-simpl-pod-pokrasku",
+    "title": "Симпл скрытая под покраску",
+    "img": "https://andora-doors.ru/upload/iblock/7de/r3vztoonq6rxhq4ql7ff7xomlecucnar/gladkaya-skrytaya.png",
+    "page": "https://andora-doors.ru/catalog/simpl/simpl_pod_pokrasku/"
+   },
+   {
+    "code": "and-simpl-skrytaya-pod-pokrasku-s-odnoy-storony-pvkh-s-drugoy",
+    "title": "Симпл скрытая под покраску с одной стороны/ПВХ с другой",
+    "img": "https://andora-doors.ru/upload/iblock/dee/dabnzdy3ipadwqpurhlapxefibpjnun8/paneli.png",
+    "page": "https://andora-doors.ru/catalog/simpl/simpl_skrytaya_pod_pokrasku_s_odnoy_storony_pvkh_s_drugoy/"
+   }
+  ]
+ }
+]

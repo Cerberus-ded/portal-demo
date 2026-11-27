@@ -1,0 +1,1833 @@
+[
+ {
+  "slug": "stick",
+  "name": "Stick",
+  "url": "https://chameleon-doors.ru/catalog/stick-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Модели из коллекция межкомнатных дверей \"Stick\" создают гармоничную атмосферу, наполняя пространство ощущением порядка и ясности. Они станут идеальным фоном для современной жизни, подчеркивая ее ритм и динамику. Двери способствуют созданию лаконичного и уютного интерьера, где каждая деталь обретает свое значение.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "10 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Верх/низ полотна укутан в пленку; Толщина МДФ 10мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-stick-1-dg",
+    "title": "Stick 1",
+    "img": "https://chameleon-doors.ru/images/catalog/stick/stick-1-dg.png"
+   },
+   {
+    "code": "cham-stick-2-dg",
+    "title": "Stick 2",
+    "img": "https://chameleon-doors.ru/images/catalog/stick/stick-2-dg.png"
+   },
+   {
+    "code": "cham-stick-3-dg",
+    "title": "Stick 3",
+    "img": "https://chameleon-doors.ru/images/catalog/stick/stick-3-dg.png"
+   },
+   {
+    "code": "cham-stick-4-dg",
+    "title": "Stick 4",
+    "img": "https://chameleon-doors.ru/images/catalog/stick/stick-4-dg.png"
+   },
+   {
+    "code": "cham-stick-5-dg",
+    "title": "Stick 5",
+    "img": "https://chameleon-doors.ru/images/catalog/stick/stick-5-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "molding",
+  "name": "Molding",
+  "url": "https://chameleon-doors.ru/catalog/molding-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Коллекция \"Molding\" привносит в интерьер элемент изысканности и архитектурной глубины. Модели создают ощущение уюта и респектабельности, не перегружая пространство. Они прекрасно вписываются в современные концепции, добавляя им характер и индивидуальность.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Цвета молдингов: серый, черный, золотой; Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-m-1-dg",
+    "title": "M 1",
+    "img": "https://chameleon-doors.ru/images/catalog/molding/m-1-dg.png"
+   },
+   {
+    "code": "cham-m-2-dg",
+    "title": "M 2",
+    "img": "https://chameleon-doors.ru/images/catalog/molding/m-2-dg.png"
+   },
+   {
+    "code": "cham-m-3-dg",
+    "title": "M 3",
+    "img": "https://chameleon-doors.ru/images/catalog/molding/m-3-dg.png"
+   },
+   {
+    "code": "cham-m-4-dg",
+    "title": "M 4",
+    "img": "https://chameleon-doors.ru/images/catalog/molding/m-4-dg.png"
+   },
+   {
+    "code": "cham-m-5-dg",
+    "title": "M 5",
+    "img": "https://chameleon-doors.ru/images/catalog/molding/m-5-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "diagonal",
+  "name": "Diagonal",
+  "url": "https://chameleon-doors.ru/catalog/diagonal-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Данное решение коллекции \"Diagonal\" динамично преобразует пространство, задавая ему современный и энергичный вектор. Модели создают уникальный визуальный эффект, делая обстановку стильной и запоминающейся. Они отлично поддерживают концепцию динамичного и комфортного жилья.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Цвета молдингов: серый, черный, золотой; Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-d-1-dg",
+    "title": "D 1",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-1-dg.png"
+   },
+   {
+    "code": "cham-d-2-dg",
+    "title": "D 2",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-2-dg.png"
+   },
+   {
+    "code": "cham-d-3-dg",
+    "title": "D 3",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-3-dg.png"
+   },
+   {
+    "code": "cham-d-4-dg",
+    "title": "D 4",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-4-dg.png"
+   },
+   {
+    "code": "cham-d-5-dg",
+    "title": "D 5",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-5-dg.png"
+   },
+   {
+    "code": "cham-d-6-dg",
+    "title": "D 6",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-6-dg.png"
+   },
+   {
+    "code": "cham-d-7-dg",
+    "title": "D 7",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-7-dg.png"
+   },
+   {
+    "code": "cham-d-8-dg",
+    "title": "D 8",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-8-dg.png"
+   },
+   {
+    "code": "cham-d-9-dg",
+    "title": "D 9",
+    "img": "https://chameleon-doors.ru/images/catalog/diagonal/d-9-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "line",
+  "name": "Line",
+  "url": "https://chameleon-doors.ru/catalog/line-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Коллекция \"Line\" воплощает собой чистоту формы и концептуальную целостность. Эти модели визуально выстраивают пространство, делая его строгим и одновременно уютным. Они служат ключевым элементом в создании современной и гармоничной атмосферы.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-l-1-dg",
+    "title": "L 1",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-1-dg.png"
+   },
+   {
+    "code": "cham-l-2-dg",
+    "title": "L 2",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-2-dg.png"
+   },
+   {
+    "code": "cham-l-3-dg",
+    "title": "L 3",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-3-dg.png"
+   },
+   {
+    "code": "cham-l-4-dg",
+    "title": "L 4",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-4-dg.png"
+   },
+   {
+    "code": "cham-l-5-dg",
+    "title": "L 5",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-5-dg.png"
+   },
+   {
+    "code": "cham-l-6-dg",
+    "title": "L 6",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-6-dg.png"
+   },
+   {
+    "code": "cham-l-7-dg",
+    "title": "L 7",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-7-dg.png"
+   },
+   {
+    "code": "cham-l-8-dg",
+    "title": "L 8",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-8-dg.png"
+   },
+   {
+    "code": "cham-l-9-dg",
+    "title": "L 9",
+    "img": "https://chameleon-doors.ru/images/catalog/line/l-9-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "minimal",
+  "name": "Minimal",
+  "url": "https://chameleon-doors.ru/catalog/minimal-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Сущность коллекции \"Minimal\" — это абсолютная гармония и сдержанная эстетика. Модели создают спокойную и расслабляющую атмосферу, где ничто не отвлекает. Они являются идеальной основой для современного интерьера, наполненного светом и воздухом.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Мателюкс\"; Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-mini-1-dg",
+    "title": "Mini 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-1-dg.png"
+   },
+   {
+    "code": "cham-mini-1-do",
+    "title": "Mini 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-1-do.png"
+   },
+   {
+    "code": "cham-mini-2-dg",
+    "title": "Mini 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-2-dg.png"
+   },
+   {
+    "code": "cham-mini-2-do",
+    "title": "Mini 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-2-do.png"
+   },
+   {
+    "code": "cham-mini-3-dg",
+    "title": "Mini 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-3-dg.png"
+   },
+   {
+    "code": "cham-mini-3-do",
+    "title": "Mini 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-3-do.png"
+   },
+   {
+    "code": "cham-mini-4-dg",
+    "title": "Mini 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-4-dg.png"
+   },
+   {
+    "code": "cham-mini-4-do",
+    "title": "Mini 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-4-do.png"
+   },
+   {
+    "code": "cham-mini-5-dg",
+    "title": "Mini 5 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-5-dg.png"
+   },
+   {
+    "code": "cham-mini-5-do",
+    "title": "Mini 5 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-5-do.png"
+   },
+   {
+    "code": "cham-mini-6-dg",
+    "title": "Mini 6 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-6-dg.png"
+   },
+   {
+    "code": "cham-mini-6-do",
+    "title": "Mini 6 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/mini-6-do.png"
+   },
+   {
+    "code": "cham-mini-7-dg",
+    "title": "Mini 7 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/Mini-7-dg.png"
+   },
+   {
+    "code": "cham-mini-8-dg",
+    "title": "Mini 8 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/Mini-8-dg.png"
+   },
+   {
+    "code": "cham-mini-9-dg",
+    "title": "Mini 9 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/Mini-9-dg.png"
+   },
+   {
+    "code": "cham-mini-10-dg",
+    "title": "Mini 10 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/Mini-10-dg.png"
+   },
+   {
+    "code": "cham-mini-11-dg",
+    "title": "Mini 11 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/Mini-11-dg.png"
+   },
+   {
+    "code": "cham-mini-12-dg",
+    "title": "Mini 12 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/Mini-12-dg.png"
+   },
+   {
+    "code": "cham-mini-13-dg",
+    "title": "Mini 13 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal/Mini-13-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "minimal-step",
+  "name": "Minimal Step",
+  "url": "https://chameleon-doors.ru/catalog/minimal-step-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Коллекция \"Minimal Step\" предлагает тонкий переход к современной эстетике, обогащая ее легкой игрой восприятия. Модели создают ощущение простора и тактильной привлекательности. Они прекрасно интегрируются в интерьер, обеспечивая ему неповторимый шарм и комфорт.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Мателюкс\"; Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-minimal-step-1-dg",
+    "title": "Mini step 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-1-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-1-do",
+    "title": "Mini step 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-1-do.png"
+   },
+   {
+    "code": "cham-minimal-step-2-dg",
+    "title": "Mini step 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-2-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-2-do",
+    "title": "Mini step 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-2-do.png"
+   },
+   {
+    "code": "cham-minimal-step-3-dg",
+    "title": "Mini step 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-3-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-3-do",
+    "title": "Mini step 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-3-do.png"
+   },
+   {
+    "code": "cham-minimal-step-4-dg",
+    "title": "Mini step 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-4-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-4-do",
+    "title": "Mini step 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-4-do.png"
+   },
+   {
+    "code": "cham-minimal-step-5-dg",
+    "title": "Mini step 5 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-5-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-6-dg",
+    "title": "Mini step 6 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-6-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-7-dg",
+    "title": "Mini step 7 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-7-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-8-dg",
+    "title": "Mini step 8 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-8-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-9-dg",
+    "title": "Mini step 9 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-9-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-10-dg",
+    "title": "Mini step 10 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-10-dg.png"
+   },
+   {
+    "code": "cham-minimal-step-11-dg",
+    "title": "Mini step 11 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/minimal-step/minimal-step-11-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "fly",
+  "name": "Fly",
+  "url": "https://chameleon-doors.ru/catalog/fly-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Модели коллекции \"Fly\" воплощают идею легкости и невесомости, размывая границы между помещениями. Они наполняют пространство светом и воздухом, создавая ощущение свободы. Коллекция идеально подходит для формирования современного и уютного жизненного пространства.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Мателюкс\"; Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-fly-1-dg",
+    "title": "Fly 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/fly/fly-1-dg.png"
+   },
+   {
+    "code": "cham-fly-1-do",
+    "title": "Fly 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/fly/fly-1-do.png"
+   },
+   {
+    "code": "cham-fly-2-dg",
+    "title": "Fly 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/fly/fly-2-dg.png"
+   },
+   {
+    "code": "cham-fly-2-do",
+    "title": "Fly 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/fly/fly-2-do.png"
+   },
+   {
+    "code": "cham-fly-3-dg",
+    "title": "Fly 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/fly/fly-3-dg.png"
+   },
+   {
+    "code": "cham-fly-3-do",
+    "title": "Fly 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/fly/fly-3-do.png"
+   },
+   {
+    "code": "cham-fly-4-dg",
+    "title": "Fly 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/fly/fly-4-dg.png"
+   },
+   {
+    "code": "cham-fly-4-do",
+    "title": "Fly 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/fly/fly-4-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "glass",
+  "name": "Glass",
+  "url": "https://chameleon-doors.ru/catalog/glass-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Коллекция \"Glass\" открывает новые перспективы, наполняя интерьер светом и визуальной лёгкостью. Модели создают ощущение простора и прозрачности, сохраняя при этом атмосферу уединённости. Они являются безупречным выбором для создания современной и светлой среды.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "10 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Лакобель\" (черный или белый); Верх/низ полотна укутан в пленку; Толщина МДФ 10мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-glass-1-do",
+    "title": "Glass 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-1-do.png"
+   },
+   {
+    "code": "cham-glass-2-do",
+    "title": "Glass 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-2-do.png"
+   },
+   {
+    "code": "cham-glass-3-do",
+    "title": "Glass 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-3-do.png"
+   },
+   {
+    "code": "cham-glass-4-do",
+    "title": "Glass 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-4-do.png"
+   },
+   {
+    "code": "cham-glass-5-do",
+    "title": "Glass 5 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-5-do.png"
+   },
+   {
+    "code": "cham-glass-6-do",
+    "title": "Glass 6 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-6-do.png"
+   },
+   {
+    "code": "cham-glass-7-do",
+    "title": "Glass 7 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-7-do.png"
+   },
+   {
+    "code": "cham-glass-8-do",
+    "title": "Glass 8 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-8-do.png"
+   },
+   {
+    "code": "cham-glass-9-do",
+    "title": "Glass 9 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/glass/glass-9-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "classic",
+  "name": "Classic",
+  "url": "https://chameleon-doors.ru/catalog/classic-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Коллекция \"Classic\" привносит в современное пространство ноты элегантности и проверенной временем гармонии. Модели создают теплую и гостеприимную атмосферу, говорящую о хорошем вкусе. Они служат мостом между традициями и актуальными тенденциями в дизайне.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "10 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Мателюкс\"; Верх/низ полотна укутан в пленку; Толщина МДФ 10мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-classic-1-dg",
+    "title": "Classic 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-1-dg.png"
+   },
+   {
+    "code": "cham-classic-1-do",
+    "title": "Classic 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-1-do.png"
+   },
+   {
+    "code": "cham-classic-2-dg",
+    "title": "Classic 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-2-dg.png"
+   },
+   {
+    "code": "cham-classic-2-do",
+    "title": "Classic 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-2-do.png"
+   },
+   {
+    "code": "cham-classic-3-dg",
+    "title": "Classic 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-3-dg.png"
+   },
+   {
+    "code": "cham-classic-3-do",
+    "title": "Classic 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-3-do.png"
+   },
+   {
+    "code": "cham-classic-4-dg",
+    "title": "Classic 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-4-dg.png"
+   },
+   {
+    "code": "cham-classic-4-do",
+    "title": "Classic 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-4-do.png"
+   },
+   {
+    "code": "cham-classic-5-dg",
+    "title": "Classic 5 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-5-dg.png"
+   },
+   {
+    "code": "cham-classic-5-do",
+    "title": "Classic 5 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-5-do.png"
+   },
+   {
+    "code": "cham-classic-6-dg",
+    "title": "Classic 6 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-6-dg.png"
+   },
+   {
+    "code": "cham-classic-6-do",
+    "title": "Classic 6 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/classic/classic-6-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "rich",
+  "name": "Rich",
+  "url": "https://chameleon-doors.ru/catalog/rich-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Коллекция \"Rich\" предлагает насыщенное и выразительное решение для создания интерьера с ярким характером. Модели формируют атмосферу респектабельности и глубокого уюта. Они становятся ключевым акцентом, подчеркивающим индивидуальность и стиль всего пространства.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "10 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Флутес\"; Верх/низ полотна укутан в пленку; Толщина МДФ 10мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-rich-1-dg",
+    "title": "Rich 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/rich/rich-1-dg.png"
+   },
+   {
+    "code": "cham-rich-1-do",
+    "title": "Rich 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/rich/rich-1-do.png"
+   },
+   {
+    "code": "cham-rich-2-dg",
+    "title": "Rich 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/rich/rich-2-dg.png"
+   },
+   {
+    "code": "cham-rich-2-do",
+    "title": "Rich 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/rich/rich-2-do.png"
+   },
+   {
+    "code": "cham-rich-3-dg",
+    "title": "Rich 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/rich/rich-3-dg.png"
+   },
+   {
+    "code": "cham-rich-3-do",
+    "title": "Rich 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/rich/rich-3-do.png"
+   },
+   {
+    "code": "cham-rich-4-dg",
+    "title": "Rich 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/rich/rich-4-dg.png"
+   },
+   {
+    "code": "cham-rich-4-do",
+    "title": "Rich 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/rich/rich-4-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "grid",
+  "name": "Grid",
+  "url": "https://chameleon-doors.ru/catalog/grid-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Данное решение коллекции \"Grid\" придает интерьеру структурность и современный геометрический ритм. Модели создают интересный визуальный рисунок, добавляя пространству глубины и концептуальности. Они отлично вписываются в урбанистическую эстетику, наполняя ее уютом.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "10 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Бронзовый мателюкс\"; Верх/низ полотна укутан в пленку; Толщина МДФ 10мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-grid-new-1-dg",
+    "title": "Grid 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/grid/grid-new-1-dg.png"
+   },
+   {
+    "code": "cham-grid-new-1-do",
+    "title": "Grid 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/grid/grid-new-1-do.png"
+   },
+   {
+    "code": "cham-grid-new-2-dg",
+    "title": "Grid 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/grid/grid-new-2-dg.png"
+   },
+   {
+    "code": "cham-grid-new-2-do",
+    "title": "Grid 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/grid/grid-new-2-do.png"
+   },
+   {
+    "code": "cham-grid-new-3-dg",
+    "title": "Grid 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/grid/grid-new-3-dg.png"
+   },
+   {
+    "code": "cham-grid-new-3-do",
+    "title": "Grid 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/grid/grid-new-3-do.png"
+   },
+   {
+    "code": "cham-grid-new-4-dg",
+    "title": "Grid 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/grid/grid-new-4-dg.png"
+   },
+   {
+    "code": "cham-grid-new-4-do",
+    "title": "Grid 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/grid/grid-new-4-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "design",
+  "name": "Design",
+  "url": "https://chameleon-doors.ru/catalog/design-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Коллекция \"Design\" представляет собой смелый шаг в сторону актуального художественного высказывания. Эти модели созданы, чтобы быть центром притяжения, формируя вокруг себя уникальную эстетику. Они превращают пространство в арт-объект, полный комфорта и стиля.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Бронзовый мателюкс\"; Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-design-1-dg",
+    "title": "Design 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-1-dg.png"
+   },
+   {
+    "code": "cham-design-2-dg",
+    "title": "Design 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-2-dg.png"
+   },
+   {
+    "code": "cham-design-3-dg",
+    "title": "Design 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-3-dg.png"
+   },
+   {
+    "code": "cham-design-4-dg",
+    "title": "Design 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-4-dg.png"
+   },
+   {
+    "code": "cham-design-5-dg",
+    "title": "Design 5 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-5-dg.png"
+   },
+   {
+    "code": "cham-design-6-dg",
+    "title": "Design 6 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-6-dg.png"
+   },
+   {
+    "code": "cham-design-7-dg",
+    "title": "Design 7 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-7-dg.png"
+   },
+   {
+    "code": "cham-design-8-dg",
+    "title": "Design 8 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-8-dg.png"
+   },
+   {
+    "code": "cham-design-9-dg",
+    "title": "Design 9 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-9-dg.png"
+   },
+   {
+    "code": "cham-design-10-dg",
+    "title": "Design 10 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-10-dg.png"
+   },
+   {
+    "code": "cham-design-11-dg",
+    "title": "Design 11 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-11-dg.png"
+   },
+   {
+    "code": "cham-design-12-dg",
+    "title": "Design 12 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-12-dg.png"
+   },
+   {
+    "code": "cham-design-13-dg",
+    "title": "Design 13 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-13-dg.png"
+   },
+   {
+    "code": "cham-design-14-dg",
+    "title": "Design 14 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-14-dg.png"
+   },
+   {
+    "code": "cham-design-15-dg",
+    "title": "Design 15 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-15-dg.png"
+   },
+   {
+    "code": "cham-design-16-dg",
+    "title": "Design 16 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-16-dg.png"
+   },
+   {
+    "code": "cham-design-17-dg",
+    "title": "Design 17 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-17-dg.png"
+   },
+   {
+    "code": "cham-design-18-dg",
+    "title": "Design 18 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-18-dg.png"
+   },
+   {
+    "code": "cham-design-19-dg",
+    "title": "Design 19 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-19-dg.png"
+   },
+   {
+    "code": "cham-design-20-dg",
+    "title": "Design 20 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-20-dg.png"
+   },
+   {
+    "code": "cham-design-21-dg",
+    "title": "Design 21 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-21-dg.png"
+   },
+   {
+    "code": "cham-design-22-dg",
+    "title": "Design 22 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-22-dg.png"
+   },
+   {
+    "code": "cham-design-23-dg",
+    "title": "Design 23 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-23-dg.png"
+   },
+   {
+    "code": "cham-design-24-dg",
+    "title": "Design 24 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-24-dg.png"
+   },
+   {
+    "code": "cham-design-25-dg",
+    "title": "Design 25 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-25-dg.png"
+   },
+   {
+    "code": "cham-design-26-dg",
+    "title": "Design 26 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/design/design-26-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "office",
+  "name": "Office",
+  "url": "https://chameleon-doors.ru/catalog/office-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Коллекция \"Office\" ориентирована на создание продуктивной и сконцентрированной атмосферы деловой среды. Модели способствуют формированию серьезного и стильного образа пространства. Они идеально поддерживают корпоративный дух, обеспечивая комфорт и функциональность.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Бронзовый мателюкс\"; Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-office-1-dg",
+    "title": "Office 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/office/office-1-dg.png"
+   },
+   {
+    "code": "cham-office-2-dg",
+    "title": "Office 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/office/office-2-dg.png"
+   },
+   {
+    "code": "cham-office-3-dg",
+    "title": "Office 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/office/office-3-dg.png"
+   },
+   {
+    "code": "cham-office-4-dg",
+    "title": "Office 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/office/office-4-dg.png"
+   },
+   {
+    "code": "cham-office-5-dg",
+    "title": "Office 5 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/office/office-5-dg.png"
+   },
+   {
+    "code": "cham-office-6-dg",
+    "title": "Office 6 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/office/office-6-dg.png"
+   },
+   {
+    "code": "cham-office-7-dg",
+    "title": "Office 7 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/office/office-7-dg.png"
+   },
+   {
+    "code": "cham-office-8-dg",
+    "title": "Office 8 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/office/office-8-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "bar-rooms",
+  "name": "Bar Rooms",
+  "url": "https://chameleon-doors.ru/catalog/bar-rooms-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Решение коллекции «Bar Rooms» специально создано для организации особых зон отдыха и релаксации в ресторанах, барах и кухонных помещениях. Модели помогают сформировать камерную и клубную атмосферу, располагающую к неформальному общению. Они добавляют интерьеру характер и чувство стиля, идеально вписываясь в концепцию заведений.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Высота отбойников 200мм; Используется стекло \"Прозрачное\"; Верх/низ полотна укутан в пленку; Толщина МДФ 6мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-b-1-dg",
+    "title": "B 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/bar-rooms/b-1-dg.png"
+   },
+   {
+    "code": "cham-b-2-dg",
+    "title": "B 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/bar-rooms/b-2-dg.png"
+   },
+   {
+    "code": "cham-b-3-do",
+    "title": "B 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/bar-rooms/b-3-do.png"
+   },
+   {
+    "code": "cham-b-4-do",
+    "title": "B 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/bar-rooms/b-4-do.png"
+   },
+   {
+    "code": "cham-b-5-do",
+    "title": "B 5 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/bar-rooms/b-5-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "invisible",
+  "name": "Invisible",
+  "url": "https://chameleon-doors.ru/catalog/invisible",
+  "styles": [],
+  "coat": [],
+  "about": "Cтена, которая кажется единым целым, без единого намека на дверной проем. Скрытые двери – это воплощение минимализма и чистоты линий. Они растворяются в интерьере, сливаясь с отделкой стен, будь то покраска, обои, декоративная штукатурка или панели. Это позволяет создать ощущение бесшовности, визуально расширить пространство и придать ему утонченную элегантность. Никаких выступающих ручек, никаких контрастных рам – только идеальная гладь, которая завораживает своей простотой.",
+  "specs": [
+   [
+    "Высота",
+    "от 1500 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "42 / 59 мм"
+   ],
+   [
+    "По умолчанию",
+    "Верх/низ полотна укутан в пленку; Толщина МДФ 10мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-invisible",
+    "title": "Invisible",
+    "img": "https://chameleon-doors.ru/images/catalog/invisible/Invisible.jpg"
+   },
+   {
+    "code": "cham-invisible-2",
+    "title": "Invisible",
+    "img": "https://chameleon-doors.ru/images/catalog/invisible/Invisible-2.jpg"
+   }
+  ]
+ },
+ {
+  "slug": "rail",
+  "name": "Rail",
+  "url": "https://chameleon-doors.ru/catalog/rail-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Двери с фрезеровкой под фальшбагет – это воплощение классического стиля и утонченности. Они способны придать любому помещению особый шарм, будь то гостиная, спальня или кабинет. Разнообразие форм, а также возможность выбора различных материалов и отделок позволяют подобрать дверь, идеально соответствующую вашему интерьеру.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6+10 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-rail-1-dg",
+    "title": "Rail 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/rail/rail-1-dg.png"
+   },
+   {
+    "code": "cham-rail-1-do",
+    "title": "Rail 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/rail/rail-1-do.png"
+   },
+   {
+    "code": "cham-rail-2-dg",
+    "title": "Rail 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/rail/rail-2-dg.png"
+   },
+   {
+    "code": "cham-rail-2-do",
+    "title": "Rail 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/rail/rail-2-do.png"
+   },
+   {
+    "code": "cham-rail-3-dg",
+    "title": "Rail 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/rail/rail-3-dg.png"
+   },
+   {
+    "code": "cham-rail-3-do",
+    "title": "Rail 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/rail/rail-3-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "oval",
+  "name": "Oval",
+  "url": "https://chameleon-doors.ru/catalog/oval-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Овальная фрезеровка может быть разной: от тонкой, едва заметной линии, подчеркивающей естественную красоту древесины, до более выразительной, объемной, создающей игру света и тени. Она может быть классической, строгой и симметричной, или же более свободной, с легкими, игривыми изгибами. В любом случае, она добавляет двери неповторимый шарм и индивидуальность.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 / 10 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Флутес ребристый\"; Верх/низ полотна укутан в пленку; Толщина МДФ ДГ 6 мм, ДО 10 мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-oval-1-dg",
+    "title": "Oval 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/oval/Oval-1-dg.png"
+   },
+   {
+    "code": "cham-oval-1-do",
+    "title": "Oval 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/oval/Oval-1-do.png"
+   },
+   {
+    "code": "cham-oval-2-dg",
+    "title": "Oval 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/oval/Oval-2-dg.png"
+   },
+   {
+    "code": "cham-oval-3-dg",
+    "title": "Oval 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/oval/Oval-3-dg.png"
+   },
+   {
+    "code": "cham-oval-4-do",
+    "title": "Oval 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/oval/Oval-4-do.png"
+   },
+   {
+    "code": "cham-oval-5-do",
+    "title": "Oval 5 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/oval/Oval-5-do.png"
+   },
+   {
+    "code": "cham-oval-6-dg",
+    "title": "Oval 6 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/oval/Oval-6-dg.png"
+   },
+   {
+    "code": "cham-oval-6-do",
+    "title": "Oval 6 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/oval/Oval-6-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "select",
+  "name": "Select",
+  "url": "https://chameleon-doors.ru/catalog/select-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Выбирая дверь с выборкой, вы выбираете не просто предмет интерьера. Вы выбираете историю, которую она будет рассказывать каждый день. Вы выбираете искусство, которое будет радовать глаз и наполнять ваш дом теплом и уютом. Это двери, которые открывают не только проход, но и новые грани вашего пространства, делая его по-настоящему уникальным.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "4+6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Цвета молдингов : серый, черный, золотой; Верх/низ полотна укутан в пленку; Толщина МДФ 4+6 мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-select-1-dg",
+    "title": "Select 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-1-dg.png"
+   },
+   {
+    "code": "cham-select-2-dg",
+    "title": "Select 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-2-dg.png"
+   },
+   {
+    "code": "cham-select-3-dg",
+    "title": "Select 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-3-dg.png"
+   },
+   {
+    "code": "cham-select-4-dg",
+    "title": "Select 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-4-dg.png"
+   },
+   {
+    "code": "cham-select-5-dg",
+    "title": "Select 5 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-5-dg.png"
+   },
+   {
+    "code": "cham-select-6-dg",
+    "title": "Select 6 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-6-dg.png"
+   },
+   {
+    "code": "cham-select-7-dg",
+    "title": "Select 7 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-7-dg.png"
+   },
+   {
+    "code": "cham-select-8-dg",
+    "title": "Select 8 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-8-dg.png"
+   },
+   {
+    "code": "cham-select-9-dg",
+    "title": "Select 9 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-9-dg.png"
+   },
+   {
+    "code": "cham-select-10-dg",
+    "title": "Select 10 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-10-dg.png"
+   },
+   {
+    "code": "cham-select-11-dg",
+    "title": "Select 11 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-11-dg.png"
+   },
+   {
+    "code": "cham-select-12-dg",
+    "title": "Select 12 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/select/Select-12-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "round-stick",
+  "name": "Round Stick",
+  "url": "https://chameleon-doors.ru/catalog/round-stick-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Есть в мире вещей, которые кажутся обыденными, но при ближайшем рассмотрении раскрывают свою удивительную глубину. К таким вещам, несомненно, относятся двери. А когда эти двери обретают двухцветное воплощение, они превращаются из простого функционального элемента в настоящее произведение искусства, способное преобразить любое пространство.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 / 10 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Верх/низ полотна укутан в пленку; Толщина МДФ без вставки 6 мм , с вставкой 10 мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-round-stick-1-dg",
+    "title": "Round stick 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/round-stick/Round-stick-1-dg.png"
+   },
+   {
+    "code": "cham-round-stick-2-dg",
+    "title": "Round stick 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/round-stick/Round-stick-2-dg.png"
+   },
+   {
+    "code": "cham-round-stick-3-dg",
+    "title": "Round stick 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/round-stick/Round-stick-3-dg.png"
+   },
+   {
+    "code": "cham-round-stick-4-dg",
+    "title": "Round stick 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/round-stick/Round-stick-4-dg.png"
+   },
+   {
+    "code": "cham-round-stick-5-dg",
+    "title": "Round stick 5 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/round-stick/Round-stick-5-dg.png"
+   },
+   {
+    "code": "cham-round-stick-6-dg",
+    "title": "Round stick 6 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/round-stick/Round-stick-6-dg.png"
+   },
+   {
+    "code": "cham-round-stick-7-dg",
+    "title": "Round stick 7 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/round-stick/Round-stick-7-dg.png"
+   },
+   {
+    "code": "cham-round-stick-8-dg",
+    "title": "Round stick 8 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/round-stick/Round-stick-8-dg.png"
+   }
+  ]
+ },
+ {
+  "slug": "mil-fly",
+  "name": "Mil Fly",
+  "url": "https://chameleon-doors.ru/catalog/mil-fly-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "Несмотря на свою массивность, двери с парящей филенкой выглядят удивительно легко и воздушно. Этот эффект визуально расширяет пространство, делая его более просторным и светлым.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло \"Мателюкс\"; Верх/низ полотна укутан в пленку; Толщина МДФ 6 мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-mil-fly-1-dg",
+    "title": "Mil fly 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/mil-fly/Mil-fly-1-dg.png"
+   },
+   {
+    "code": "cham-mil-fly-1-do",
+    "title": "Mil fly 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/mil-fly/Mil-fly-1-do.png"
+   },
+   {
+    "code": "cham-mil-fly-2-dg",
+    "title": "Mil fly 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/mil-fly/Mil-fly-2-dg.png"
+   },
+   {
+    "code": "cham-mil-fly-2-do",
+    "title": "Mil fly 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/mil-fly/Mil-fly-2-do.png"
+   },
+   {
+    "code": "cham-mil-fly-3-dg",
+    "title": "Mil fly 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/mil-fly/Mil-fly-3-dg.png"
+   },
+   {
+    "code": "cham-mil-fly-3-do",
+    "title": "Mil fly 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/mil-fly/Mil-fly-3-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "very-rich",
+  "name": "Very Rich",
+  "url": "https://chameleon-doors.ru/catalog/very-rich-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "В мире, где каждая деталь имеет значение, двери с молдингами предстают не просто функциональным элементом, а настоящим произведением искусства, способным преобразить любое пространство. Они – это не просто проход, а граница между мирами, приглашение к исследованию, обещание уюта и элегантности.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Используется стекло «Флутес ребристый»; Цвета молдингов : серый, черный, золотой; Верх/низ полотна укутан в пленку; Толщина МДФ 6 мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-very-rich-1-dg",
+    "title": "Very rich 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/very-rich/Very-rich-1-dg.png"
+   },
+   {
+    "code": "cham-very-rich-1-do",
+    "title": "Very rich 1 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/very-rich/Very-rich-1-do.png"
+   },
+   {
+    "code": "cham-very-rich-2-dg",
+    "title": "Very rich 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/very-rich/Very-rich-2-dg.png"
+   },
+   {
+    "code": "cham-very-rich-2-do",
+    "title": "Very rich 2 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/very-rich/Very-rich-2-do.png"
+   },
+   {
+    "code": "cham-very-rich-3-dg",
+    "title": "Very rich 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/very-rich/Very-rich-3-dg.png"
+   },
+   {
+    "code": "cham-very-rich-3-do",
+    "title": "Very rich 3 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/very-rich/Very-rich-3-do.png"
+   },
+   {
+    "code": "cham-very-rich-4-dg",
+    "title": "Very rich 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/very-rich/Very-rich-4-dg.png"
+   },
+   {
+    "code": "cham-very-rich-4-do",
+    "title": "Very rich 4 ДО",
+    "img": "https://chameleon-doors.ru/images/catalog/very-rich/Very-rich-4-do.png"
+   }
+  ]
+ },
+ {
+  "slug": "slim",
+  "name": "Slim",
+  "url": "https://chameleon-doors.ru/catalog/slim-collection",
+  "styles": [],
+  "coat": [
+   "ПВХ"
+  ],
+  "about": "В мире, где царит изобилие форм и декора, есть особая прелесть в сдержанности и лаконичности. Двери с минимальной фрезеровкой – это воплощение этой философии. Они не кричат о себе, но при этом обладают неповторимым шармом, способным преобразить любое пространство.",
+  "specs": [
+   [
+    "Высота",
+    "от 1800 мм до 2780 мм"
+   ],
+   [
+    "Ширина",
+    "от 500 мм до 1050 мм"
+   ],
+   [
+    "Толщина МДФ",
+    "6 мм"
+   ],
+   [
+    "Толщина полотна",
+    "38 мм"
+   ],
+   [
+    "Покрытие",
+    "ПВХ"
+   ],
+   [
+    "По умолчанию",
+    "Верх/низ полотна укутан в пленку; Толщина МДФ 6 мм"
+   ]
+  ],
+  "models": [
+   {
+    "code": "cham-slim-1-dg",
+    "title": "Slim 1 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/slim/Slim-1-dg.png"
+   },
+   {
+    "code": "cham-slim-2-dg",
+    "title": "Slim 2 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/slim/Slim-2-dg.png"
+   },
+   {
+    "code": "cham-slim-3-dg",
+    "title": "Slim 3 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/slim/Slim-3-dg.png"
+   },
+   {
+    "code": "cham-slim-4-dg",
+    "title": "Slim 4 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/slim/Slim-4-dg.png"
+   },
+   {
+    "code": "cham-slim-5-dg",
+    "title": "Slim 5 ДГ",
+    "img": "https://chameleon-doors.ru/images/catalog/slim/Slim-5-dg.png"
+   }
+  ]
+ }
+]

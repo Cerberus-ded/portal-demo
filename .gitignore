@@ -1,0 +1,41 @@
+# Промежуточные результаты сборки
+_build/
+site31/
+glavnaya31.html
+glavnaya31.src.html
+
+# Исходные фото фабрик: около 120 МБ, хранятся только на компьютере владельца
+web/*/s/
+web/*/l/
+web/*/png/
+web/*/src/
+web/*/swatch/
+web/torex/kit/*/
+
+# Кэш скачанных страниц и оригиналов фабрик, снимки проверок
+cache/
+shots/
+*.png
+!photos/*.png
+
+# Python, Node
+__pycache__/
+*.pyc
+node_modules/
+package-lock.json
+
+# Прайсы и каталоги фабрик (исходники скриптов tools/, могут содержать цены)
+*.xlsx
+*.xlsm
+*.pdf
+
+# Система и редакторы
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Локальные настройки Claude Code
+.claude/settings.local.json

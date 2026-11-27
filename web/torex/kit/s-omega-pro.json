@@ -1,0 +1,923 @@
+{
+ "sheet": "S.OMEGA PRO",
+ "specs": [
+  [
+   "Назначение",
+   "квартирная"
+  ],
+  [
+   "Уровень шумоизоляции, дБ",
+   "МР 34,5(37,5***), РР 40,4"
+  ],
+  [
+   "Средний вес, кг",
+   "МР 84, РР 99"
+  ],
+  [
+   "Размерный ряд",
+   null
+  ],
+  [
+   "Высота, мм",
+   "2030, 2050, 2070, 2100, 2150*, 2200*"
+  ],
+  [
+   "Ширина, мм",
+   "860, 880, 950, 1000*, 1030*"
+  ],
+  [
+   "Полотно",
+   null
+  ],
+  [
+   "Толщина полотна, мм",
+   "МР 100, РР 110"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,4"
+  ],
+  [
+   "Усиление полотна",
+   "металлические вертикальные П-образные ребра жесткости"
+  ],
+  [
+   "Наполнение полотна",
+   "базальтовая плита + пенополистирол"
+  ],
+  [
+   "Уплотнитель",
+   "1 Q-lon + 1 резиновый"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Короб",
+   null
+  ],
+  [
+   "Глубина короба, мм",
+   "106"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,4"
+  ],
+  [
+   "Тип короба",
+   "усиленный закрытый утепленный"
+  ],
+  [
+   "Ширина металл. наличника, мм",
+   "75"
+  ],
+  [
+   "Ширина перекрываемого зазора, мм",
+   "61"
+  ],
+  [
+   "Световой проем (для ширины 950мм)",
+   "830"
+  ],
+  [
+   "Высота порога, мм",
+   "50"
+  ],
+  [
+   "Регулятор притвора",
+   "эксцентрик"
+  ],
+  [
+   "Уплотнитель",
+   "магнитный, 1 контур"
+  ],
+  [
+   "Порог из нержавеющей стали",
+   "опция"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Замковая система",
+   null
+  ],
+  [
+   "Основной замок",
+   "цилиндровый Border 4-3"
+  ],
+  [
+   "Дополнительный замок",
+   "сувальдный Border ЗВ8-6К/15 \"зацеп\""
+  ],
+  [
+   "Цилиндровый механизм",
+   "Apecs PM"
+  ],
+  [
+   "Ночная задвижка",
+   "Альфа №67"
+  ],
+  [
+   "Внутренняя панель - съемная",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Внешняя панель - вариант РР",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Ручка",
+   "TOR XL, черная"
+  ],
+  [
+   "Фурнитура",
+   "TOR XL, черная"
+  ],
+  [
+   "Петли",
+   "с опорным подшипником, 2 шт"
+  ],
+  [
+   "Противосъемные ригели",
+   "3 шт с системой \"зацеп\""
+  ],
+  [
+   "Глазок",
+   "есть, в центре"
+  ]
+ ],
+ "note": "* с доплатой *** с опцией \"АНТИшум\"",
+ "notes": [
+  "* с доплатой *** с опцией \"АНТИшум\""
+ ],
+ "models": [
+  "S.OMEGA PRO МР",
+  "S.OMEGA PRO PР"
+ ],
+ "device": [
+  {
+   "img": "web/torex/kit/s-omega-pro/01.webp",
+   "w": 351,
+   "h": 752
+  },
+  {
+   "img": "web/torex/kit/s-omega-pro/02.webp",
+   "w": 295,
+   "h": 314
+  }
+ ],
+ "hw": [
+  {
+   "img": "web/torex/kit/s-omega-pro/03.webp",
+   "w": 251,
+   "h": 124
+  }
+ ],
+ "base": [
+  {
+   "title": "Наружная отделка",
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/04.webp",
+     "w": 153,
+     "h": 325
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/05.webp",
+     "w": 104,
+     "h": 137
+    }
+   ]
+  },
+  {
+   "title": "Внутренняя/наружная отделка: цвета ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/06.webp",
+     "w": 76,
+     "h": 109,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/07.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/08.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/09.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/10.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/11.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/12.webp",
+     "w": 66,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/13.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/14.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/15.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/16.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/17.webp",
+     "w": 74,
+     "h": 98,
+     "cut": 1
+    }
+   ]
+  },
+  {
+   "title": "Наружная и внутренняя: панель МДФ 10 мм",
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/18.webp",
+     "w": 257,
+     "h": 201,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/19.webp",
+     "w": 256,
+     "h": 201,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/20.webp",
+     "w": 258,
+     "h": 201,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/21.webp",
+     "w": 90,
+     "h": 208,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/22.webp",
+     "w": 91,
+     "h": 208,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/23.webp",
+     "w": 90,
+     "h": 208,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/24.webp",
+     "w": 90,
+     "h": 208,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/25.webp",
+     "w": 90,
+     "h": 208,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/26.webp",
+     "w": 91,
+     "h": 208,
+     "cut": 1
+    }
+   ]
+  }
+ ],
+ "opts": [
+  {
+   "nums": [
+    1,
+    2
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/27.webp",
+     "w": 186,
+     "h": 413
+    }
+   ],
+   "texts": [
+    "Цвет металла Букле коричневый, Колоре неро, Колоре гриджио",
+    "Цвет металла Колоре бьянко"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    3,
+    4
+   ],
+   "name": "Коллекция ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/28.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/29.webp",
+     "w": 64,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/30.webp",
+     "w": 76,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/31.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/32.webp",
+     "w": 73,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/33.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/34.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/35.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/36.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/37.webp",
+     "w": 64,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/38.webp",
+     "w": 70,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/39.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/40.webp",
+     "w": 76,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/41.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/42.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/43.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/44.webp",
+     "w": 64,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/45.webp",
+     "w": 75,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/46.webp",
+     "w": 68,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/47.webp",
+     "w": 66,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/48.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Цвет ПВХ (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    5
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/49.webp",
+     "w": 112,
+     "h": 272,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/50.webp",
+     "w": 110,
+     "h": 272,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/51.webp",
+     "w": 118,
+     "h": 272,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/52.webp",
+     "w": 117,
+     "h": 272,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный рисунок на металле SP"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    6,
+    7
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/53.webp",
+     "w": 106,
+     "h": 246,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/54.webp",
+     "w": 106,
+     "h": 246,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок из коллекции Кристалл со вставкой из стекла (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    8,
+    9
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/55.webp",
+     "w": 100,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/56.webp",
+     "w": 100,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/57.webp",
+     "w": 102,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/58.webp",
+     "w": 102,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/59.webp",
+     "w": 101,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/60.webp",
+     "w": 100,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/61.webp",
+     "w": 101,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/62.webp",
+     "w": 102,
+     "h": 229,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок коллекции Dynamic L (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    10,
+    11
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/63.webp",
+     "w": 102,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/64.webp",
+     "w": 102,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/65.webp",
+     "w": 102,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/66.webp",
+     "w": 102,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/67.webp",
+     "w": 102,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/68.webp",
+     "w": 102,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/69.webp",
+     "w": 102,
+     "h": 229,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок коллекции Dynamic L с молдингом (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    12,
+    13,
+    14
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/70.webp",
+     "w": 89,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/71.webp",
+     "w": 87,
+     "h": 199,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/72.webp",
+     "w": 88,
+     "h": 198,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Внутренний рисунок OP-СM (классическое зеркало)",
+    "Внутренний рисунок RM-M10 (овальное зеркало)",
+    "Внутренний рисунок OP-MM (большое зеркало) на панели МДФ 16мм с покрытием РТ Шелк белый, ПВХ Бьянко, Ферро, Крема, Оскуро, Айвори"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    15
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/73.webp",
+     "w": 106,
+     "h": 227,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/74.webp",
+     "w": 105,
+     "h": 227,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/75.webp",
+     "w": 107,
+     "h": 227,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/76.webp",
+     "w": 106,
+     "h": 227,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/77.webp",
+     "w": 107,
+     "h": 227,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/78.webp",
+     "w": 104,
+     "h": 227,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/79.webp",
+     "w": 105,
+     "h": 227,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/80.webp",
+     "w": 105,
+     "h": 227,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок OP-S, SL (сборная панель) (снаружи)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    16
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/81.webp",
+     "w": 92,
+     "h": 209,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/82.webp",
+     "w": 93,
+     "h": 209,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/83.webp",
+     "w": 92,
+     "h": 209,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок OP-S (сборная панель) (внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    17,
+    18
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/84.webp",
+     "w": 95,
+     "h": 223,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/85.webp",
+     "w": 95,
+     "h": 223,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/86.webp",
+     "w": 96,
+     "h": 223,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/87.webp",
+     "w": 96,
+     "h": 223,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок OP-SH (вставки ШПОН) (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    21
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/s-omega-pro/88.webp",
+     "w": 283,
+     "h": 149
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/89.webp",
+     "w": 315,
+     "h": 165,
+     "cap": "цвет хром"
+    },
+    {
+     "img": "web/torex/kit/s-omega-pro/90.webp",
+     "w": 274,
+     "h": 144,
+     "cap": "цвет золото сатин"
+    }
+   ],
+   "soon": true,
+   "texts": [
+    "Комплект фурнитуры в цвете хром, хром сатинированный или золото сатин на квадратном основании вместо базового"
+   ],
+   "cat": "прочие"
+  }
+ ],
+ "more": [
+  {
+   "n": 19,
+   "text": "Цилиндр Securemme K2 с перекодировкой",
+   "cat": "защита"
+  },
+  {
+   "n": 20,
+   "text": "АНТИшум: проклейка всей площади полотна шумо- виброизоляционным материалом SGM толщиной 1,5-1,7мм",
+   "cat": "защита"
+  },
+  {
+   "n": 22,
+   "text": "Глазок с улучшенной оптикой APECS",
+   "cat": "прочие"
+  },
+  {
+   "n": 23,
+   "text": "Стальной нержавеющий порог",
+   "cat": "прочие"
+  },
+  {
+   "n": 24,
+   "text": "Утепление короба",
+   "cat": "прочие"
+  },
+  {
+   "n": 25,
+   "text": "Открытый неутепленный короб",
+   "cat": "прочие"
+  },
+  {
+   "n": 26,
+   "text": "Третья петля",
+   "cat": "прочие"
+  },
+  {
+   "n": 27,
+   "text": "Ширина 1000 мм",
+   "cat": "прочие"
+  },
+  {
+   "n": 28,
+   "text": "Ширина 1030 мм (при высоте до 2100 мм включительно)",
+   "cat": "прочие"
+  },
+  {
+   "n": 29,
+   "text": "Высота 2150, 2200 мм (при ширине до 1000 мм включительно)",
+   "cat": "прочие"
+  }
+ ]
+}
