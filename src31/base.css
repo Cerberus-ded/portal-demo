@@ -257,6 +257,9 @@ h3 { font-family: var(--font-body); font-weight: 600; font-size: var(--text-md);
 .tools__tel { display: grid; gap: 0; text-align: right; text-decoration: none; }
 .tools__tel b { font-size: var(--text-sm); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .tools__tel span { font-size: var(--text-xs); color: var(--color-muted); white-space: nowrap; }
+.tools__ico { display: none; }
+/* звонок в одно касание из меню на телефоне и планшете: на компьютере номер стоит в шапке */
+.nav__call { display: none; }
 .cart {
   display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 44px;
   padding: 0 var(--space-md); border: var(--rule-bar) solid var(--color-ink); border-radius: var(--radius-ctl);
@@ -432,10 +435,23 @@ html[data-seek] { overflow: hidden; scrollbar-gutter: stable; }
   .nav__split .nav__top { flex: 1 1 auto; justify-content: flex-start; }
   .nav__caret { width: 56px; min-height: 48px; }
   .burger { display: inline-flex; }
-  .tools__tel { display: none; }
+  /* планшет: номер в шапке становится кнопкой с трубкой, как лупа; сам номер остаётся для чтения с экрана */
+  .tools__tel {
+    position: relative; display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; flex: 0 0 auto;
+    border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl); color: var(--color-ink);
+    transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+  }
+  .tools__tel:hover { background: var(--color-accent-soft); border-color: var(--color-ink); }
+  .tools__tel b, .tools__tel span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .tools__ico { display: block; }
+  .nav__call { display: grid; gap: var(--space-xs); margin-top: var(--space-sm); padding: var(--space-md) var(--space-xs) 0; border-top: var(--rule-hair) solid var(--color-hair); }
+  .nav__call .btn { width: 100%; }
+  .nav__call p { font-size: var(--text-xs); color: var(--color-muted); line-height: 1.5; }
 }
 @media (max-width: 720px) {
   :root { --gutter: 20px; --gap-columns: 16px; }
+  /* на телефоне пятой кнопке в шапке места нет (360 px): позвонить можно из меню и с кнопок на странице */
+  .tools__tel { display: none; }
   /* on a phone the sticky header keeps only the name and the menu: the address and hours are on the page itself */
   .topbar__strip { display: none; }
 }
