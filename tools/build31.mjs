@@ -285,7 +285,8 @@ const { F, SECTIONS } = new Function("var ITEMS; " + dataSrc + "; return { F: F,
 const drop = (o) => { for (const k of Object.keys(o)) if (o[k] == null || o[k] === false) delete o[k]; return o; };
 W("x1/seek.json", JSON.stringify({ F, chips: {},
   sections: SECTIONS.map((s) => ({ id: s.id, name: s.name, short: s.short, facets: s.facets.map((f) => drop({ id: f.id, label: f.label, opts: f.opts || null })) })),
-  items: ITEMS.map((i) => drop({ s: i.s, brand: i.brand, name: i.name, code: i.code, f: i.f, vars: i.vars.map((v) => ({ name: v.name, code: v.code, fin: v.fin })) })) }));
+  // pack: the factory's folder, where the homepage's search finds the collection's cover (lord/covers.json)
+  items: ITEMS.map((i) => drop({ s: i.s, brand: i.brand, name: i.name, code: i.code, pack: i.pack, f: i.f, vars: i.vars.map((v) => ({ name: v.name, code: v.code, fin: v.fin })) })) }));
 
 // ---- the homepage: its catalogue menu and the counts on its section cards ----
 const count = (id) => ITEMS.filter((x) => x.s === id).length;

@@ -417,8 +417,21 @@
 
   // ---- поиск по каталогу: данные подгружаются при первом открытии, коллекция открывается в каталоге ----
   var CAT = "https://claude.ai/artifact/MTMYB5MvJyFsLYuVuPdNih";
+  // фото в результатах: обложки коллекций лежат по фабрикам (lord/covers.json), берём файл фабрики, когда она впервые попала в выдачу
+  var covers = {};
+  function coversOf(dir) {
+    if (!covers[dir]) {
+      covers[dir] = fetch(dir + "/covers.json").then(function (r) { if (!r.ok) throw new Error("covers " + r.status); return r.json(); });
+      covers[dir].catch(function () { delete covers[dir]; });
+    }
+    return covers[dir];
+  }
   window.PortalSeek({
     load: function () { return fetch("x1/seek.json").then(function (r) { if (!r.ok) throw new Error("seek " + r.status); return r.json(); }); },
+    thumb: function (it) {
+      var dir = String(it.pack || "").split("/")[0];
+      return dir ? coversOf(dir).then(function (d) { return d[it.code] || ""; }) : "";
+    },
     home: CAT + "#katalog",
     cuts: false,
     href: function (it) { return CAT + "#" + it.s + "-" + it.code; },
