@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-# python -I door_fetch.py <factory dir> <collections json> [--redo code-prefix,...] [--crop auto|none] [--cache <dir>]
+# python -I door_fetch.py <factory dir> <collections json> [--redo code-prefix,...] [--crop auto|none] [--cache <dir>] [--from <dir>]
 #   --cache: keep the downloaded originals there (outside OneDrive) and reuse them on the next run
+#   --from: the dir of pictures cut out of a PDF catalogue (tools/mira_build.py): a model's img that is not a link
+#           is a file name there
 # Every model photo of a factory as two WebP sizes: l/<code>.webp 1600 tall for the enlarged view, s/<code>.webp 800 tall
 # for the grid. Empty margins around the door are cut first, so every door fills its frame the same way: by transparency
 # when the photo has it, otherwise by the white background. The downloaded original is dropped after.
@@ -12,6 +14,7 @@ REDO = []
 CACHE = sys.argv[sys.argv.index('--cache') + 1] if '--cache' in sys.argv else None
 if CACHE:
     os.makedirs(CACHE, exist_ok=True)
+FROM = sys.argv[sys.argv.index('--from') + 1] if '--from' in sys.argv else None
 if '--redo' in sys.argv:
     REDO = [x for x in sys.argv[sys.argv.index('--redo') + 1].split(',') if x]
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36'
@@ -22,7 +25,7 @@ jobs = []
 for c in data:
     ms = c['models'] or ([{'code': c['slug'], 'img': c['main']}] if c.get('main') else [])
     for m in ms:
-        jobs.append((m['code'], m['img']))
+        jobs.append((m['code'], os.path.join(FROM, m['img']) if FROM and not re.match(r'https?://', m['img']) else m['img']))
 
 
 def run(args):

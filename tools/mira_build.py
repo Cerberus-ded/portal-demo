@@ -5,7 +5,8 @@
 #                           of «Хорошие двери_2026.pdf», cut out by tools/pdf_images.py (pages 4-27, the ~713x1527 picture)
 #   web/adema/adema.json    ADEMA interior doors from «Каталог 2026 NEW.pdf» of «Двери мира» (pages 31-35), cut out of the
 #                           rendered pages by tools/pdf_pages.mjs (scale 3.7) and tools/pdf_tiles.py, in reading order
-# The names are typed from the pages (the PDFs keep their text as outlines). img points at the local picture.
+# The names are typed from the pages (the PDFs keep their text as outlines). img is the picture's file name inside the
+# images dir given here, never a full path: tools/door_fetch.py --from <that dir> finds it there.
 import glob, io, json, os, re, sys
 
 ROOT, GOOD, ADEMA = sys.argv[1:4]
@@ -47,7 +48,7 @@ line = {
               '«Лайн» с тем же номером.'),
     'specs': [['Основа', 'МДФ'], ['Покрытие', 'CPL, антивандальное'],
               ['Размеры полотна', '600×2000, 700×2000, 800×2000, 900×2000 мм']],
-    'models': [{'code': 'layn-' + code_of(a), 'title': a + ' · ' + c, 'img': door_of(p)} for p, a, c in LINE]}
+    'models': [{'code': 'layn-' + code_of(a), 'title': a + ' · ' + c, 'img': os.path.basename(door_of(p))} for p, a, c in LINE]}
 io.open(os.path.join(ROOT, 'web', 'raznye', 'raznye.json'), 'w', encoding='utf-8').write(json.dumps([line], ensure_ascii=False, indent=1))
 
 # ADEMA, tile by tile as the catalogue shows them
@@ -87,7 +88,7 @@ for f, (slug, title) in zip(files, TILES):
                        'specs': [], 'models': []}
         order.append(slug)
     n = len(colls[slug]['models']) + 1
-    colls[slug]['models'].append({'code': 'adema-%s-%d' % (slug, n), 'title': title, 'img': f})
+    colls[slug]['models'].append({'code': 'adema-%s-%d' % (slug, n), 'title': title, 'img': os.path.basename(f)})
 io.open(os.path.join(ROOT, 'web', 'adema', 'adema.json'), 'w', encoding='utf-8').write(
     json.dumps([colls[s] for s in order], ensure_ascii=False, indent=1))
 print('Лайн', len(line['models']), 'models; ADEMA', len(order), 'collections', len(files), 'models')

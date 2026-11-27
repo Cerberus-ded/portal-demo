@@ -11,27 +11,27 @@
    {
     "code": "adema-vega-1",
     "title": "Вега-3 · Оазис",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p31-01.png"
+    "img": "p31-01.png"
    },
    {
     "code": "adema-vega-2",
     "title": "Вега-2 · Меджик меркури",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p31-02.png"
+    "img": "p31-02.png"
    },
    {
     "code": "adema-vega-3",
     "title": "Вега-5 · Меджик дюна",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p31-03.png"
+    "img": "p31-03.png"
    },
    {
     "code": "adema-vega-4",
     "title": "Вега-5 · Меджик фреско",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p31-04.png"
+    "img": "p31-04.png"
    },
    {
     "code": "adema-vega-5",
     "title": "Вега-6 · Меджик тоффи",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p31-05.png"
+    "img": "p31-05.png"
    }
   ]
  },
@@ -47,7 +47,7 @@
    {
     "code": "adema-parallel-1",
     "title": "Параллель · Астана табак",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p31-06.png"
+    "img": "p31-06.png"
    }
   ]
  },
@@ -63,7 +63,7 @@
    {
     "code": "adema-legend-1",
     "title": "Легенд · Дюна норд / Дюна солано",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p32-01.png"
+    "img": "p32-01.png"
    }
   ]
  },
@@ -79,7 +79,7 @@
    {
     "code": "adema-madrid-1",
     "title": "Мадрид · Арктик",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p32-02.png"
+    "img": "p32-02.png"
    }
   ]
  },
@@ -95,7 +95,7 @@
    {
     "code": "adema-akcent-1",
     "title": "Акцент 2 · Арктик",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p32-03.png"
+    "img": "p32-03.png"
    }
   ]
  },
@@ -111,7 +111,7 @@
    {
     "code": "adema-sonata-1",
     "title": "Соната · Эмалит белый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p32-04.png"
+    "img": "p32-04.png"
    }
   ]
  },
@@ -127,12 +127,12 @@
    {
     "code": "adema-241-1",
     "title": "241 · Арктик",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p32-05.png"
+    "img": "p32-05.png"
    },
    {
     "code": "adema-241-2",
     "title": "241 · Смоки",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p32-06.png"
+    "img": "p32-06.png"
    }
   ]
  },
@@ -148,12 +148,12 @@
    {
     "code": "adema-ermitazh-1",
     "title": "Эрмитаж-2 · Арктик",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p32-07.png"
+    "img": "p32-07.png"
    },
    {
     "code": "adema-ermitazh-2",
     "title": "Эрмитаж-2 · Смоки",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p32-08.png"
+    "img": "p32-08.png"
    }
   ]
  },
@@ -169,17 +169,17 @@
    {
     "code": "adema-royal-1",
     "title": "Роял · Суфле",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p33-01.png"
+    "img": "p33-01.png"
    },
    {
     "code": "adema-royal-2",
     "title": "Роял · Эмалит белый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p33-02.png"
+    "img": "p33-02.png"
    },
    {
     "code": "adema-royal-3",
     "title": "Роял 2 · Эмалит белый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p33-03.png"
+    "img": "p33-03.png"
    }
   ]
  },
@@ -195,7 +195,7 @@
    {
     "code": "adema-favorit-1",
     "title": "Фаворит · Эмалит белый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p33-04.png"
+    "img": "p33-04.png"
    }
   ]
  },
@@ -211,7 +211,7 @@
    {
     "code": "adema-malta-1",
     "title": "Мальта · Эмалит белый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p33-05.png"
+    "img": "p33-05.png"
    }
   ]
  },
@@ -227,7 +227,7 @@
    {
     "code": "adema-vektor-1",
     "title": "Вектор · Эмалит белый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p33-06.png"
+    "img": "p33-06.png"
    }
   ]
  },
@@ -243,12 +243,12 @@
    {
     "code": "adema-novella-1",
     "title": "Новелла · Эмалит белый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p33-07.png"
+    "img": "p33-07.png"
    },
    {
     "code": "adema-novella-2",
     "title": "Новелла · Эмалит серый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p33-08.png"
+    "img": "p33-08.png"
    }
   ]
  },
@@ -264,22 +264,22 @@
    {
     "code": "adema-layt-1",
     "title": "Лайт 1 · Эмалит белый",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p34-01.png"
+    "img": "p34-01.png"
    },
    {
     "code": "adema-layt-2",
     "title": "Лайт 4 · Пацифик",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p34-02.png"
+    "img": "p34-02.png"
    },
    {
     "code": "adema-layt-3",
     "title": "Лайт 5 · Бетон снежный",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p34-03.png"
+    "img": "p34-03.png"
    },
    {
     "code": "adema-layt-4",
     "title": "Лайт 3 · Арктик",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p34-04.png"
+    "img": "p34-04.png"
    }
   ]
  },
@@ -295,87 +295,87 @@
    {
     "code": "adema-adema-1",
     "title": "Адема 1 · Белый бланко, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p34-05.png"
+    "img": "p34-05.png"
    },
    {
     "code": "adema-adema-2",
     "title": "Адема 1 · Эшвайт, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p34-06.png"
+    "img": "p34-06.png"
    },
    {
     "code": "adema-adema-3",
     "title": "Адема 1 · Белёный дуб, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35a-01.png"
+    "img": "p35a-01.png"
    },
    {
     "code": "adema-adema-4",
     "title": "Адема 1 · Грей, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35a-02.png"
+    "img": "p35a-02.png"
    },
    {
     "code": "adema-adema-5",
     "title": "Адема 1 · Неаполь, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35a-03.png"
+    "img": "p35a-03.png"
    },
    {
     "code": "adema-adema-6",
     "title": "Адема 1 · Венге, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35a-04.png"
+    "img": "p35a-04.png"
    },
    {
     "code": "adema-adema-7",
     "title": "Адема 1 · Орех, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35a-05.png"
+    "img": "p35a-05.png"
    },
    {
     "code": "adema-adema-8",
     "title": "Адема 1 · Белый бланко, матовое стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35a-06.png"
+    "img": "p35a-06.png"
    },
    {
     "code": "adema-adema-9",
     "title": "Адема 1 · Эшвайт, матовое стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35a-07.png"
+    "img": "p35a-07.png"
    },
    {
     "code": "adema-adema-10",
     "title": "Адема 1 · Белёный дуб, матовое стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35a-08.png"
+    "img": "p35a-08.png"
    },
    {
     "code": "adema-adema-11",
     "title": "Адема 26 · Бетон бежевый, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35b-01.png"
+    "img": "p35b-01.png"
    },
    {
     "code": "adema-adema-12",
     "title": "Адема 28 · Санторини белый, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35b-02.png"
+    "img": "p35b-02.png"
    },
    {
     "code": "adema-adema-13",
     "title": "Адема 30 · Бетон снежный, стекло графит",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35b-03.png"
+    "img": "p35b-03.png"
    },
    {
     "code": "adema-adema-14",
     "title": "Адема 31 · Ривьера айс, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35b-04.png"
+    "img": "p35b-04.png"
    },
    {
     "code": "adema-adema-15",
     "title": "Адема 31 · Эшвайт, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35b-05.png"
+    "img": "p35b-05.png"
    },
    {
     "code": "adema-adema-16",
     "title": "Адема 32 · Ривьера айс, стекло графит",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35b-06.png"
+    "img": "p35b-06.png"
    },
    {
     "code": "adema-adema-17",
     "title": "Адема 33 · Бетон снежный, чёрное стекло",
-    "img": "C:/Users/lakol/AppData/Local/Temp/claude/572543d07729952e/7021778e-63e7-48de-99c1-bdc713306a05/scratchpad/pdf/adema37/t\\p35b-07.png"
+    "img": "p35b-07.png"
    }
   ]
  }
