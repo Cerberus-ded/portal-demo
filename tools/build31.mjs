@@ -307,6 +307,8 @@ for (const [id, n] of Object.entries(ROOM)) {
   home = home.replace(rx, (m, a, b) => a + (n ? n : "Скоро") + b + (n ? plural(n, "коллекция", "коллекции", "коллекций") : "наполняем раздел"));
 }
 home = home.replace(/class="room mat"/g, 'class="room mat lift"');
+// a section still empty: its card says «Скоро» and on a phone folds into a short row under the full ones (src31/home.css)
+for (const [id, n] of Object.entries(ROOM)) if (!n) home = home.replace(`<a class="room mat lift" href="${CAT}#${id}">`, `<a class="room mat lift room--soon" href="${CAT}#${id}">`);
 const PICS = { "k-hero": [800, 1600], "k-dveri": [640, 1200], "k-plitka": [640, 1200], "k-poly": [640, 1000], "k-oboi": [640, 1200], "k-santehnika": [640, 1200], "k-work-punta": [800, 1400], "k-work-entry": [800, 1257] };
 home = home.replace(/<img src="photos\/(k-[a-z-]+)\.jpg"([^>]*?)>/g, (m, k, rest) => {
   const [a, b] = PICS[k];

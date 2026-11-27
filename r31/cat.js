@@ -256,7 +256,8 @@
       b.type = "button";
       b.setAttribute("aria-current", s.id === current ? "true" : "false");
       b.appendChild(text("span", null, s.name));
-      b.appendChild(text("em", null, n ? String(n) : "0"));
+      // пустой раздел: «скоро», а не ноль, который читается как пустой каталог
+      b.appendChild(text("em", null, n ? String(n) : (s.empty ? s.empty.tag : "0")));
       b.addEventListener("click", function () { goTo(s.id); });
       box.appendChild(b);
     });
@@ -477,7 +478,8 @@
     if (!pool().length) {
       grid.hidden = true; empty.hidden = false;
       empty.appendChild(text("h2", null, "Раздел наполняем"));
-      empty.appendChild(text("p", null, SOON));
+      // SOON уже стоит под заголовком страницы: здесь только куда идти дальше
+      empty.appendChild(text("p", null, "Образцы стоят в салоне на Гончарова, 11. Позвоните, менеджер подскажет, что есть в наличии."));
       var act = el("div", "empty__act");
       var tel = text("a", "btn btn--outline", "Позвонить в салон");
       tel.href = "tel:+79962203622";
@@ -1655,10 +1657,17 @@
   /*ADMIN*/
   function resetAll() { active = {}; renderAll(); }
 
+  // Пустой раздел: счётчику, сортировке и фильтрам нечего отбирать, остаются список разделов и «Раздел наполняем».
+  // Коллекция, добавленная в админке, раздел наполняет: renderAll вызывается снова, и всё возвращается.
+  function renderEmpty() {
+    $("browse").classList.toggle("layout--empty", view === "section" && !openId && !pool().length);
+  }
+
   function renderAll() {
     renderCart();
     renderCats();
     renderHead();
+    renderEmpty();
     renderSort();
     renderFacets();
     renderChips();
