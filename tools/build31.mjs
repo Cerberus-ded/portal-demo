@@ -1,14 +1,33 @@
-// node build31.mjs <project dir> [<out dir>]
+// node build31.mjs <project dir> [<out dir>] [--packs <dir with the packs already built>]
 // The catalogue from scratch by collection: interior doors of Lord, Zodchij, Andora, Chameleon, Adema and the Лайн series, Torex entrance doors:
 //   site31/index.html        the catalogue (r31 sources)
 //   site31/<factory>/*.json  door photos in packs: covers (one door per collection), s-<collection> small, l-<collection> large
 //   site31/glavnaya.html     the homepage inside the catalogue artifact; glavnaya31.html its own address
 //   site31/x1/seek.json      what the homepage's search reads
+// --packs <dir>: the source photos (web/<factory>/s, l, swatch, web/torex/kit/<series>/) live only on the owner's computer.
+// Without them the pages can still be built: every picture is taken from the packs already built in <dir> (the repository
+// root), the packs come out the same, and only the pages, the search data and the texts change. A model with no photo in
+// those packs stops the build: new photos need the owner's computer.
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, copyFileSync, rmSync } from "node:fs";
-import { join } from "node:path";
+import { join, resolve, relative, isAbsolute } from "node:path";
 const root = process.argv[2];
 const R = (p) => readFileSync(join(root, p), "utf8");
-const OUT = process.argv[3] || join(root, "site31");
+const flag = process.argv.indexOf("--packs");
+const PACKS = flag > 0 ? process.argv[flag + 1] : null;
+if (flag > 0 && !PACKS) throw new Error("--packs: name the folder with the built packs, the repository root: --packs .");
+const OUT = (process.argv[3] && process.argv[3] !== "--packs" ? process.argv[3] : null) || join(root, "site31");
+// the out folder is wiped first: it must not hold the packs we read from
+if (PACKS) {
+  const rel = relative(resolve(OUT), resolve(PACKS));
+  if (!rel || (!rel.startsWith("..") && !isAbsolute(rel))) throw new Error("--packs must not be the out folder or inside it");
+  if (!existsSync(join(PACKS, "lord", "covers.json"))) throw new Error("--packs " + PACKS + ": no built packs there (lord/covers.json)");
+}
+const packCache = new Map();
+// a pack already built, {} when there is none
+const oldPack = (p) => {
+  if (!packCache.has(p)) packCache.set(p, existsSync(join(PACKS, p)) ? JSON.parse(readFileSync(join(PACKS, p), "utf8")) : {});
+  return packCache.get(p);
+};
 if (existsSync(OUT)) rmSync(OUT, { recursive: true });
 for (const d of ["", "x1", "photos"]) mkdirSync(join(OUT, d), { recursive: true });
 const W = (p, s) => writeFileSync(join(OUT, p), s, "utf8");
@@ -127,13 +146,26 @@ function loadTorex() {
   });
 }
 // the price list's pictures for the series page: every tile inlined, so the series is one request
-function kitPack(kit) {
-  const t = (x) => { const o = { u: b64(join(root, x.img)), w: x.w, h: x.h }; if (x.cap) o.c = x.cap; if (x.sw) o.sw = 1; if (x.cut) o.k = 1; return o; };
+// old (--packs): the series' pack already built; its pictures stand in for the price list's, tile by tile in the same place,
+// and a tile whose size differs means the price list's pictures changed: that needs the owner's computer
+function kitPack(kit, old) {
+  const pic = (x, o) => {
+    if (!PACKS) return b64(join(root, x.img));
+    if (!o || !o.u || o.w !== x.w || o.h !== x.h) throw new Error("kit picture not in the built packs: " + x.img + " (build on the owner's computer)");
+    return o.u;
+  };
+  const t = (x, o) => { const r = { u: pic(x, o), w: x.w, h: x.h }; if (x.cap) r.c = x.cap; if (x.sw) r.sw = 1; if (x.cut) r.k = 1; return r; };
+  const at = (list, i) => (Array.isArray(list) ? list[i] : undefined);
   const tidy = (s) => String(s || "").replace(/\s+/g, " ").trim();
+  old = old || {};
   return {
-    m: kit.models, dev: kit.device.map(t), hw: (kit.hw || []).map(t),
-    base: kit.base.map((b) => ({ t: tidy(b.title), i: b.items.map(t) })),
-    opts: kit.opts.filter((g) => g.items.length).map((g) => { const o = { c: g.cat, x: g.texts, i: g.items.map(t) }; if (g.name) o.t = g.name; return o; }),
+    m: kit.models, dev: kit.device.map((x, i) => t(x, at(old.dev, i))), hw: (kit.hw || []).map((x, i) => t(x, at(old.hw, i))),
+    base: kit.base.map((b, j) => ({ t: tidy(b.title), i: b.items.map((x, i) => t(x, at((at(old.base, j) || {}).i, i))) })),
+    opts: kit.opts.filter((g) => g.items.length).map((g, j) => {
+      const o = { c: g.cat, x: g.texts, i: g.items.map((x, i) => t(x, at((at(old.opts, j) || {}).i, i))) };
+      if (g.name) o.t = g.name;
+      return o;
+    }),
     more: kit.more.map((m) => ({ c: m.cat, x: m.text }))
   };
 }
@@ -157,7 +189,9 @@ for (const fab of FACTORIES) {
   const covers = {};
   for (const c of fab.load()) {
     const slug = c.slug.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    const has = (v) => existsSync(join(root, "web", fab.dir, "s", v.code + ".webp")) && existsSync(join(root, "web", fab.dir, "l", v.code + ".webp"));
+    const oldS = () => oldPack(fab.dir + "/s-" + slug + ".json"), oldL = () => oldPack(fab.dir + "/l-" + slug + ".json");
+    const has = (v) => PACKS ? !!(oldS()[v.code] && oldL()[v.code])
+      : existsSync(join(root, "web", fab.dir, "s", v.code + ".webp")) && existsSync(join(root, "web", fab.dir, "l", v.code + ".webp"));
     if (fab.skip) c.vars.filter((v) => !has(v)).forEach((v) => console.log("left out, no photo:", fab.brand, c.name, v.name, v.code));
     const vars = c.vars.filter((v) => !fab.skip || has(v)).map((v) => { const o = { name: v.name, code: v.code, fin: "none" }; if (v.on) o.on = v.on; return o; });
     if (!vars.length) continue;
@@ -173,13 +207,18 @@ for (const fab of FACTORIES) {
       const notes = (c.kit.notes || []).join(" ").split(/\s+(?=\*)/).map((x) => x.trim()).filter(Boolean)
         .map((x) => (/^\*\s*с доплатой$/i.test(x) ? "* размер под заказ" : x.replace(/"([^"]+)"/g, "«$1»")));
       if (notes.length) item.specNote = notes;
-      const txt = JSON.stringify(kitPack(c.kit));
+      const txt = JSON.stringify(kitPack(c.kit, PACKS ? oldPack(fab.dir + "/k-" + slug + ".json") : null));
       W(fab.dir + "/k-" + slug + ".json", txt);
       packBytes += txt.length; files++;
     }
     ITEMS.push(item);
     const s = {}, l = {};
     for (const v of vars) {
+      if (PACKS) {
+        if (!has(v)) throw new Error("no photo in the built packs " + fab.dir + " " + c.slug + " " + v.code + " (build on the owner's computer)");
+        s[v.code] = oldS()[v.code]; l[v.code] = oldL()[v.code];
+        continue;
+      }
       const ps = join(root, "web", fab.dir, "s", v.code + ".webp"), pl = join(root, "web", fab.dir, "l", v.code + ".webp");
       if (!existsSync(ps) || !existsSync(pl)) throw new Error("no photo " + fab.dir + " " + c.slug + " " + v.code);
       s[v.code] = b64(ps); l[v.code] = b64(pl);
@@ -197,7 +236,11 @@ for (const fab of FACTORIES) {
   // Torex colours as squares, one pack for every series: colour id → [name, picture] (web/torex/colors.json, swatch/<id>.webp)
   if (fab.dir === "torex" && ITEMS.some((i) => i.fin) && existsSync(join(root, "web/torex/colors.json"))) {
     const cols = JSON.parse(R("web/torex/colors.json")), d = {};
-    for (const [id, x] of Object.entries(cols)) d[id] = [x.name, b64(join(root, "web/torex/swatch", id + ".webp"))];
+    for (const [id, x] of Object.entries(cols)) {
+      const was = PACKS ? oldPack("torex/colors.json")[id] : null;
+      if (PACKS && !(was && was[1])) throw new Error("colour square not in the built packs: torex " + id + " (build on the owner's computer)");
+      d[id] = [x.name, PACKS ? was[1] : b64(join(root, "web/torex/swatch", id + ".webp"))];
+    }
     const txt = JSON.stringify(d);
     W("torex/colors.json", txt);
     packBytes += txt.length; files++;
