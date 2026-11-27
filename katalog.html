@@ -1350,6 +1350,22 @@ html:has(.viewer[open]) .askbar, body:has(#cartbox:not([hidden])) .askbar { disp
 button.protolink { background: transparent; font: inherit; font-size: var(--text-sm); font-weight: 600; cursor: pointer; }
 button.protolink:hover { background: var(--color-ink); color: var(--color-paper); }
 [data-demo-reset][data-armed] { background: var(--color-bad); border-color: var(--color-bad); color: var(--color-paper); }
+.protomore, .modeline__short, .protomore__shut { display: none; }
+@media (max-width: 720px) {
+  :root:not([data-demo-open]) .modeline__full, :root:not([data-demo-open]) .protobar .protolink { display: none; }
+  :root:not([data-demo-open]) .modeline__short { display: inline; }
+  :root:not([data-demo-open]) .protobar__in { flex-wrap: nowrap; justify-content: space-between; padding-block: var(--space-xs); }
+  :root:not([data-demo-open]) .modeline { flex: 0 1 auto; font-weight: 600; color: var(--color-ink); }
+  .protomore {
+    display: inline-flex; align-items: center; gap: var(--space-2xs); flex: 0 0 auto; min-height: 40px; padding: 0 var(--space-sm);
+    background: transparent; color: var(--color-ink); border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl);
+    font: inherit; font-size: var(--text-sm); font-weight: 600; white-space: nowrap; cursor: pointer;
+  }
+  .protomore::after { content: ""; width: 7px; height: 7px; border: solid currentColor; border-width: 0 1.6px 1.6px 0; transform: translateY(-2px) rotate(45deg); }
+  :root[data-demo-open] .protomore::after { transform: translateY(2px) rotate(-135deg); }
+  :root[data-demo-open] .protomore__open { display: none; }
+  :root[data-demo-open] .protomore__shut { display: inline; }
+}
 .order--done .order__demo { font-size: var(--text-sm); padding: var(--space-sm) var(--space-md); background: var(--color-paper-2); border-left: 3px solid var(--color-accent); max-width: 70ch; }
 </style>
 </head>
@@ -1486,6 +1502,22 @@ window.PortalDemo = (function () {
     reset();
   });
 
+  // ---- полоса «Демо-версия» на телефоне: свёрнута в строку, «Как попробовать» её раскрывает, выбор помнится ----
+  try { if (localStorage.getItem("demo-bar") === "open") document.documentElement.setAttribute("data-demo-open", "1"); } catch (e) {}
+  function syncMore() {
+    var on = document.documentElement.hasAttribute("data-demo-open");
+    [].forEach.call(document.querySelectorAll("[data-demo-more]"), function (b) { b.setAttribute("aria-expanded", on ? "true" : "false"); });
+  }
+  document.addEventListener("DOMContentLoaded", syncMore);
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest("[data-demo-more]");
+    if (!b) return;
+    var on = !document.documentElement.hasAttribute("data-demo-open");
+    if (on) document.documentElement.setAttribute("data-demo-open", "1"); else document.documentElement.removeAttribute("data-demo-open");
+    try { localStorage.setItem("demo-bar", on ? "open" : "shut"); } catch (e) {}
+    syncMore();
+  });
+
   return {
     use: function (name) { return ready.then(function () { return name === "db" ? db : name === "assets" ? assets : name === "user" ? user : null; }); },
     blob: function (id) { return urls[id] || ""; }
@@ -1494,7 +1526,8 @@ window.PortalDemo = (function () {
 </script>
 <div class="protobar">
   <div class="container protobar__in">
-    <p class="modeline">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</p>
+    <p class="modeline"><span class="modeline__short">Демо-версия сайта</span><span class="modeline__full">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</span></p>
+    <button type="button" class="protomore" data-demo-more aria-expanded="false"><span class="protomore__open">Как попробовать</span><span class="protomore__shut">Свернуть</span></button>
     <a class="protolink" id="inboxLink" href="#zayavki" hidden>Заявки менеджеру <b id="inboxN">0</b></a>
     <a class="protolink" id="adminLink" href="#admin" hidden>Админка</a>
     <button type="button" class="protolink" data-demo-reset>Начать демо заново</button>
@@ -2404,7 +2437,43 @@ window.PortalSeek = function (o) {
 
   // раздел с фильтрами, которые выбрал поиск: их ставим, когда раздел откроется
   var pendingActive = null;
+  // Фильтры в адресе: «mezhkomnatnye?brand=Лорд&style=Классика». Такую ссылку можно переслать, её ставят главная (фабрики)
+  // и акции, а при смене фильтров адрес раздела переписывается сам (без новой записи в истории).
+  function splitQuery(h) {
+    var q = h.indexOf("?");
+    if (q < 0) return { path: h, filters: null };
+    var filters = {};
+    h.slice(q + 1).split("&").forEach(function (pair) {
+      var eq = pair.indexOf("="), k = eq > 0 ? pair.slice(0, eq) : "", v = eq > 0 ? pair.slice(eq + 1) : "";
+      if (!k || !v) return;
+      filters[k] = filters[k] || [];
+      if (filters[k].indexOf(v) < 0) filters[k].push(v);
+    });
+    return { path: h.slice(0, q), filters: filters };
+  }
+  // только фильтры этого раздела: чужой или выдуманный ключ в адресе ничего не ломает
+  function filtersFor(id, filters) {
+    var sec = SECTIONS.filter(function (x) { return x.id === id; })[0], out = {};
+    if (sec) sec.facets.forEach(function (f) { if (filters[f.id]) out[f.id] = filters[f.id].slice(); });
+    return out;
+  }
+  function queryOf(sel) {
+    var out = [];
+    section().facets.forEach(function (f) { (sel[f.id] || []).forEach(function (v) { out.push(f.id + "=" + encodeURIComponent(v)); }); });
+    return out.length ? "?" + out.join("&") : "";
+  }
+  // сетка раздела: адрес повторяет выбранные фильтры
+  function syncHash() {
+    if (view !== "section" || openId || splitQuery(readHash()).path !== current) return;
+    var want = current + queryOf(active), plain;
+    try { plain = decodeURIComponent(want); } catch (e) { plain = want; }
+    if (readHash() === plain) return;
+    lastHash = plain;
+    try { history.replaceState(history.state, "", "#" + want); } catch (e) {}
+  }
   function apply(h) {
+    var sq = splitQuery(h);
+    h = sq.path;
     // старый вид адреса «plitka/КОД» тоже открывается
     var parts = h.split("/"), id = parts[0];
     if (parts.length < 2) {
@@ -2434,6 +2503,7 @@ window.PortalSeek = function (o) {
         current = id; active = {}; openFacets = {};
       }
       view = "section";
+      if (sq.filters && !parts[1]) pendingActive = filtersFor(id, sq.filters);
       if (pendingActive) { active = pendingActive; openFacets = {}; Object.keys(active).forEach(function (k) { openFacets[k] = true; }); }
       var it = parts[1] ? ITEMS.filter(function (x) { return x.s === id && x.code === parts[1]; })[0] : null;
       openId = it ? itemId(it) : null;
@@ -4537,6 +4607,7 @@ window.PortalSeek = function (o) {
     renderDetail();
     renderInbox();
     renderAdmin();
+    syncHash();
   }
 
   // ---- the catalogue drop panel and the small-screen menu ----

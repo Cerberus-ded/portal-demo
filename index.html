@@ -649,6 +649,9 @@ h3 { font-size: var(--text-lg); }
 .facts ul { display: grid; gap: var(--space-2xs); }
 .facts li { font-size: var(--text-sm); color: var(--color-ink-2); }
 .facts .facts__todo { color: var(--color-muted); }
+/* фабрика с коллекциями в каталоге — ссылка на раздел с её фильтром; поле нажатия 40 px, строки списка не раздвигаются */
+.facts li a { display: inline-block; min-width: 40px; padding-block: 10px; margin-block: -10px; color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-rule); text-underline-offset: 3px; transition: color var(--dur-micro) var(--ease-out), text-decoration-color var(--dur-micro) var(--ease-out); }
+.facts li a:hover { color: var(--color-mat-accent); text-decoration-color: currentColor; }
 
 /* ---- the close ---- */
 .visit { display: grid; gap: var(--space-xl); }
@@ -661,10 +664,6 @@ h3 { font-size: var(--text-lg); }
 .contacts a { text-decoration: underline; text-underline-offset: 3px; }
 .contacts a:hover { text-decoration-thickness: 2px; }
 .visit .lead { font-size: var(--text-lead); color: var(--color-paper); opacity: 0.86; max-width: 52ch; }
-.fill {
-  font-size: var(--text-sm); color: var(--color-paper); opacity: 0.74;
-  border-left: 2px dashed currentColor; padding-left: var(--space-md); max-width: 60ch;
-}
 
 /* ---- footer ---- */
 .foot { border-top: var(--rule-hair) solid var(--color-rule); padding-block: var(--space-2xl) var(--space-xl); }
@@ -712,6 +711,22 @@ mark.legal-fill { background: color-mix(in oklab, var(--color-accent) 22%, trans
 button.protolink { background: transparent; font: inherit; font-size: var(--text-sm); font-weight: 600; cursor: pointer; }
 button.protolink:hover { background: var(--color-ink); color: var(--color-paper); }
 [data-demo-reset][data-armed] { background: var(--color-bad); border-color: var(--color-bad); color: var(--color-paper); }
+.protomore, .modeline__short, .protomore__shut { display: none; }
+@media (max-width: 720px) {
+  :root:not([data-demo-open]) .modeline__full, :root:not([data-demo-open]) .protobar .protolink { display: none; }
+  :root:not([data-demo-open]) .modeline__short { display: inline; }
+  :root:not([data-demo-open]) .protobar__in { flex-wrap: nowrap; justify-content: space-between; padding-block: var(--space-xs); }
+  :root:not([data-demo-open]) .modeline { flex: 0 1 auto; font-weight: 600; color: var(--color-ink); }
+  .protomore {
+    display: inline-flex; align-items: center; gap: var(--space-2xs); flex: 0 0 auto; min-height: 40px; padding: 0 var(--space-sm);
+    background: transparent; color: var(--color-ink); border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl);
+    font: inherit; font-size: var(--text-sm); font-weight: 600; white-space: nowrap; cursor: pointer;
+  }
+  .protomore::after { content: ""; width: 7px; height: 7px; border: solid currentColor; border-width: 0 1.6px 1.6px 0; transform: translateY(-2px) rotate(45deg); }
+  :root[data-demo-open] .protomore::after { transform: translateY(2px) rotate(-135deg); }
+  :root[data-demo-open] .protomore__open { display: none; }
+  :root[data-demo-open] .protomore__shut { display: inline; }
+}
 .order--done .order__demo { font-size: var(--text-sm); padding: var(--space-sm) var(--space-md); background: var(--color-paper-2); border-left: 3px solid var(--color-accent); max-width: 70ch; }
 </style>
 </head>
@@ -848,6 +863,22 @@ window.PortalDemo = (function () {
     reset();
   });
 
+  // ---- полоса «Демо-версия» на телефоне: свёрнута в строку, «Как попробовать» её раскрывает, выбор помнится ----
+  try { if (localStorage.getItem("demo-bar") === "open") document.documentElement.setAttribute("data-demo-open", "1"); } catch (e) {}
+  function syncMore() {
+    var on = document.documentElement.hasAttribute("data-demo-open");
+    [].forEach.call(document.querySelectorAll("[data-demo-more]"), function (b) { b.setAttribute("aria-expanded", on ? "true" : "false"); });
+  }
+  document.addEventListener("DOMContentLoaded", syncMore);
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest("[data-demo-more]");
+    if (!b) return;
+    var on = !document.documentElement.hasAttribute("data-demo-open");
+    if (on) document.documentElement.setAttribute("data-demo-open", "1"); else document.documentElement.removeAttribute("data-demo-open");
+    try { localStorage.setItem("demo-bar", on ? "open" : "shut"); } catch (e) {}
+    syncMore();
+  });
+
   return {
     use: function (name) { return ready.then(function () { return name === "db" ? db : name === "assets" ? assets : name === "user" ? user : null; }); },
     blob: function (id) { return urls[id] || ""; }
@@ -856,7 +887,8 @@ window.PortalDemo = (function () {
 </script>
 <div class="protobar">
   <div class="container protobar__in">
-    <p class="modeline">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</p>
+    <p class="modeline"><span class="modeline__short">Демо-версия сайта</span><span class="modeline__full">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</span></p>
+    <button type="button" class="protomore" data-demo-more aria-expanded="false"><span class="protomore__open">Как попробовать</span><span class="protomore__shut">Свернуть</span></button>
     <a class="protolink" id="adminLink" href="katalog.html#admin" hidden>Админка</a>
     <a class="protolink" href="katalog.html#zayavki">Заявки менеджеру</a>
     <button type="button" class="protolink" data-demo-reset>Начать демо заново</button>
@@ -1112,7 +1144,7 @@ window.PortalDemo = (function () {
     <div class="facts">
       <section>
         <h3>Двери</h3>
-        <ul><li>Лорд</li><li>Зодчий</li><li>Аэлита</li><li>Андора</li><li>Лист</li><li>Адема</li><li>Энтро</li><li>Хорошие двери</li><li>Хамелеон</li><li>Торекс</li><li>Кова и TRX</li><li>Дорстон и Тайгер</li><li>Берсеркер</li><li>Мастино</li><li>Макрус</li></ul>
+        <ul><li><a href="katalog.html#mezhkomnatnye?brand=%D0%9B%D0%BE%D1%80%D0%B4">Лорд</a></li><li><a href="katalog.html#mezhkomnatnye?brand=%D0%97%D0%BE%D0%B4%D1%87%D0%B8%D0%B9">Зодчий</a></li><li>Аэлита</li><li><a href="katalog.html#mezhkomnatnye?brand=%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D0%B0">Андора</a></li><li>Лист</li><li><a href="katalog.html#mezhkomnatnye?brand=%D0%90%D0%B4%D0%B5%D0%BC%D0%B0">Адема</a></li><li>Энтро</li><li>Хорошие двери</li><li><a href="katalog.html#mezhkomnatnye?brand=%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD">Хамелеон</a></li><li><a href="katalog.html#vhodnye?brand=%D0%A2%D0%BE%D1%80%D0%B5%D0%BA%D1%81">Торекс</a></li><li>Кова и TRX</li><li>Дорстон и Тайгер</li><li>Берсеркер</li><li>Мастино</li><li>Макрус</li></ul>
       </section>
       <section>
         <h3>Плитка</h3>
@@ -1143,7 +1175,7 @@ window.PortalDemo = (function () {
         <dl class="contacts">
           <div>
             <dt>Адрес</dt>
-            <dd>Димитровград, улица Гончарова, 11</dd>
+            <dd><a href="https://yandex.ru/maps/?text=%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D0%B3%D1%80%D0%B0%D0%B4%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%93%D0%BE%D0%BD%D1%87%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%2C%2011" target="_blank" rel="noopener">Димитровград, улица Гончарова, 11</a></dd>
           </div>
           <div>
             <dt>Телефон</dt>
@@ -1158,9 +1190,9 @@ window.PortalDemo = (function () {
             <dd><a href="https://vk.ru/portaldd" target="_blank" rel="noopener">ВКонтакте</a></dd>
           </div>
         </dl>
-        <p class="fill" id="kontakty-fill">На сайте здесь встанет карта Яндекса с точкой на Гончарова, 11.</p>
         <div class="hero__act">
           <a class="btn" href="tel:+79962203622">Позвонить в салон</a>
+          <a class="btn btn--outline" href="https://yandex.ru/maps/?text=%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D0%B3%D1%80%D0%B0%D0%B4%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%93%D0%BE%D0%BD%D1%87%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%2C%2011" target="_blank" rel="noopener">Открыть на Яндекс Картах</a>
           <a class="btn btn--outline" href="https://vk.ru/portaldd" target="_blank" rel="noopener">Написать во ВКонтакте</a>
         </div>
       </div>
