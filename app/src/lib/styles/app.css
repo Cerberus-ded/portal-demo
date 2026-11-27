@@ -13,3 +13,6 @@ a.protolink { text-decoration: none; }
 .docpage a { text-decoration: underline; text-underline-offset: 3px; }
 /* страница 404 */
 .lost { padding-block: var(--space-2xl); display: grid; gap: var(--space-md); max-width: 60ch; }
+/* колонка фильтров на узком экране свёрнута, пока её не открыли кнопкой «Фильтры»: решает CSS, без мигания при загрузке */
+@media (max-width: 1180px) { :where(.pg-cat) .rail:not([data-open]) { display: none; } }
+:where(.pg-cat) .cats a { text-decoration: none; }
