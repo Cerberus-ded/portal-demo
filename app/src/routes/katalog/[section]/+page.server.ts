@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { SECTIONS, card, itemsIn, section } from '#lib/server/catalog';
+import { SECTIONS, card, itemsIn, section } from '#lib/server/catalog.ts';
 
 export const entries = () => SECTIONS.map((s) => ({ section: s.id }));
 

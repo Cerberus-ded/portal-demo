@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { href } from '#lib';
-	import { cookies } from '#lib/cookies.svelte';
+	import { cookies } from '#lib/cookies.svelte.ts';
 </script>
 
 {#if cookies.shown}
-	<section class="cookies" role="dialog" aria-label="Cookie и Яндекс Метрика">
+	<section class="cookies" aria-label="Cookie и Яндекс Метрика">
 		<p>
 			Мы хотим использовать cookie и Яндекс Метрику, чтобы видеть, какие разделы сайта нужны покупателям, и улучшать его. Нажимая «Разрешить»,
 			вы даёте <a href={href.doc('cookie')}>согласие на обработку данных с помощью cookie и Метрики</a>. Если откажетесь, сайт будет работать так

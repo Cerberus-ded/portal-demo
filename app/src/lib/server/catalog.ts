@@ -1,11 +1,11 @@
 // Каталог на сервере сборки: читается один раз при пререндере, в браузер уходит только то, что нужно странице.
 import data from './generated/catalog.json';
-import type { Card, Doc, Item, Kit, NavSection, Section } from '../types';
+import type { Card, Doc, Item, Kit, NavSection, Section } from '../types.ts';
 
 export const F: Record<string, string> = data.F;
 export const SECTIONS = data.sections as Section[];
 export const ITEMS = data.items as unknown as Item[];
-export const DOCS = data.docs as Record<string, Doc>;
+export const DOCS = data.docs as unknown as Record<string, Doc>;
 export const LEGAL = data.legal as Record<string, string>;
 export const METRIKA = String(data.metrika || '');
 export const COLORS = data.colors as Record<string, string>;

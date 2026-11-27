@@ -1,4 +1,4 @@
-import { ITEMS, SECTIONS, brandLine, itemsIn } from '#lib/server/catalog';
+import { ITEMS, SECTIONS, brandLine, itemsIn } from '#lib/server/catalog.ts';
 
 // обзор каталога: наполненные разделы карточками, остальные строкой «скоро»
 const LEAD: Record<string, string> = { mezhkomnatnye: 'LORD-NOVITA-FELICIA', vhodnye: 'TOREX-ULTIMATUM-PRO' };

@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { href, file } from '#lib';
-	import { plural } from '#lib/text';
+	import { plural } from '#lib/text.ts';
 	import Crumbs from '#lib/components/Crumbs.svelte';
 	import type { PageProps } from './$types';
 

@@ -3,9 +3,9 @@
 	// ?m=3 в адресе: открыть с выбранной моделью (так ведёт поиск).
 	import { onMount, tick } from 'svelte';
 	import { href, file } from '#lib';
-	import { SALON } from '#lib/site';
-	import { cart } from '#lib/cart.svelte';
-	import { lineOf, lineText, plural } from '#lib/text';
+	import { SALON } from '#lib/site.ts';
+	import { cart } from '#lib/cart.svelte.ts';
+	import { lineOf, lineText, plural } from '#lib/text.ts';
 	import Crumbs from '#lib/components/Crumbs.svelte';
 	import OrderForm from '#lib/components/OrderForm.svelte';
 	import Viewer from '#lib/components/Viewer.svelte';

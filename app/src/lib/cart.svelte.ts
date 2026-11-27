@@ -1,5 +1,5 @@
 // Корзина живёт в браузере покупателя (localStorage «cart», как в демо). Цен в ней нет.
-import type { Line } from './types';
+import type { Line } from './types.ts';
 
 const KEY = 'cart';
 

@@ -3,10 +3,10 @@
 	// В демо заявки лежат в браузере посетителя (src/lib/orders.ts); на рабочем сайте здесь будет вход для менеджера.
 	import { onMount } from 'svelte';
 	import { href } from '#lib';
-	import { STATUS, listOrders, marks, setMark, watchOrders, freshCount } from '#lib/orders';
-	import { lineText, phoneDigits, plural, viaText } from '#lib/text';
+	import { STATUS, listOrders, marks, setMark, watchOrders, freshCount } from '#lib/orders.ts';
+	import { lineText, phoneDigits, plural, viaText } from '#lib/text.ts';
 	import Crumbs from '#lib/components/Crumbs.svelte';
-	import type { Order } from '#lib/types';
+	import type { Order } from '#lib/types.ts';
 
 	let orders = $state<Order[]>([]),
 		mk = $state<Record<string, string>>({}),

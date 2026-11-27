@@ -3,8 +3,8 @@
 	// (в демо их меняла админка, в Svelte-версии админки ещё нет).
 	import { onMount } from 'svelte';
 	import { href, file } from '#lib';
-	import { SALON } from '#lib/site';
-	import { plural } from '#lib/text';
+	import { SALON } from '#lib/site.ts';
+	import { plural } from '#lib/text.ts';
 	import Fill from '#lib/components/Fill.svelte';
 	import type { PageProps } from './$types';
 
@@ -19,13 +19,13 @@
 	const srcset = (k: string) => `${file(`photos/${k}-${PICS[k][0]}.webp`)} ${PICS[k][0]}w, ${file(`photos/${k}-${PICS[k][1]}.webp`)} ${PICS[k][1]}w`;
 	const ROOM_SIZES = '(max-width: 480px) 90vw, (max-width: 720px) 45vw, (max-width: 1100px) 30vw, 18vw';
 
-	const rooms = [
+	const rooms = $derived([
 		{ id: 'mezhkomnatnye', n: data.rooms.dveri, pic: 'k-dveri', alt: 'Синие межкомнатные двери в светлом коридоре', w: 1600, h: 1120, name: 'Двери', sub: 'Межкомнатные и входные, коллекциями фабрик.' },
 		{ id: 'plitka', n: data.rooms.plitka, pic: 'k-plitka', alt: 'Ванная комната с плиткой под мрамор', w: 1600, h: 1226, name: 'Плитка', sub: 'Керамогранит и плитка: Alma Ceramica, Global Tile, LB, Kerama Marazzi.' },
 		{ id: 'poly', n: data.rooms.poly, pic: 'k-poly', alt: 'Ламинат под дуб, вид сверху', w: 1000, h: 1000, name: 'Полы', sub: 'Ламинат, кварцвинил и линолеум: Kastamonu, Tarkett, Egger.' },
 		{ id: 'oboi', n: data.rooms.oboi, pic: 'k-oboi', alt: 'Стена с серыми обоями, столик с вазой', w: 1369, h: 1369, name: 'Обои', sub: 'Обои Grandeco, Marburg, Artsimple, Andrea Rossi.' },
 		{ id: 'santehnika', n: data.rooms.santehnika, pic: 'k-santehnika', alt: 'Душевой уголок с чёрным профилем', w: 1200, h: 1200, name: 'Сантехника', sub: 'Смесители, ванны, унитазы, раковины, мебель для ванных.' }
-	];
+	]);
 
 	const works = [
 		{

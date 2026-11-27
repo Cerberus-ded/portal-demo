@@ -12,8 +12,8 @@
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { href, file } from '#lib';
-	import { INDEXING } from '#lib/site';
-	import { cookies } from '#lib/cookies.svelte';
+	import { INDEXING } from '#lib/site.ts';
+	import { cookies } from '#lib/cookies.svelte.ts';
 	import { createSeek } from '#lib/seek/seek.js';
 	import Topbar from '#lib/components/Topbar.svelte';
 	import Foot from '#lib/components/Foot.svelte';

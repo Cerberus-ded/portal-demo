@@ -1,9 +1,9 @@
 <script lang="ts">
 	// Подвал, общий для всех страниц: перенесён с главной демо-версии (r31/home.body.html).
 	import { href } from '#lib';
-	import { SALON } from '#lib/site';
+	import { SALON } from '#lib/site.ts';
 	import Fill from './Fill.svelte';
-	import type { NavSection } from '#lib/types';
+	import type { NavSection } from '#lib/types.ts';
 
 	let { nav, legal, onCookies }: { nav: NavSection[]; legal: Record<string, string>; onCookies: () => void } = $props();
 </script>

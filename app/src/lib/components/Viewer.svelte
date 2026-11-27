@@ -2,7 +2,7 @@
 	// Дверь крупно: снимок на весь экран, листание, заявка и корзина прямо отсюда. Перенесено из r31/cat.js (buildViewer).
 	// Приближения (лупы) нет: по просьбе салона снимок показываем целиком.
 	import { file } from '#lib';
-	import type { Item } from '#lib/types';
+	import type { Item } from '#lib/types.ts';
 
 	let {
 		item,

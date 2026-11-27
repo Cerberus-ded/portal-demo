@@ -2,11 +2,11 @@
 	// Корзина: позиции из коллекций, количество, одна заявка на всё. Цены нет. Перенесено из r31/cat.js (renderCart).
 	import { onMount } from 'svelte';
 	import { href } from '#lib';
-	import { cart } from '#lib/cart.svelte';
-	import { plural } from '#lib/text';
+	import { cart } from '#lib/cart.svelte.ts';
+	import { plural } from '#lib/text.ts';
 	import Crumbs from '#lib/components/Crumbs.svelte';
 	import OrderForm from '#lib/components/OrderForm.svelte';
-	import type { Order } from '#lib/types';
+	import type { Order } from '#lib/types.ts';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();

@@ -2,7 +2,7 @@
 	// Комплектация серии по прайсу фабрики (Торекс): что входит в дверь и что можно добавить. Перенесено из r31/cat.js (kitSection).
 	// Картинки и подписи из розничного прайса фабрики, цен и доплат нет: цену с опциями называет менеджер. Ничего не нажимается.
 	import { file } from '#lib';
-	import type { Item, Kit, KitTile } from '#lib/types';
+	import type { Item, Kit, KitTile } from '#lib/types.ts';
 
 	let { item, kit }: { item: Item; kit: Kit } = $props();
 

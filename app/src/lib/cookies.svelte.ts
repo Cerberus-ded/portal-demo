@@ -41,13 +41,13 @@ class Cookies {
 	load() {
 		if (this.loaded || !/^\d+$/.test(this.id)) return;
 		this.loaded = true;
-		const ym = (window.ym ||= Object.assign((...a: unknown[]) => (ym.a ||= []).push(a), { l: Date.now() }) as Window['ym']);
+		const ym: NonNullable<Window['ym']> = (window.ym ||= Object.assign((...a: unknown[]) => void (ym.a ||= []).push(a), { l: Date.now() }));
 		const k = document.createElement('script');
 		k.async = true;
 		k.src = 'https://mc.yandex.ru/metrika/tag.js';
 		document.head.appendChild(k);
 		// без Вебвизора: запись действий на странице в согласии не описана
-		ym!(Number(this.id), 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: false });
+		ym(Number(this.id), 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: false });
 	}
 	dropCookies() {
 		for (const c of document.cookie.split(';')) {

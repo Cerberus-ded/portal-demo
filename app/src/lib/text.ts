@@ -1,4 +1,4 @@
-import type { Item, Line, Order, Variant } from './types';
+import type { Item, Line, Order, Variant } from './types.ts';
 
 export function plural(n: number, one: string, few: string, many: string) {
 	const a = n % 100,

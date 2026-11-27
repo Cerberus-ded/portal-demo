@@ -1,8 +1,8 @@
 <script lang="ts">
 	// Цвета отделки серии (Торекс): квадратики с цветом и названием, ничего не выбирается, цены нет. Перенесено из r31/cat.js (finishes).
 	import { file } from '#lib';
-	import { plural } from '#lib/text';
-	import type { Item } from '#lib/types';
+	import { plural } from '#lib/text.ts';
+	import type { Item } from '#lib/types.ts';
 
 	let { item, colors }: { item: Item; colors: Record<string, string> } = $props();
 	const FIN: ['m' | 'p' | 'i', string][] = [['m', 'Снаружи: металл с покрытием'], ['p', 'Снаружи: панель'], ['i', 'Внутри: панель']];

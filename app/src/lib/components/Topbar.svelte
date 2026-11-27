@@ -4,11 +4,11 @@
 	import { onMount } from 'svelte';
 	import { page } from '$app/state';
 	import { href } from '#lib';
-	import { SALON, DEMO } from '#lib/site';
-	import { cart } from '#lib/cart.svelte';
-	import { collections } from '#lib/text';
-	import { freshCount, resetDemo, watchOrders } from '#lib/orders';
-	import type { NavSection } from '#lib/types';
+	import { SALON, DEMO } from '#lib/site.ts';
+	import { cart } from '#lib/cart.svelte.ts';
+	import { collections } from '#lib/text.ts';
+	import { freshCount, resetDemo, watchOrders } from '#lib/orders.ts';
+	import type { NavSection } from '#lib/types.ts';
 
 	let { nav, total }: { nav: NavSection[]; total: number } = $props();
 

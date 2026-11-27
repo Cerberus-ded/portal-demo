@@ -3,12 +3,12 @@
 	// Согласие на обработку персональных данных отдельной галочкой (ст. 9 152-ФЗ), политика рядом (ст. 18.1).
 	import { tick } from 'svelte';
 	import { href } from '#lib';
-	import { SALON, DEMO } from '#lib/site';
-	import { draft } from '#lib/draft.svelte';
-	import { cookies } from '#lib/cookies.svelte';
-	import { sendOrder } from '#lib/orders';
-	import { lineText, orderNo, orderText, phoneDigits, phoneNice } from '#lib/text';
-	import type { Line, Order } from '#lib/types';
+	import { SALON, DEMO } from '#lib/site.ts';
+	import { draft } from '#lib/draft.svelte.ts';
+	import { cookies } from '#lib/cookies.svelte.ts';
+	import { sendOrder } from '#lib/orders.ts';
+	import { lineText, orderNo, orderText, phoneDigits, phoneNice } from '#lib/text.ts';
+	import type { Line, Order } from '#lib/types.ts';
 
 	let {
 		key,
@@ -28,6 +28,7 @@
 		ondone?: (order: Order) => void;
 	} = $props();
 
+	// svelte-ignore state_referenced_locally
 	let count = $state<number | null>(qty?.one ? 1 : null);
 	let err = $state<Record<string, string>>({});
 	let sending = $state(false),

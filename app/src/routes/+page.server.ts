@@ -1,4 +1,4 @@
-import { itemsIn } from '#lib/server/catalog';
+import { itemsIn } from '#lib/server/catalog.ts';
 
 // цифры на карточках разделов главной: сколько коллекций уже в каталоге
 export const load = () => {

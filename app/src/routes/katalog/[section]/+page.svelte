@@ -1,14 +1,14 @@
 <script lang="ts">
 	// Раздел каталога: фильтры слева, сетка коллекций справа. Перенесено из r31/cat.js (renderFacets, renderGrid).
 	// Выбранные фильтры и сортировка лежат в адресе (?brand=Лорд&style=Классика&sort=name): ссылку можно переслать.
-	import { browser } from '$app/environment';
+	import { browser } from '$app/env';
 	import { page } from '$app/state';
 	import { goto, replaceState } from '$app/navigation';
 	import { href, file } from '#lib';
-	import { SALON } from '#lib/site';
-	import { plural } from '#lib/text';
+	import { SALON } from '#lib/site.ts';
+	import { plural } from '#lib/text.ts';
 	import Crumbs from '#lib/components/Crumbs.svelte';
-	import type { Card, Facet } from '#lib/types';
+	import type { Card, Facet } from '#lib/types.ts';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
