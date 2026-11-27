@@ -170,10 +170,6 @@ h3 { font-size: var(--text-lg); }
 .contacts a { text-decoration: underline; text-underline-offset: 3px; }
 .contacts a:hover { text-decoration-thickness: 2px; }
 .visit .lead { font-size: var(--text-lead); color: var(--color-paper); opacity: 0.86; max-width: 52ch; }
-.fill {
-  font-size: var(--text-sm); color: var(--color-paper); opacity: 0.74;
-  border-left: 2px dashed currentColor; padding-left: var(--space-md); max-width: 60ch;
-}
 
 /* ---- footer ---- */
 .foot { border-top: var(--rule-hair) solid var(--color-rule); padding-block: var(--space-2xl) var(--space-xl); }
