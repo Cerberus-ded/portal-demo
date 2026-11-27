@@ -150,6 +150,10 @@ const FACTORIES = [
 ];
 
 const ITEMS = [];
+// a word of Russian and Latin letters at once (a Latin «C» in «Cтена») is a typo the site's search will not find: said aloud
+const MIXED = /[A-Za-zА-Яа-яЁё]*(?:[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё])[A-Za-zА-Яа-яЁё]*/g, mixed = new Set();
+const spell = (o) => { if (typeof o === "string") { if (!o.startsWith("data:")) for (const m of o.match(MIXED) || []) mixed.add(m); }
+  else if (o && typeof o === "object") Object.values(o).forEach(spell); };
 const b64 = (p) => "data:image/webp;base64," + readFileSync(p).toString("base64");
 let packBytes = 0, files = 0;
 for (const fab of FACTORIES) {
@@ -173,7 +177,9 @@ for (const fab of FACTORIES) {
       const notes = (c.kit.notes || []).join(" ").split(/\s+(?=\*)/).map((x) => x.trim()).filter(Boolean)
         .map((x) => (/^\*\s*с доплатой$/i.test(x) ? "* размер под заказ" : x.replace(/"([^"]+)"/g, "«$1»")));
       if (notes.length) item.specNote = notes;
-      const txt = JSON.stringify(kitPack(c.kit));
+      const kp = kitPack(c.kit);
+      spell(kp);
+      const txt = JSON.stringify(kp);
       W(fab.dir + "/k-" + slug + ".json", txt);
       packBytes += txt.length; files++;
     }
@@ -203,6 +209,8 @@ for (const fab of FACTORIES) {
     packBytes += txt.length; files++;
   }
 }
+spell(ITEMS);
+if (mixed.size) console.log("mixed Russian and Latin letters:", [...mixed].join(", "));
 const codes = ITEMS.map((i) => i.code);
 if (new Set(codes).size !== codes.length) throw new Error("duplicate collection codes");
 for (const fab of FACTORIES) {
