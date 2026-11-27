@@ -324,5 +324,10 @@ W("glavnaya.html", inside);
 writeFileSync(join(OUT, "..", "glavnaya31.html"), src.replace(new RegExp(`href="(${CAT.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[^"]*)"`, "g"), 'href="$1" target="_blank" rel="noopener"'), "utf8");
 const used = new Set([...inside.matchAll(/photos\/(k-[a-z-]+-\d+\.webp)/g)].map((m) => m[1]));
 for (const f of used) copyFileSync(join(root, "photos", f), join(OUT, "photos", f));
+// the fonts of both pages (src31/base.css reads them from fonts/): files of the site itself, no Google
+mkdirSync(join(OUT, "fonts"), { recursive: true });
+const fonts = readdirSync(join(root, "fonts")).filter((f) => /\.(woff2|txt)$/.test(f));
+for (const f of fonts) copyFileSync(join(root, "fonts", f), join(OUT, "fonts", f));
+for (const m of base.matchAll(/url\("(fonts\/[^"]+)"\)/g)) if (!existsSync(join(OUT, m[1]))) throw new Error("font missing: " + m[1]);
 console.log("index.html", readFileSync(join(OUT, "index.html")).length,
   "glavnaya.html", inside.length, "photos", used.size, "files", files + 2 + used.size + 1);

@@ -69,6 +69,10 @@ used = set(re.findall(r'photos/(k-[a-z-]+-\d+\.webp)', home))
 os.makedirs(os.path.join(OUT, 'photos'))
 for f in sorted(used):
     shutil.copyfile(os.path.join('photos', f), os.path.join(OUT, 'photos', f))
+# the fonts: files of the site itself (src31/base.css), not Google's
+shutil.copytree(os.path.join(SITE, 'fonts'), os.path.join(OUT, 'fonts'))
+if 'fonts.googleapis.com' in home or 'fonts.googleapis.com' in cat:
+    sys.exit('a Google Fonts link is left')
 io.open(os.path.join(OUT, '.nojekyll'), 'w').write('')
 # README.md, CLAUDE.md and .claude/ live in the repository itself: the build does not write them
 size = sum(os.path.getsize(os.path.join(dp, f)) for dp, _, fs in os.walk(OUT) for f in fs)
