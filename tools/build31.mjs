@@ -308,6 +308,16 @@ for (const [id, n] of Object.entries(ROOM)) {
   home = home.replace(rx, (m, a, b) => a + (n ? n : "Скоро") + b + (n ? plural(n, "коллекция", "коллекции", "коллекций") : "наполняем раздел"));
 }
 home = home.replace(/class="room mat"/g, 'class="room mat lift"');
+// the factories on the homepage: a name with collections in the catalogue opens its section filtered by it (cat.js, splitQuery)
+const brandSec = {};
+for (const i of ITEMS) if (!brandSec[i.brand]) brandSec[i.brand] = i.s;
+let linked = 0;
+home = home.replace(/<div class="facts">[\s\S]*?<\/div>/, (block) => block.replace(/<li>([^<]+)<\/li>/g, (m, name) => {
+  if (!brandSec[name]) return m;
+  linked++;
+  return `<li><a href="${CAT}#${brandSec[name]}?brand=${encodeURIComponent(name)}">${name}</a></li>`;
+}));
+if (!linked) throw new Error("homepage factories: none linked to the catalogue");
 // a section still empty: its card says «Скоро» and on a phone folds into a short row under the full ones (src31/home.css)
 for (const [id, n] of Object.entries(ROOM)) if (!n) home = home.replace(`<a class="room mat lift" href="${CAT}#${id}">`, `<a class="room mat lift room--soon" href="${CAT}#${id}">`);
 const PICS = { "k-hero": [800, 1600], "k-dveri": [640, 1200], "k-plitka": [640, 1200], "k-poly": [640, 1000], "k-oboi": [640, 1200], "k-santehnika": [640, 1200], "k-work-punta": [800, 1400], "k-work-entry": [800, 1257] };
