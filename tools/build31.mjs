@@ -4,11 +4,18 @@
 //   site31/<factory>/*.json  door photos in packs: covers (one door per collection), s-<collection> small, l-<collection> large
 //   site31/glavnaya.html     the homepage inside the catalogue artifact; glavnaya31.html its own address
 //   site31/x1/seek.json      what the homepage's search reads
-import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, copyFileSync, rmSync } from "node:fs";
-import { join } from "node:path";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, copyFileSync, rmSync, realpathSync } from "node:fs";
+import { join, resolve, sep } from "node:path";
 const root = process.argv[2];
 const R = (p) => readFileSync(join(root, p), "utf8");
 const OUT = process.argv[3] || join(root, "site31");
+// the out dir is deleted whole first: never the project, a dir above it, one of its source dirs or a dir inside one,
+// nor any dir that holds sources or git (the door photos in web/ exist only on the owner's computer)
+const real = (p) => { const r = resolve(p); let x; try { x = realpathSync.native(r); } catch (e) { x = r; } return process.platform === "win32" ? x.toLowerCase() : x; };
+const within = (a, b) => { a = real(a); b = real(b); return a === b || a.startsWith(b.endsWith(sep) ? b : b + sep); };
+const KEEP = ["r31", "src31", "web", "tools", "photos", ".git"];
+if (within(root, OUT) || KEEP.some((d) => within(OUT, join(root, d))) || ["r31", "src31", "web", ".git"].some((d) => existsSync(join(OUT, d))))
+  throw new Error("will not delete " + OUT + ": it is the project, holds it or is part of it; give the build a dir of its own, e.g. _build/site31");
 if (existsSync(OUT)) rmSync(OUT, { recursive: true });
 for (const d of ["", "x1", "photos"]) mkdirSync(join(OUT, d), { recursive: true });
 const W = (p, s) => writeFileSync(join(OUT, p), s, "utf8");
