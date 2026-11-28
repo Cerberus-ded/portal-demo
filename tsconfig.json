@@ -1,0 +1,6 @@
+// Only for the deslop-please linter (node tools/deslop.mjs): the site itself has no TypeScript and no JS build.
+// This file makes the root scripts one project for its indexer, scip-typescript; app/ is a project of its own.
+{
+  "compilerOptions": { "allowJs": true, "checkJs": false, "noEmit": true, "target": "es2022", "module": "preserve" },
+  "include": ["tools/**/*.mjs", "src31/**/*.js", "r31/**/*.js"]
+}
