@@ -315,13 +315,13 @@
     },
     {
      "img": "web/torex/kit/snegir-arctic-lt/27.webp",
-     "w": 61,
+     "w": 86,
      "h": 198,
      "cut": 1
     },
     {
      "img": "web/torex/kit/snegir-arctic-lt/28.webp",
-     "w": 110,
+     "w": 85,
      "h": 198,
      "cut": 1
     },
@@ -412,13 +412,13 @@
     },
     {
      "img": "web/torex/kit/snegir-arctic-lt/39.webp",
-     "w": 67,
+     "w": 83,
      "h": 92,
      "cut": 1
     },
     {
      "img": "web/torex/kit/snegir-arctic-lt/40.webp",
-     "w": 76,
+     "w": 75,
      "h": 92,
      "cut": 1
     },
@@ -617,7 +617,7 @@
      "img": "web/torex/kit/snegir-arctic-lt/64.webp",
      "w": 165,
      "h": 344,
-     "cap": "ALT-СМ"
+     "cap": "ALT-CM"
     }
    ],
    "texts": [
@@ -672,7 +672,7 @@
    ],
    "texts": [
     "Наружный рисунок на металле со вставкой из HPL",
-    "Рисунок cо вставкой из HPL на панели МДФ 16мм (внутри)"
+    "Рисунок со вставкой из HPL на панели МДФ 16мм (внутри)"
    ],
    "soon": false,
    "cat": "рисунок отделки"

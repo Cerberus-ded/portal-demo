@@ -378,12 +378,13 @@ def series(book, sheet_name, slug, root):
     n_img = [0]
     def tiles_of(p, cap_shapes):
         im = save_img(book, p, out, None)
-        t = kit_slice.tiles(im)
+        er = []
+        t = kit_slice.tiles(im, erase=er)
         res = []
         if t and len(t) > 1:
-            for (x0, y0, x1, y1) in t:
+            for (x0, y0, x1, y1), gone in zip(t, er):
                 n_img[0] += 1
-                tt = emit(im.crop((x0, y0, x1, y1)), out, rel, n_img[0])
+                tt = emit(kit_slice.crop(im, (x0, y0, x1, y1), gone), out, rel, n_img[0])
                 tt['cut'] = 1   # плитка из сборной картинки: странице можно привести её к общему размеру
                 res.append(tt)
         else:
@@ -459,6 +460,12 @@ def series(book, sheet_name, slug, root):
             else:
                 items += tiles_of(p, caps_for(p))
         base.append({'title': h[2], 'items': items})
+    # электронный замок HOGO (Сайбер ПРО) стоит в прайсе среди отделки, а это фурнитура в комплекте
+    for b in base:
+        lock = [t for t in b['items'] if re.match(r'HOGO\b', t.get('cap') or '')]
+        hw += lock
+        b['items'] = [t for t in b['items'] if t not in lock]
+    base = [b for b in base if b['items']]
 
     # 6. опции с картинками
     opics = sorted([p for p in pics if r_opt < p['row'] < r_end], key=lambda p: (p['row'], p['col'], p['y0'], p['x0']))
