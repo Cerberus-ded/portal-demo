@@ -27,7 +27,10 @@ CLAUDE.md                  как устроен проект и правила 
 ```bash
 node tools/build31.mjs . _build/site31
 python -I tools/build_demo31.py _build/site31 _build/glavnaya31.src.html _build/demo
-# содержимое _build/demo скопировать в корень репозитория
+# перенести в корень: сначала убрать старые пакеты фабрик (папки с covers.json) и поиск,
+# иначе пакеты удалённых и переименованных коллекций останутся на сайте и в git; затем скопировать сборку
+for d in */; do [ -f "${d}covers.json" ] && rm -r "$d"; done; rm -rf x1
+cp -r _build/demo/. .
 
 node tools/mobile37.mjs . shots <папка с node_modules/puppeteer-core> 360,390,414 demo
 ```
