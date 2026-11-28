@@ -1,0 +1,784 @@
+{
+ "sheet": "ARCTIC_LT",
+ "specs": [
+  [
+   "Назначение",
+   "уличная"
+  ],
+  [
+   "Средний вес, кг",
+   "МР 63"
+  ],
+  [
+   "Размерный ряд",
+   null
+  ],
+  [
+   "Высота, мм",
+   "2050, 2100"
+  ],
+  [
+   "Ширина, мм",
+   "880, 950, 1000*"
+  ],
+  [
+   "Полотно",
+   null
+  ],
+  [
+   "Толщина полотна, мм",
+   "МР 96"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1"
+  ],
+  [
+   "Усиление полотна",
+   "горизонтальные стяжки"
+  ],
+  [
+   "Наполнение полотна",
+   "пенополистирол"
+  ],
+  [
+   "Уплотнитель",
+   "резиновый, 1 контур"
+  ],
+  [
+   "Терморазрыв",
+   "полиамидный профиль 10 мм"
+  ],
+  [
+   "Короб",
+   null
+  ],
+  [
+   "Глубина короба, мм",
+   "137"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,4"
+  ],
+  [
+   "Тип короба",
+   "комбинированный с ПВХ"
+  ],
+  [
+   "Ширина металл. наличника, мм",
+   "75"
+  ],
+  [
+   "Ширина перекрываемого зазора, мм",
+   "56"
+  ],
+  [
+   "Световой проем (для ширины 950мм)",
+   "830"
+  ],
+  [
+   "Высота порога, мм",
+   "60"
+  ],
+  [
+   "Регулятор притвора",
+   "эксцентрик"
+  ],
+  [
+   "Уплотнитель",
+   "резиновый, 2 контура"
+  ],
+  [
+   "Порог из нержавеющей стали",
+   "на внутреннем коробе"
+  ],
+  [
+   "Терморазрыв",
+   "ТЕРМОКОМПОЗИТ**"
+  ],
+  [
+   "Замковая система",
+   null
+  ],
+  [
+   "Основной замок",
+   "сувальдный Avers T-52/S8"
+  ],
+  [
+   "Дополнительный замок",
+   "сувальдный Avers T-47/S6"
+  ],
+  [
+   "Ночная задвижка",
+   "Avers L-0260"
+  ],
+  [
+   "Внутренняя панель",
+   "МДФ 16 мм с ПВХ покрытием"
+  ],
+  [
+   "Ручка",
+   "ALFA, хром"
+  ],
+  [
+   "Фурнитура",
+   "МОН-СПА со шторками, хром"
+  ],
+  [
+   "Петли",
+   "разнесенные, 2 шт"
+  ],
+  [
+   "Противосъемные ригели",
+   "2 шт"
+  ]
+ ],
+ "note": "* с доплатой",
+ "notes": [
+  "* с доплатой",
+  "**внутренний короб из ПВХ в базовом цвете графит"
+ ],
+ "models": [
+  "ARCTIC LT МР"
+ ],
+ "device": [
+  {
+   "img": "web/torex/kit/snegir-arctic-lt/01.webp",
+   "w": 222,
+   "h": 500
+  },
+  {
+   "img": "web/torex/kit/snegir-arctic-lt/02.webp",
+   "w": 690,
+   "h": 583
+  }
+ ],
+ "hw": [
+  {
+   "img": "web/torex/kit/snegir-arctic-lt/03.webp",
+   "w": 317,
+   "h": 220
+  }
+ ],
+ "base": [
+  {
+   "title": "Внешняя отделка",
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/04.webp",
+     "w": 146,
+     "h": 324,
+     "cap": "без рисунка"
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/05.webp",
+     "w": 89,
+     "h": 96,
+     "cap": "темно-серый букле графит"
+    }
+   ]
+  },
+  {
+   "title": "Внутренняя отделка: цвета ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/06.webp",
+     "w": 134,
+     "h": 200,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/07.webp",
+     "w": 122,
+     "h": 200,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/08.webp",
+     "w": 122,
+     "h": 200,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/09.webp",
+     "w": 122,
+     "h": 200,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/10.webp",
+     "w": 122,
+     "h": 200,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/11.webp",
+     "w": 119,
+     "h": 199,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/12.webp",
+     "w": 121,
+     "h": 178,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/13.webp",
+     "w": 122,
+     "h": 178,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/14.webp",
+     "w": 122,
+     "h": 178,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/15.webp",
+     "w": 119,
+     "h": 177,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/16.webp",
+     "w": 121,
+     "h": 178,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/17.webp",
+     "w": 133,
+     "h": 178,
+     "cut": 1
+    }
+   ]
+  },
+  {
+   "title": "Внутренняя отделка: панель МДФ 16 мм",
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/18.webp",
+     "w": 86,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/19.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/20.webp",
+     "w": 84,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/21.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/22.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/23.webp",
+     "w": 84,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/24.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/25.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/26.webp",
+     "w": 86,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/27.webp",
+     "w": 61,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/28.webp",
+     "w": 110,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/29.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/30.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/31.webp",
+     "w": 84,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/32.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/33.webp",
+     "w": 85,
+     "h": 198,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/34.webp",
+     "w": 87,
+     "h": 198,
+     "cut": 1
+    }
+   ]
+  }
+ ],
+ "opts": [
+  {
+   "nums": [
+    1,
+    2
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/35.webp",
+     "w": 159,
+     "h": 232
+    }
+   ],
+   "texts": [
+    "Цвет металла Букле коричневый",
+    "Цвет металла Колоре неро, Колоре гриджио"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    3,
+    4
+   ],
+   "name": "Коллекция ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/36.webp",
+     "w": 70,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/37.webp",
+     "w": 64,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/38.webp",
+     "w": 76,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/39.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/40.webp",
+     "w": 76,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/41.webp",
+     "w": 66,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/42.webp",
+     "w": 64,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/43.webp",
+     "w": 66,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/44.webp",
+     "w": 66,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/45.webp",
+     "w": 64,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/46.webp",
+     "w": 70,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/47.webp",
+     "w": 66,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/48.webp",
+     "w": 76,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/49.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/50.webp",
+     "w": 66,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/51.webp",
+     "w": 66,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/52.webp",
+     "w": 64,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/53.webp",
+     "w": 75,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/54.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/55.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/56.webp",
+     "w": 64,
+     "h": 91,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Цвет ПВХ (внутри)",
+    "Изготовление внутреннего короба в ПВХ Бьянко, Крема, Дуб коньяк, Лиственница белая, Бетон известковый, Айвори"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    5
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/57.webp",
+     "w": 88,
+     "h": 193,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/58.webp",
+     "w": 87,
+     "h": 193,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/59.webp",
+     "w": 87,
+     "h": 193,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный рисунок на металле ALT-1N, ALT-2B, ALT-3B"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    6
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/60.webp",
+     "w": 229,
+     "h": 502,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/61.webp",
+     "w": 228,
+     "h": 502,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/62.webp",
+     "w": 229,
+     "h": 502,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный классический рисунок на металле FLN"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    9
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/63.webp",
+     "w": 166,
+     "h": 341,
+     "cap": "ALT-M2"
+    }
+   ],
+   "texts": [
+    "Внутреннюю панель МДФ 16 мм с молдингом (рис ALT-M2)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    10
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/64.webp",
+     "w": 165,
+     "h": 344,
+     "cap": "ALT-СМ"
+    }
+   ],
+   "texts": [
+    "Внутреннюю панель МДФ 16 мм с классическим зеркалом (рис ALT-CM)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    7,
+    8
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/65.webp",
+     "w": 99,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/66.webp",
+     "w": 101,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/67.webp",
+     "w": 97,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/68.webp",
+     "w": 101,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/69.webp",
+     "w": 105,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/70.webp",
+     "w": 103,
+     "h": 229,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный рисунок на металле со вставкой из HPL",
+    "Рисунок cо вставкой из HPL на панели МДФ 16мм (внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    11
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/71.webp",
+     "w": 186,
+     "h": 389,
+     "cap": "HOGO V07"
+    }
+   ],
+   "texts": [
+    "Опцию АРКТИК НЕЙРО: замена базовых замков на цилиндровые замки Бордер"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    12
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/72.webp",
+     "w": 231,
+     "h": 552,
+     "cap": "HOGO D01"
+    }
+   ],
+   "texts": [
+    "Опцию АРКТИК НЕЙРО с ТЯГОВОЙ РУЧКОЙ: замена базовых замков на цилиндровые замки Бордер+тяговая ручка"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    14
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/73.webp",
+     "w": 184,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/74.webp",
+     "w": 166,
+     "h": 88,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Ручка PAVA или LARGO вместо базовой"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    15
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/snegir-arctic-lt/75.webp",
+     "w": 530,
+     "h": 299
+    }
+   ],
+   "texts": [
+    "Комплект фурнитуры в чёрном цвете на круглом основании вместо базового"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  }
+ ],
+ "more": [
+  {
+   "n": 13,
+   "text": "ЦИЛИНДРОВЫЙ замок+цилиндр с термоштоком вместо базового сувальдного замка",
+   "cat": "прочие"
+  },
+  {
+   "n": 16,
+   "text": "Третья петля",
+   "cat": "прочие"
+  },
+  {
+   "n": 17,
+   "text": "Стальной нержавеюший порог на внешний короб",
+   "cat": "прочие"
+  },
+  {
+   "n": 18,
+   "text": "Ширина 1000 мм",
+   "cat": "прочие"
+  }
+ ]
+}

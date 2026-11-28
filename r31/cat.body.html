@@ -1,0 +1,129 @@
+</style>
+
+<div class="protobar">
+  <div class="container protobar__in">
+    <p class="modeline">Прототип сайта. Цен на сайте нет: покупатель собирает позиции в корзину или оставляет заявку на одну, менеджер называет цену и подтверждает наличие.</p>
+    <a class="protolink" id="inboxLink" href="#zayavki" hidden>Заявки менеджеру <b id="inboxN">0</b></a>
+    <a class="protolink" id="adminLink" href="#admin" hidden>Админка</a>
+  </div>
+</div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar__strip">
+    <div class="container">
+      <span>Димитровград, улица Гончарова, 11</span>
+      <span><b>Без выходных:</b> будни с 10:00 до 18:00, суббота и воскресенье с 10:00 до 16:00</span>
+    </div>
+  </div>
+  <div class="container topbar__main">
+    <a class="brand" href="glavnaya.html">
+      <b>Портал</b>
+      <span>отделочные материалы</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Главное меню">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <span class="nav__split">
+            <a class="nav__top" id="navCat" href="#katalog" aria-current="page">Каталог</a>
+            <button type="button" class="nav__caret" id="navCaret" aria-expanded="false" aria-controls="catmenu" aria-label="Разделы каталога"></button>
+          </span>
+          <div class="nav__drop" id="catmenu" hidden>
+            <ul id="catlinks"></ul>
+          </div>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="glavnaya.html#akcii">Акции</a></li>
+        <li class="nav__item"><a class="nav__link" href="glavnaya.html#raboty">Наши работы</a></li>
+        <li class="nav__item"><a class="nav__link" href="glavnaya.html#o-salone">О салоне</a></li>
+        <li class="nav__item"><a class="nav__link" href="glavnaya.html#kontakty">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="tools">
+      <button type="button" class="seekbtn" data-seek aria-label="Поиск по каталогу" title="Поиск по каталогу ( / )"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.2 15.2 20.5 20.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+      <a class="tools__tel" href="tel:+79962203622">
+        <b>+7 (996) 220-36-22</b>
+        <span>позвонить в салон</span>
+      </a>
+      <button type="button" class="cart" id="cart">Корзина <b id="cartN">0</b></button>
+      <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="crumbs" id="crumbs" aria-label="Хлебные крошки">
+    <ol>
+      <li><a href="glavnaya.html">Главная</a></li>
+      <li><a href="#katalog" id="crumbCat">Каталог</a></li>
+      <li id="crumbSecLi"><a href="#" id="crumbSec"></a></li>
+      <li id="crumbNow" aria-current="page"></li>
+    </ol>
+  </nav>
+
+  <div class="pagehead" id="head">
+    <h1 id="title"></h1>
+    <p id="intro"></p>
+    <button type="button" class="seekfield" id="seekfield" data-seek><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.2 15.2 20.5 20.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Найти коллекцию, фабрику, размер или артикул</span><kbd>/</kbd></button>
+  </div>
+
+  <div class="cartbox" id="cartbox" hidden></div>
+
+  <div class="overview" id="overview" hidden></div>
+  <div class="inbox" id="inbox" hidden></div>
+  <div class="admin" id="admin" hidden></div>
+
+  <div class="layout" id="browse">
+    <aside class="rail" id="rail" aria-label="Разделы и фильтры">
+      <div class="rail__block">
+        <p class="rail__title">Разделы каталога</p>
+        <div class="cats" id="cats"></div>
+      </div>
+      <div class="rail__block">
+        <div class="rail__row">
+          <p class="rail__title">Фильтры</p>
+          <button type="button" class="rail__reset" id="reset">Сбросить</button>
+        </div>
+        <div id="facets"></div>
+      </div>
+    </aside>
+
+    <div class="results">
+      <div class="toolbar">
+        <p id="count"></p>
+        <label class="sort">
+          <span>Сортировка</span>
+          <select id="sort">
+            <option value="name">по названию</option>
+            <option value="brand">по фабрике</option>
+            <option value="vars">по числу вариантов</option>
+          </select>
+        </label>
+        <button type="button" class="btn btn--outline btn--mini railtoggle" id="railtoggle" aria-controls="rail" aria-expanded="false">Фильтры</button>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden></div>
+    </div>
+  </div>
+
+  <div class="detail" id="detail" hidden></div>
+</main>
+
+<footer class="container foot">
+  <span>Прототип каталога, собираем его заново по коллекциям фабрик. Фото моделей с сайтов и из каталогов фабрик, временно, до своих снимков салона. Цену и наличие называет менеджер.</span>
+  <nav class="foot__nav" aria-label="Служебные ссылки">
+    <a href="glavnaya.html">Главная</a>
+    <a href="tel:+79962203622">+7 (996) 220-36-22</a>
+    <a href="https://vk.ru/portaldd" target="_blank" rel="noopener">ВКонтакте</a>
+    <a href="#soglasie" data-doc="soglasie">Согласие на обработку персональных данных</a>
+    <a href="#politika" data-doc="politika">Политика обработки персональных данных</a>
+    <a href="#cookie" data-cookie-settings>Настройки cookie</a>
+    <a href="https://claude.ai/artifact/3yvczK4kVUnM7Lci6wWqr4" target="_blank" rel="noopener" data-owner hidden>Техническое задание</a>
+  </nav>
+  <div class="foot__legal">
+    <p>Продавец: {{name|полное наименование ИП или ООО}}, ИНН {{inn|…}}, ОГРН/ОГРНИП {{ogrn|…}}. Адрес: Ульяновская обл., г. Димитровград, ул. Гончарова, 11. Режим работы: будни с 10:00 до 18:00, суббота и воскресенье с 10:00 до 16:00. Телефон +7 (996) 220-36-22, e-mail {{email|e-mail салона}}.</p>
+    <p>Информация на сайте справочная и не является публичной офертой (ст. 437 ГК РФ). Цену, наличие и условия продажи называет менеджер.</p>
+  </div>
+</footer>
+

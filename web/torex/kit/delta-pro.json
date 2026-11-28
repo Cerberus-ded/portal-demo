@@ -1,0 +1,970 @@
+{
+ "sheet": "DELTA PRO",
+ "specs": [
+  [
+   "Назначение",
+   "квартирная"
+  ],
+  [
+   "Уровень шумоизоляции, дБ",
+   "МР 33,9, РР 37,7"
+  ],
+  [
+   "Средний вес, кг",
+   "МР 67, РР 83"
+  ],
+  [
+   "Размерный ряд",
+   null
+  ],
+  [
+   "Высота, мм",
+   "2030, 2050, 2070, 2100, 2150*, 2200*, 2250*"
+  ],
+  [
+   "Ширина, мм",
+   "860, 950, 1000*, 1050*, 1100*"
+  ],
+  [
+   "Полотно",
+   null
+  ],
+  [
+   "Толщина полотна, мм",
+   "МР 74, РР 84"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,2"
+  ],
+  [
+   "Усиление полотна",
+   "вертикальные П-образные ребра жесткости, горизонтальные стяжки, замковый карман"
+  ],
+  [
+   "Наполнение полотна",
+   "базальтовая плита высокой плотности"
+  ],
+  [
+   "Уплотнитель",
+   "резиновый, 1 контур"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Короб",
+   null
+  ],
+  [
+   "Глубина короба, мм",
+   "120"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,4"
+  ],
+  [
+   "Тип короба",
+   "цельнокатаный профиль"
+  ],
+  [
+   "Ширина металл. наличника, мм",
+   "76"
+  ],
+  [
+   "Ширина перекрываемого зазора, мм",
+   "55"
+  ],
+  [
+   "Световой проем (для ширины 950мм)",
+   "842"
+  ],
+  [
+   "Высота порога, мм",
+   "47"
+  ],
+  [
+   "Регулятор притвора",
+   "эксцентрик"
+  ],
+  [
+   "Уплотнитель",
+   "резиновый, 1 контур"
+  ],
+  [
+   "Порог из нержавеющей стали",
+   "нет"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Замковая система",
+   null
+  ],
+  [
+   "Основной замок",
+   "цилиндровый TOREX STS T-82"
+  ],
+  [
+   "Дополнительный замок",
+   "сувальдный TOREX STS T-87/S6"
+  ],
+  [
+   "Цилиндровый механизм",
+   "Avers ZM/Ajax"
+  ],
+  [
+   "Ночная задвижка",
+   "Intecron"
+  ],
+  [
+   "Внутренняя панель - съемная",
+   "МДФ 6 мм с ПВХ покрытием"
+  ],
+  [
+   "Внешняя панель - вариант РР",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Ручка",
+   "ALFA, хром"
+  ],
+  [
+   "Фурнитура",
+   "МОН, хром"
+  ],
+  [
+   "Петли",
+   "разнесенные, 2 шт"
+  ],
+  [
+   "Противосъемные ригели",
+   "2 шт"
+  ],
+  [
+   "Глазок",
+   "есть, в центре"
+  ]
+ ],
+ "note": "* с доплатой",
+ "notes": [
+  "* с доплатой"
+ ],
+ "models": [
+  "DELTA PRO МР",
+  "DELTA PRO PР"
+ ],
+ "device": [
+  {
+   "img": "web/torex/kit/delta-pro/01.webp",
+   "w": 302,
+   "h": 671
+  },
+  {
+   "img": "web/torex/kit/delta-pro/02.webp",
+   "w": 288,
+   "h": 322
+  }
+ ],
+ "hw": [
+  {
+   "img": "web/torex/kit/delta-pro/03.webp",
+   "w": 299,
+   "h": 197
+  }
+ ],
+ "base": [
+  {
+   "title": "Наружная отделка",
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/04.webp",
+     "w": 153,
+     "h": 352,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/05.webp",
+     "w": 153,
+     "h": 352,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/06.webp",
+     "w": 205,
+     "h": 117
+    }
+   ]
+  },
+  {
+   "title": "Внутренняя/наружная отделка: цвета ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/07.webp",
+     "w": 76,
+     "h": 109,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/08.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/09.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/10.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/11.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/12.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/13.webp",
+     "w": 66,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/14.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/15.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/16.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/17.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/18.webp",
+     "w": 74,
+     "h": 98,
+     "cut": 1
+    }
+   ]
+  },
+  {
+   "title": "Наружная/внутренняя отделка: панель МДФ 10/6 мм",
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/19.webp",
+     "w": 88,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/20.webp",
+     "w": 87,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/21.webp",
+     "w": 87,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/22.webp",
+     "w": 87,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/23.webp",
+     "w": 86,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/24.webp",
+     "w": 87,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/25.webp",
+     "w": 89,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/26.webp",
+     "w": 88,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/27.webp",
+     "w": 87,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/28.webp",
+     "w": 87,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/29.webp",
+     "w": 87,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/30.webp",
+     "w": 88,
+     "h": 204,
+     "cut": 1
+    }
+   ]
+  }
+ ],
+ "opts": [
+  {
+   "nums": [
+    1,
+    2
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/31.webp",
+     "w": 159,
+     "h": 232
+    }
+   ],
+   "texts": [
+    "Цвет металла Букле коричневый",
+    "Цвет металла Колоре неро"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    3,
+    4
+   ],
+   "name": "Коллекция ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/32.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/33.webp",
+     "w": 64,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/34.webp",
+     "w": 76,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/35.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/36.webp",
+     "w": 73,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/37.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/38.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/39.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/40.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/41.webp",
+     "w": 64,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/42.webp",
+     "w": 70,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/43.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/44.webp",
+     "w": 76,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/45.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/46.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/47.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/48.webp",
+     "w": 64,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/49.webp",
+     "w": 75,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/50.webp",
+     "w": 68,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/51.webp",
+     "w": 66,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/52.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Цвет ПВХ (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    5,
+    6,
+    7
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/53.webp",
+     "w": 103,
+     "h": 232,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/54.webp",
+     "w": 103,
+     "h": 232,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/55.webp",
+     "w": 103,
+     "h": 232,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/56.webp",
+     "w": 103,
+     "h": 232,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/57.webp",
+     "w": 104,
+     "h": 232,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/58.webp",
+     "w": 104,
+     "h": 232,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный рисунок на металле VDM",
+    "Наружный рисунок на металле DL",
+    "Наружный классический рисунок на металле FLN"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    8
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/59.webp",
+     "w": 148,
+     "h": 319,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/60.webp",
+     "w": 150,
+     "h": 319,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/61.webp",
+     "w": 149,
+     "h": 319,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/62.webp",
+     "w": 149,
+     "h": 319,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/63.webp",
+     "w": 146,
+     "h": 319,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/64.webp",
+     "w": 145,
+     "h": 319,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/65.webp",
+     "w": 146,
+     "h": 319,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный рисунок D-S, SL (сборная панель)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    9,
+    10
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/66.webp",
+     "w": 88,
+     "h": 205,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/67.webp",
+     "w": 90,
+     "h": 205,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/68.webp",
+     "w": 91,
+     "h": 206,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/69.webp",
+     "w": 88,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/70.webp",
+     "w": 89,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/71.webp",
+     "w": 86,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/72.webp",
+     "w": 89,
+     "h": 204,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/73.webp",
+     "w": 89,
+     "h": 225,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/74.webp",
+     "w": 88,
+     "h": 223,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/75.webp",
+     "w": 89,
+     "h": 223,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок коллекции LINE или Dynamic L на панели МДФ 10мм (снаружи)",
+    "Рисунок коллекции LINE или Dynamic L на панели МДФ 6мм (внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    11,
+    12
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/76.webp",
+     "w": 92,
+     "h": 208,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/77.webp",
+     "w": 93,
+     "h": 208,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/78.webp",
+     "w": 92,
+     "h": 208,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/79.webp",
+     "w": 90,
+     "h": 203,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/80.webp",
+     "w": 90,
+     "h": 203,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/81.webp",
+     "w": 94,
+     "h": 203,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/82.webp",
+     "w": 95,
+     "h": 203,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок коллекции LINE или Dynamic L с молдингом на панели МДФ 10мм (снаружи)",
+    "Рисунок коллекции LINE или Dynamic L с молдингом на панели МДФ 6мм (внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    13
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/83.webp",
+     "w": 157,
+     "h": 217
+    }
+   ],
+   "texts": [
+    "Внутренний классический объемный рисунок D-3D2 на панели МДФ 10мм"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    14
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/84.webp",
+     "w": 423,
+     "h": 216
+    }
+   ],
+   "texts": [
+    "Рисунок из коллекции Кристалл со вставкой из стекла на панели МДФ 10мм (снаружи)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    15,
+    16,
+    17
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/85.webp",
+     "w": 91,
+     "h": 210,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/86.webp",
+     "w": 92,
+     "h": 210,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/delta-pro/87.webp",
+     "w": 93,
+     "h": 210,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Внутренний рисунок СК6-СM (классическое зеркало)",
+    "Внутренний рисунок RM-M10 (овальное зеркало) на панели МДФ 10мм",
+    "Внутренний рисунок D-MM (большое зеркало) на панели МДФ 16мм с покрытием РТ Шелк белый, ПВХ Бьянко, Ферро, Крема, Оскуро, Айвори"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    18
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/88.webp",
+     "w": 338,
+     "h": 160
+    }
+   ],
+   "texts": [
+    "Комплект фурнитуры в чёрном цвете на квадратном основании вместо базового"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    19
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/89.webp",
+     "w": 274,
+     "h": 144
+    }
+   ],
+   "soon": true,
+   "texts": [
+    "Комплект фурнитуры в цвете золото сатин на квадратном основании вместо базового"
+   ],
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    20
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/90.webp",
+     "w": 248,
+     "h": 98
+    }
+   ],
+   "texts": [
+    "Ручка BOSTON вместо базовой"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    21
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/delta-pro/91.webp",
+     "w": 174,
+     "h": 88
+    }
+   ],
+   "texts": [
+    "Броненакладка круглая хром"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  }
+ ],
+ "more": [
+  {
+   "n": 22,
+   "text": "Глазок с улучшенной оптикой APECS",
+   "cat": "прочие"
+  },
+  {
+   "n": 23,
+   "text": "Магнитный уплотнитель",
+   "cat": "прочие"
+  },
+  {
+   "n": 24,
+   "text": "Стальной нержавеющий порог",
+   "cat": "прочие"
+  },
+  {
+   "n": 25,
+   "text": "Утепление короба",
+   "cat": "прочие"
+  },
+  {
+   "n": 26,
+   "text": "Третья петля",
+   "cat": "прочие"
+  },
+  {
+   "n": 27,
+   "text": "Ширина 1000 мм",
+   "cat": "прочие"
+  },
+  {
+   "n": 28,
+   "text": "Ширина 1050 мм (при высоте до 2100 мм включительно)",
+   "cat": "прочие"
+  },
+  {
+   "n": 29,
+   "text": "Ширина 1100 мм (при высоте до 2100 мм включительно)",
+   "cat": "прочие"
+  },
+  {
+   "n": 30,
+   "text": "Высота 2150, 2200, 2250 мм (при ширине до 1000 мм включительно)",
+   "cat": "прочие"
+  },
+  {
+   "n": 31,
+   "text": "Комбинированный монтаж: наличник обрезной сверху",
+   "cat": "прочие"
+  },
+  {
+   "n": 32,
+   "text": "Комбинированный монтаж: наличник обрезной справа или слева",
+   "cat": "прочие"
+  },
+  {
+   "n": 33,
+   "text": "Монтаж в проем",
+   "cat": "прочие"
+  },
+  {
+   "n": 34,
+   "text": "Дверь без дополнительного замка",
+   "cat": "прочие"
+  }
+ ]
+}

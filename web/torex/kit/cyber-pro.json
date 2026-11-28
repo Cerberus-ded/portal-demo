@@ -1,0 +1,861 @@
+{
+ "sheet": "CYBER PRO",
+ "specs": [
+  [
+   "Назначение",
+   "квартирная"
+  ],
+  [
+   "Уровень шумоизоляции, дБ",
+   "МР 35, РР 39"
+  ],
+  [
+   "Средний вес, кг",
+   "МР 83, РР 97"
+  ],
+  [
+   "Размерный ряд",
+   null
+  ],
+  [
+   "Высота, мм",
+   "2050, 2070, 2100, 2150*, 2200*"
+  ],
+  [
+   "Ширина, мм",
+   "880, 950, 1000*, 1030*"
+  ],
+  [
+   "Полотно",
+   null
+  ],
+  [
+   "Толщина полотна, мм",
+   "МР 100, РР 110"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,4"
+  ],
+  [
+   "Усиление полотна",
+   "замковый короб+горизонтальные рёбра жёсткости"
+  ],
+  [
+   "Наполнение полотна",
+   "пенополистирол+слой вибро- звукоизоляционного материала SGM"
+  ],
+  [
+   "Уплотнитель",
+   "1 Q-lon + 1 резиновый"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Короб",
+   null
+  ],
+  [
+   "Глубина короба, мм",
+   "106"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,4"
+  ],
+  [
+   "Тип короба",
+   "цельногнутый профиль"
+  ],
+  [
+   "Ширина металл. наличника, мм",
+   "75"
+  ],
+  [
+   "Ширина перекрываемого зазора, мм",
+   "61"
+  ],
+  [
+   "Световой проем (для ширины 950мм)",
+   "830"
+  ],
+  [
+   "Высота порога, мм",
+   "50"
+  ],
+  [
+   "Регулятор притвора",
+   "эксцентрик"
+  ],
+  [
+   "Уплотнитель",
+   "магнитный, 1 контур"
+  ],
+  [
+   "Порог из нержавеющей стали",
+   "опция"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Замковая система",
+   null
+  ],
+  [
+   "Основной замок",
+   "цилиндровый Border ЗВ4-3/85Ма"
+  ],
+  [
+   "Дополнительный замок",
+   "цилиндровый Border 1-4"
+  ],
+  [
+   "Цилиндровый механизм",
+   "Apecs PM"
+  ],
+  [
+   "Ночная задвижка",
+   "нет"
+  ],
+  [
+   "Внутренняя панель",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Внешняя панель - вариант РР",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Ручка",
+   "в составе электронного замка"
+  ],
+  [
+   "Фурнитура",
+   "TOR XL, черная"
+  ],
+  [
+   "Петли",
+   "с опорным подшипником, 2 шт"
+  ],
+  [
+   "Противосъемные ригели",
+   "3 шт"
+  ],
+  [
+   "Глазок",
+   "видеоглазок в составе замка"
+  ]
+ ],
+ "note": "* с доплатой",
+ "notes": [
+  "* с доплатой"
+ ],
+ "models": [
+  "CYBER PRO МР",
+  "CYBER PRO РР"
+ ],
+ "device": [
+  {
+   "img": "web/torex/kit/cyber-pro/01.webp",
+   "w": 382,
+   "h": 813
+  },
+  {
+   "img": "web/torex/kit/cyber-pro/02.webp",
+   "w": 296,
+   "h": 315
+  }
+ ],
+ "hw": [
+  {
+   "img": "web/torex/kit/cyber-pro/03.webp",
+   "w": 80,
+   "h": 107
+  }
+ ],
+ "base": [
+  {
+   "title": "Наружная отделка",
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/04.webp",
+     "w": 236,
+     "h": 557,
+     "cap": "HOGO V05"
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/05.webp",
+     "w": 158,
+     "h": 313
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/06.webp",
+     "w": 148,
+     "h": 191,
+     "cap": "без рисунка"
+    }
+   ]
+  },
+  {
+   "title": "Внутренняя/наружная отделка: цвета ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/07.webp",
+     "w": 118,
+     "h": 248,
+     "cap": "HOGO V07"
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/08.webp",
+     "w": 76,
+     "h": 109,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/09.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/10.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/11.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/12.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/13.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/14.webp",
+     "w": 66,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/15.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/16.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/17.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/18.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/19.webp",
+     "w": 74,
+     "h": 98,
+     "cut": 1
+    }
+   ]
+  },
+  {
+   "title": "Наружная и внутренняя: панель МДФ 10 мм",
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/20.webp",
+     "w": 99,
+     "h": 214,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/21.webp",
+     "w": 92,
+     "h": 211,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/22.webp",
+     "w": 98,
+     "h": 214,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/23.webp",
+     "w": 92,
+     "h": 211,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/24.webp",
+     "w": 98,
+     "h": 214,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/25.webp",
+     "w": 92,
+     "h": 211,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/26.webp",
+     "w": 98,
+     "h": 212,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/27.webp",
+     "w": 98,
+     "h": 212,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/28.webp",
+     "w": 98,
+     "h": 212,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/29.webp",
+     "w": 92,
+     "h": 209,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/30.webp",
+     "w": 92,
+     "h": 209,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/31.webp",
+     "w": 93,
+     "h": 209,
+     "cut": 1
+    }
+   ]
+  }
+ ],
+ "opts": [
+  {
+   "nums": [
+    1
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/32.webp",
+     "w": 104,
+     "h": 105,
+     "cap": "Колоре бьянко"
+    }
+   ],
+   "texts": [
+    "Цвет металла Колоре бьянко"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    2,
+    3
+   ],
+   "name": "Коллекция ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/33.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/34.webp",
+     "w": 64,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/35.webp",
+     "w": 76,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/36.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/37.webp",
+     "w": 73,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/38.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/39.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/40.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/41.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/42.webp",
+     "w": 64,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/43.webp",
+     "w": 70,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/44.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/45.webp",
+     "w": 76,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/46.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/47.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/48.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/49.webp",
+     "w": 64,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/50.webp",
+     "w": 75,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/51.webp",
+     "w": 68,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/52.webp",
+     "w": 66,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/53.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Цвет ПВХ (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    4
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/54.webp",
+     "w": 98,
+     "h": 213,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/55.webp",
+     "w": 98,
+     "h": 213,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/56.webp",
+     "w": 98,
+     "h": 213,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/57.webp",
+     "w": 99,
+     "h": 213,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный рисунок на металле SP"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    6
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/58.webp",
+     "w": 115,
+     "h": 260,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/59.webp",
+     "w": 115,
+     "h": 260,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок CBR-S (сборную панель) внутри"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    5
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/60.webp",
+     "w": 135,
+     "h": 290,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/61.webp",
+     "w": 135,
+     "h": 290,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/62.webp",
+     "w": 136,
+     "h": 290,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/63.webp",
+     "w": 134,
+     "h": 290,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/64.webp",
+     "w": 135,
+     "h": 290,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/65.webp",
+     "w": 132,
+     "h": 289,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/66.webp",
+     "w": 133,
+     "h": 289,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/67.webp",
+     "w": 133,
+     "h": 289,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок CBR-S, SL (сборную панель) снаружи"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    7,
+    8
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/68.webp",
+     "w": 80,
+     "h": 185,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/69.webp",
+     "w": 79,
+     "h": 185,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/70.webp",
+     "w": 80,
+     "h": 185,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/71.webp",
+     "w": 79,
+     "h": 185,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/72.webp",
+     "w": 81,
+     "h": 185,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/73.webp",
+     "w": 80,
+     "h": 185,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/74.webp",
+     "w": 79,
+     "h": 185,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/75.webp",
+     "w": 82,
+     "h": 185,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок коллекции Dynamic L (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    11,
+    12
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/76.webp",
+     "w": 106,
+     "h": 242,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/77.webp",
+     "w": 108,
+     "h": 243,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Внутренний рисунок RM-M10 (овальное зеркало)",
+    "Внутренний рисунок CBR-МM (большое зеркало) с покрытием РТ Шелк белый, ПВХ Бьянко, Ферро, Крема, Оскуро, Айвори"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    13,
+    14
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/78.webp",
+     "w": 129,
+     "h": 303,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/79.webp",
+     "w": 129,
+     "h": 303,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок из коллекции Кристалл со вставкой из стекла (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    9,
+    10
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/cyber-pro/80.webp",
+     "w": 100,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/81.webp",
+     "w": 101,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/82.webp",
+     "w": 100,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/83.webp",
+     "w": 100,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/84.webp",
+     "w": 100,
+     "h": 230,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/85.webp",
+     "w": 97,
+     "h": 229,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/cyber-pro/86.webp",
+     "w": 102,
+     "h": 230,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок коллекции Dynamic L с молдингом (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  }
+ ],
+ "more": [
+  {
+   "n": 15,
+   "text": "Цилиндр Securemme K2 с перекодировкой для дополнительного верхнего замка",
+   "cat": "прочие"
+  },
+  {
+   "n": 16,
+   "text": "Стальной нержавеющий порог",
+   "cat": "прочие"
+  },
+  {
+   "n": 17,
+   "text": "Утепление короба",
+   "cat": "прочие"
+  },
+  {
+   "n": 18,
+   "text": "Третья петля",
+   "cat": "прочие"
+  },
+  {
+   "n": 19,
+   "text": "Закрытый усиленный и утепленный короб",
+   "cat": "прочие"
+  },
+  {
+   "n": 20,
+   "text": "Ширина 1000 мм",
+   "cat": "прочие"
+  },
+  {
+   "n": 21,
+   "text": "Ширина 1030 мм (при высоте до 2100 мм включительно)",
+   "cat": "прочие"
+  },
+  {
+   "n": 22,
+   "text": "Высота 2150, 2200 мм (при ширине до 1000 мм включительно)",
+   "cat": "прочие"
+  }
+ ]
+}

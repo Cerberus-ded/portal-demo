@@ -1,0 +1,1128 @@
+{
+ "sheet": "ULTIMATUM PRO",
+ "specs": [
+  [
+   "Назначение",
+   "квартирная"
+  ],
+  [
+   "Уровень шумоизоляции, дБ",
+   "МР 40, РР 42"
+  ],
+  [
+   "Средний вес, кг",
+   "МР 100, РР 115"
+  ],
+  [
+   "Размерный ряд",
+   null
+  ],
+  [
+   "Высота, мм",
+   "1970, 2000, 2030, 2050, 2070, 2100, 2150*, 2200*, 2250*, 2300*"
+  ],
+  [
+   "Ширина, мм",
+   "860, 880, 950, 1000, 1050*"
+  ],
+  [
+   "Полотно",
+   null
+  ],
+  [
+   "Толщина полотна, мм",
+   "МР 75, РР 85"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "2"
+  ],
+  [
+   "Усиление полотна",
+   "металлические ребра жесткости"
+  ],
+  [
+   "Наполнение полотна",
+   "SGM-мембрана + базальтовая плита + изолон"
+  ],
+  [
+   "Уплотнитель",
+   "магнитный, 1 контур"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Короб",
+   null
+  ],
+  [
+   "Глубина короба, мм",
+   "120"
+  ],
+  [
+   "Толщина стали с покрытием, мм",
+   "1,6"
+  ],
+  [
+   "Тип короба",
+   "цельнокатаный профиль закрытого типа c утепленнием"
+  ],
+  [
+   "Ширина металл. наличника, мм",
+   "76"
+  ],
+  [
+   "Ширина перекрываемого зазора, мм",
+   "55"
+  ],
+  [
+   "Световой проем (для ширины 950мм)",
+   "842"
+  ],
+  [
+   "Высота порога, мм",
+   "47"
+  ],
+  [
+   "Регулятор притвора",
+   "эксцентрик"
+  ],
+  [
+   "Уплотнитель",
+   "резиновый, 1 контур"
+  ],
+  [
+   "Порог из нержавеющей стали",
+   "опционально*"
+  ],
+  [
+   "Терморазрыв",
+   "нет"
+  ],
+  [
+   "Замковая система",
+   null
+  ],
+  [
+   "Основной замок",
+   "цилиндровый Крит.3Вк-7РМ 006 (класс 4)"
+  ],
+  [
+   "Дополнительный замок",
+   "сувальдный Border ЗВ8-6К/15 \"зацеп\" (класс 4)"
+  ],
+  [
+   "Цилиндровый механизм",
+   "APECS SM"
+  ],
+  [
+   "Ночная задвижка",
+   "есть"
+  ],
+  [
+   "Дополнительная защита",
+   "взломостойкая вставка из керамогранита против килечного ножа и высверливания"
+  ],
+  [
+   "Внутренняя панель - съемная",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Внешняя панель - вариант РР",
+   "МДФ 10 мм с ПВХ покрытием"
+  ],
+  [
+   "Ручка",
+   "RedLine, хром"
+  ],
+  [
+   "Фурнитура",
+   "RedLine, хром с врезной броненакладкой"
+  ],
+  [
+   "Петли",
+   "с опорным подшипником - 2 шт., для высоты 2150 и выше – 3 шт."
+  ],
+  [
+   "Противосъемные ригели",
+   "3 шт с системой \"зацеп\""
+  ],
+  [
+   "Глазок",
+   "есть, в центре"
+  ]
+ ],
+ "note": "* с доплатой",
+ "notes": [
+  "* с доплатой"
+ ],
+ "models": [
+  "ULTIMATUM PRO МР",
+  "ULTIMATUM PRO PР"
+ ],
+ "device": [
+  {
+   "img": "web/torex/kit/ultimatum-pro/01.webp",
+   "w": 369,
+   "h": 842
+  },
+  {
+   "img": "web/torex/kit/ultimatum-pro/02.webp",
+   "w": 293,
+   "h": 308
+  }
+ ],
+ "hw": [
+  {
+   "img": "web/torex/kit/ultimatum-pro/03.webp",
+   "w": 311,
+   "h": 163
+  }
+ ],
+ "base": [
+  {
+   "title": "Наружная отделка",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/04.webp",
+     "w": 158,
+     "h": 313,
+     "cap": "без рисунка"
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/05.webp",
+     "w": 126,
+     "h": 297,
+     "cap": "без рисунка"
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/06.webp",
+     "w": 93,
+     "h": 94,
+     "cap": "Колоре неро",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/07.webp",
+     "w": 89,
+     "h": 96,
+     "cap": "Темно-серый букле графит",
+     "sw": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/08.webp",
+     "w": 91,
+     "h": 93,
+     "cap": "Букле коричневый",
+     "sw": 1
+    }
+   ]
+  },
+  {
+   "title": "Внутренняя/наружная отделка: цвета ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/09.webp",
+     "w": 76,
+     "h": 109,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/10.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/11.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/12.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/13.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/14.webp",
+     "w": 67,
+     "h": 108,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/15.webp",
+     "w": 66,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/16.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/17.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/18.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/19.webp",
+     "w": 67,
+     "h": 97,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/20.webp",
+     "w": 74,
+     "h": 98,
+     "cut": 1
+    }
+   ]
+  },
+  {
+   "title": "Наружная и внутренняя: панель МДФ 10 мм",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/21.webp",
+     "w": 92,
+     "h": 206,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/22.webp",
+     "w": 93,
+     "h": 206,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/23.webp",
+     "w": 92,
+     "h": 206,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/24.webp",
+     "w": 92,
+     "h": 206,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/25.webp",
+     "w": 93,
+     "h": 206,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/26.webp",
+     "w": 92,
+     "h": 206,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/27.webp",
+     "w": 186,
+     "h": 207,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/28.webp",
+     "w": 92,
+     "h": 207,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/29.webp",
+     "w": 93,
+     "h": 207,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/30.webp",
+     "w": 92,
+     "h": 207,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/31.webp",
+     "w": 92,
+     "h": 207,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/32.webp",
+     "w": 93,
+     "h": 207,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/33.webp",
+     "w": 92,
+     "h": 207,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/34.webp",
+     "w": 92,
+     "h": 207,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/35.webp",
+     "w": 93,
+     "h": 207,
+     "cut": 1
+    }
+   ]
+  }
+ ],
+ "opts": [
+  {
+   "nums": [
+    3,
+    4
+   ],
+   "name": "Коллекция ПВХ",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/36.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/37.webp",
+     "w": 64,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/38.webp",
+     "w": 76,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/39.webp",
+     "w": 71,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/40.webp",
+     "w": 73,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/41.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/42.webp",
+     "w": 65,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/43.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/44.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/45.webp",
+     "w": 64,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/46.webp",
+     "w": 70,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/47.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/48.webp",
+     "w": 76,
+     "h": 90,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/49.webp",
+     "w": 67,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/50.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/51.webp",
+     "w": 67,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/52.webp",
+     "w": 64,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/53.webp",
+     "w": 75,
+     "h": 91,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/54.webp",
+     "w": 68,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/55.webp",
+     "w": 66,
+     "h": 92,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/56.webp",
+     "w": 65,
+     "h": 91,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Цвет ПВХ (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    1
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/57.webp",
+     "w": 73,
+     "h": 110,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/58.webp",
+     "w": 74,
+     "h": 111,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/59.webp",
+     "w": 74,
+     "h": 111,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Цвет металла Колоре гриджио, Колоре графит, Колоре бруно"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    2
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/60.webp",
+     "w": 78,
+     "h": 107
+    }
+   ],
+   "texts": [
+    "Цвет металла Колоре бьянко"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    5,
+    6
+   ],
+   "name": "Коллекция Эмалей",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/61.webp",
+     "w": 97,
+     "h": 123,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/62.webp",
+     "w": 97,
+     "h": 123,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/63.webp",
+     "w": 96,
+     "h": 123,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/64.webp",
+     "w": 97,
+     "h": 123,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/65.webp",
+     "w": 98,
+     "h": 123,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/66.webp",
+     "w": 96,
+     "h": 123,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/67.webp",
+     "w": 97,
+     "h": 144,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/68.webp",
+     "w": 97,
+     "h": 144,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/69.webp",
+     "w": 96,
+     "h": 144,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/70.webp",
+     "w": 96,
+     "h": 143,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/71.webp",
+     "w": 99,
+     "h": 144,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/72.webp",
+     "w": 106,
+     "h": 143,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Цвет Эмали (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    7,
+    8
+   ],
+   "name": "Эмали по каталогу RAL, NCS",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/73.webp",
+     "w": 247,
+     "h": 234
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/74.webp",
+     "w": 318,
+     "h": 267
+    }
+   ],
+   "texts": [
+    "Цвет Эмали по каталогу RAL, NCS (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    9
+   ],
+   "name": "ГРУНТ-пленка под покраску",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/75.webp",
+     "w": 136,
+     "h": 297
+    }
+   ],
+   "texts": [
+    "Покрытие ГРУНТ-пленка под покраску (внутри, опция доступна только для базовых рисунков)"
+   ],
+   "soon": false,
+   "cat": "цвета отделки"
+  },
+  {
+   "nums": [
+    10,
+    11
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/76.webp",
+     "w": 95,
+     "h": 216,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/77.webp",
+     "w": 95,
+     "h": 217,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/78.webp",
+     "w": 95,
+     "h": 217,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/79.webp",
+     "w": 95,
+     "h": 217,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/80.webp",
+     "w": 55,
+     "h": 180,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/81.webp",
+     "w": 95,
+     "h": 217,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/82.webp",
+     "w": 55,
+     "h": 180,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/83.webp",
+     "w": 96,
+     "h": 217,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/84.webp",
+     "w": 53,
+     "h": 180,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Наружный классический рисунок на металле FLN",
+    "Наружный рисунок на металле SP"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    12,
+    13
+   ],
+   "name": "Коллекция Fashion",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/85.webp",
+     "w": 109,
+     "h": 252,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/86.webp",
+     "w": 108,
+     "h": 252,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/87.webp",
+     "w": 109,
+     "h": 252,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/88.webp",
+     "w": 108,
+     "h": 252,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/89.webp",
+     "w": 109,
+     "h": 252,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/90.webp",
+     "w": 108,
+     "h": 252,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/91.webp",
+     "w": 109,
+     "h": 253,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/92.webp",
+     "w": 108,
+     "h": 252,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/93.webp",
+     "w": 107,
+     "h": 252,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/94.webp",
+     "w": 108,
+     "h": 252,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок из коллекции Fashion с покрытием ПВХ снаружи (",
+    "Рисунок из коллекции Fashion с покрытием ПВХ внутри ("
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    14
+   ],
+   "name": "Коллекция Mix",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/95.webp",
+     "w": 107,
+     "h": 234,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/96.webp",
+     "w": 107,
+     "h": 234,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/97.webp",
+     "w": 106,
+     "h": 234,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/98.webp",
+     "w": 106,
+     "h": 234,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/99.webp",
+     "w": 107,
+     "h": 234,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок из коллекции Mix (сборная панель) с покрытием ПВХ снаружи"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    15
+   ],
+   "name": "Коллекция Mix",
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/100.webp",
+     "w": 121,
+     "h": 274,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/101.webp",
+     "w": 117,
+     "h": 272,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/102.webp",
+     "w": 120,
+     "h": 274,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок из коллекции Mix (сборная панель) с покрытием ПВХ внутри"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    16,
+    17
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/103.webp",
+     "w": 81,
+     "h": 193,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/104.webp",
+     "w": 81,
+     "h": 193,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Внутренний рисунок UT-CM (классическое зеркало) (",
+    "Внутренний рисунок UT-MM (большое зеркало) на панели МДФ 16мм с покрытием РТ Шелк белый, ПВХ Бьянко, Ферро, Крема, Оскуро, Айвори"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    18,
+    19
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/105.webp",
+     "w": 110,
+     "h": 251,
+     "cut": 1
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/106.webp",
+     "w": 108,
+     "h": 251,
+     "cut": 1
+    }
+   ],
+   "texts": [
+    "Рисунок из коллекции Кристалл со вставкой из стекла с покрытием ПВХ (снаружи и внутри)"
+   ],
+   "soon": false,
+   "cat": "рисунок отделки"
+  },
+  {
+   "nums": [
+    24
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/107.webp",
+     "w": 306,
+     "h": 170
+    },
+    {
+     "img": "web/torex/kit/ultimatum-pro/108.webp",
+     "w": 311,
+     "h": 176
+    }
+   ],
+   "texts": [
+    "Комплект фурнитуры на квадратном основании с ручкой RedLine в цвете золото сатинированное вместо базового"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    25
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/109.webp",
+     "w": 312,
+     "h": 175
+    }
+   ],
+   "texts": [
+    "Комплект фурнитуры на круглом основании с ручкой Solo в цвете золото вместо базового ("
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    26
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/110.webp",
+     "w": 319,
+     "h": 163
+    }
+   ],
+   "texts": [
+    "Комплект фурнитуры на круглом основании с ручкой Pava в цвете хром вместо базового"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    27
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/111.webp",
+     "w": 325,
+     "h": 158
+    }
+   ],
+   "texts": [
+    "Комплект фурнитуры на круглом основании с ручкой Largo в цвете хром вместо базового"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  },
+  {
+   "nums": [
+    28
+   ],
+   "name": null,
+   "items": [
+    {
+     "img": "web/torex/kit/ultimatum-pro/112.webp",
+     "w": 324,
+     "h": 163
+    }
+   ],
+   "texts": [
+    "Стальной нержавеющий порог"
+   ],
+   "soon": false,
+   "cat": "прочие"
+  }
+ ],
+ "more": [
+  {
+   "n": 20,
+   "text": "Внутреннюю временную панель МДФ 10 мм без покрытия и без рисунка",
+   "cat": "рисунок отделки"
+  },
+  {
+   "n": 21,
+   "text": "Цилиндр Securemme K2 с перекодировкой (3 класс)",
+   "cat": "защита"
+  },
+  {
+   "n": 22,
+   "text": "Цилиндр Securemme K64 с перекодировкой (4 класс) (",
+   "cat": "защита"
+  },
+  {
+   "n": 23,
+   "text": "Комплект фурнитуры на квадратном основании с ручкой RedLine в цвете черный или хром сатинированный вместо базового",
+   "cat": "прочие"
+  },
+  {
+   "n": 29,
+   "text": "Опция глазок сбоку (применяется по умолчанию в случае выбора с наружной или внутренней стороны рисунка с боковым расположением глазка)",
+   "cat": "прочие"
+  },
+  {
+   "n": 30,
+   "text": "Третья петля",
+   "cat": "прочие"
+  },
+  {
+   "n": 31,
+   "text": "Ширина 1050 мм (при высоте до 2100 мм включительно)",
+   "cat": "прочие"
+  },
+  {
+   "n": 32,
+   "text": "Высота 2150, 2200, 2250, 2300 мм (при ширине до 1000 мм включительно)",
+   "cat": "прочие"
+  },
+  {
+   "n": 33,
+   "text": "Нестандартные размеры с шагом 50 мм в диапазоне по высоте 1800-2350 (при условии подтверждения возможности производства)",
+   "cat": "прочие"
+  }
+ ]
+}
