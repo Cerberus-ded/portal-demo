@@ -18,6 +18,7 @@ r31/                       исходники страниц: разметка, 
 src31/                     стили и общие скрипты: поиск, калькулятор, админка, cookie, демо-хранилище
 web/<фабрика>/*.json       данные коллекций фабрик (сами фото хранятся вне git)
 tools/                     сборка, сбор данных фабрик, обработка фото, проверки в браузере
+tsconfig.json              только для линтера deslop-please: какие скрипты он проверяет
 .claude/agents/            агенты Claude Code для работы над сайтом
 CLAUDE.md                  как устроен проект и правила работы
 ```
@@ -33,6 +34,7 @@ for d in */; do [ -f "${d}covers.json" ] && rm -r "$d"; done; rm -rf x1
 cp -r _build/demo/. .
 
 node tools/mobile37.mjs . shots <папка с node_modules/puppeteer-core> 360,390,414 demo
+node tools/deslop.mjs <папка с node_modules/@sourcegraph/scip-typescript>   # структура кода, линтер deslop-please
 ```
 
 Для сборки нужны исходные фото дверей (`web/<фабрика>/s/`, `l/` и др.), они есть только на компьютере владельца.
