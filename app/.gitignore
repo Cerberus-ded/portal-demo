@@ -1,0 +1,30 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+.cloudflare
+/.svelte-kit
+/build
+
+# Что пишет scripts/import.mjs из собранной демо-версии: в git не храним, пересобирается
+/src/lib/server/generated
+/static/foto
+/static/photos
+/static/seek.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

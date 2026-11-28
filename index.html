@@ -5,15 +5,55 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%231d1611%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-family=%22Georgia,serif%22 font-size=%2220%22 fill=%22%23f1ece4%22 text-anchor=%22middle%22%3E%D0%9F%3C/text%3E%3C/svg%3E">
-<title>Портал, отделочные материалы в Димитровграде</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
+<meta property="og:url" content="https://cerberus-ded.github.io/portal-demo/">
+<meta property="og:image" content="https://cerberus-ded.github.io/portal-demo/photos/og-portal-1200.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<title>Салон «Портал» в Димитровграде: двери, плитка, полы, обои, сантехника</title>
+<meta name="description" content="Салон отделочных материалов «Портал» в Димитровграде, ул. Гончарова, 11. Межкомнатные и входные двери, плитка, полы, обои и сантехника. Образцы коллекций стоят в салоне.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Портал, отделочные материалы">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Салон «Портал» в Димитровграде">
+<meta property="og:description" content="Двери, плитка, полы, обои и сантехника. Образцы в салоне на Гончарова, 11, без выходных.">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HomeAndConstructionBusiness",
+ "name": "Портал",
+ "description": "Салон отделочных материалов: межкомнатные и входные двери, плитка, напольные покрытия, обои и сантехника.",
+ "telephone": "+7 996 220-36-22",
+ "address": {"@type": "PostalAddress", "streetAddress": "ул. Гончарова, 11", "addressLocality": "Димитровград", "addressRegion": "Ульяновская область", "addressCountry": "RU"},
+ "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "18:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "10:00", "closes": "16:00"}],
+ "sameAs": ["https://vk.ru/portaldd"]
+}
+</script>
+<link rel="preload" href="fonts/manrope-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant-garamond-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 
 /* Shared by the homepage and the catalogue: tokens, type, controls, the header and its menu.
    Layout: a salon folder. Limewash room, cotton mats, hairline rules, one centred menu.
    The site has one theme, the light one the client picked. */
+/* Fonts from the site itself, not from Google: the visitor's address goes nowhere else (152-FZ). fonts/, SIL OFL 1.1.
+   Two subsets each, Cyrillic and Latin: the browser fetches only the one a page's text needs. */
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/cormorant-garamond-cyrillic-400-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/cormorant-garamond-cyrillic-500-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("fonts/cormorant-garamond-cyrillic-600-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url("fonts/manrope-cyrillic-wght-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url("fonts/manrope-latin-wght-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 :root {
   color-scheme: light;
 
@@ -251,6 +291,9 @@ h3 { font-family: var(--font-body); font-weight: 600; font-size: var(--text-md);
 .tools__tel { display: grid; gap: 0; text-align: right; text-decoration: none; }
 .tools__tel b { font-size: var(--text-sm); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .tools__tel span { font-size: var(--text-xs); color: var(--color-muted); white-space: nowrap; }
+.tools__ico { display: none; }
+/* звонок в одно касание из меню на телефоне и планшете: на компьютере номер стоит в шапке */
+.nav__call { display: none; }
 .cart {
   display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 44px;
   padding: 0 var(--space-md); border: var(--rule-bar) solid var(--color-ink); border-radius: var(--radius-ctl);
@@ -426,10 +469,23 @@ html[data-seek] { overflow: hidden; scrollbar-gutter: stable; }
   .nav__split .nav__top { flex: 1 1 auto; justify-content: flex-start; }
   .nav__caret { width: 56px; min-height: 48px; }
   .burger { display: inline-flex; }
-  .tools__tel { display: none; }
+  /* планшет: номер в шапке становится кнопкой с трубкой, как лупа; сам номер остаётся для чтения с экрана */
+  .tools__tel {
+    position: relative; display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; flex: 0 0 auto;
+    border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl); color: var(--color-ink);
+    transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+  }
+  .tools__tel:hover { background: var(--color-accent-soft); border-color: var(--color-ink); }
+  .tools__tel b, .tools__tel span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .tools__ico { display: block; }
+  .nav__call { display: grid; gap: var(--space-xs); margin-top: var(--space-sm); padding: var(--space-md) var(--space-xs) 0; border-top: var(--rule-hair) solid var(--color-hair); }
+  .nav__call .btn { width: 100%; }
+  .nav__call p { font-size: var(--text-xs); color: var(--color-muted); line-height: 1.5; }
 }
 @media (max-width: 720px) {
   :root { --gutter: 20px; --gap-columns: 16px; }
+  /* на телефоне пятой кнопке в шапке места нет (360 px): позвонить можно из меню и с кнопок на странице */
+  .tools__tel { display: none; }
   /* on a phone the sticky header keeps only the name and the menu: the address and hours are on the page itself */
   .topbar__strip { display: none; }
 }
@@ -524,6 +580,18 @@ h3 { font-size: var(--text-lg); }
 .room__body > .room__sub { margin-bottom: var(--space-xs); flex: 1 1 auto; }
 .room__fig b { font-weight: 700; font-size: var(--text-lg); font-variant-numeric: tabular-nums lining-nums; }
 .room__fig span { font-size: var(--text-xs); color: var(--color-mat-ink-2); }
+/* A section still empty («Скоро», the build marks it): on a phone a short row under the full cards, not a whole screen of its own */
+@media (max-width: 720px) {
+  .rooms:has(.room--soon) { grid-template-columns: minmax(0, 1fr); }
+  .rooms:has(.room--soon) .room:not(.room--soon) .mat__fig { aspect-ratio: 4 / 3; }
+  .room.room--soon { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: var(--space-md); padding: var(--space-sm); }
+  .room--soon .mat__fig { flex: 0 0 auto; width: 88px; aspect-ratio: 1; }
+  .room--soon .room__body { padding-top: 0; gap: 2px; }
+  .room--soon .room__name { font-size: var(--text-xl); }
+  .room--soon .room__body > .room__sub { margin-bottom: 0; flex: 0 0 auto; }
+  .room--soon .room__fig { margin-top: 0; padding-top: var(--space-2xs); border-top: 0; }
+  .room--soon .room__fig b { font-size: var(--text-sm); }
+}
 
 /* ---- promotions: dated rows ---- */
 .promos { border-top: var(--rule-bar) solid var(--color-ink); }
@@ -604,6 +672,9 @@ h3 { font-size: var(--text-lg); }
 .facts ul { display: grid; gap: var(--space-2xs); }
 .facts li { font-size: var(--text-sm); color: var(--color-ink-2); }
 .facts .facts__todo { color: var(--color-muted); }
+/* фабрика с коллекциями в каталоге — ссылка на раздел с её фильтром; поле нажатия 40 px, строки списка не раздвигаются */
+.facts li a { display: inline-block; min-width: 40px; padding-block: 10px; margin-block: -10px; color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-rule); text-underline-offset: 3px; transition: color var(--dur-micro) var(--ease-out), text-decoration-color var(--dur-micro) var(--ease-out); }
+.facts li a:hover { color: var(--color-mat-accent); text-decoration-color: currentColor; }
 
 /* ---- the close ---- */
 .visit { display: grid; gap: var(--space-xl); }
@@ -616,10 +687,6 @@ h3 { font-size: var(--text-lg); }
 .contacts a { text-decoration: underline; text-underline-offset: 3px; }
 .contacts a:hover { text-decoration-thickness: 2px; }
 .visit .lead { font-size: var(--text-lead); color: var(--color-paper); opacity: 0.86; max-width: 52ch; }
-.fill {
-  font-size: var(--text-sm); color: var(--color-paper); opacity: 0.74;
-  border-left: 2px dashed currentColor; padding-left: var(--space-md); max-width: 60ch;
-}
 
 /* ---- footer ---- */
 .foot { border-top: var(--rule-hair) solid var(--color-rule); padding-block: var(--space-2xl) var(--space-xl); }
@@ -667,6 +734,22 @@ mark.legal-fill { background: color-mix(in oklab, var(--color-accent) 22%, trans
 button.protolink { background: transparent; font: inherit; font-size: var(--text-sm); font-weight: 600; cursor: pointer; }
 button.protolink:hover { background: var(--color-ink); color: var(--color-paper); }
 [data-demo-reset][data-armed] { background: var(--color-bad); border-color: var(--color-bad); color: var(--color-paper); }
+.protomore, .modeline__short, .protomore__shut { display: none; }
+@media (max-width: 720px) {
+  :root:not([data-demo-open]) .modeline__full, :root:not([data-demo-open]) .protobar .protolink { display: none; }
+  :root:not([data-demo-open]) .modeline__short { display: inline; }
+  :root:not([data-demo-open]) .protobar__in { flex-wrap: nowrap; justify-content: space-between; padding-block: var(--space-xs); }
+  :root:not([data-demo-open]) .modeline { flex: 0 1 auto; font-weight: 600; color: var(--color-ink); }
+  .protomore {
+    display: inline-flex; align-items: center; gap: var(--space-2xs); flex: 0 0 auto; min-height: 40px; padding: 0 var(--space-sm);
+    background: transparent; color: var(--color-ink); border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl);
+    font: inherit; font-size: var(--text-sm); font-weight: 600; white-space: nowrap; cursor: pointer;
+  }
+  .protomore::after { content: ""; width: 7px; height: 7px; border: solid currentColor; border-width: 0 1.6px 1.6px 0; transform: translateY(-2px) rotate(45deg); }
+  :root[data-demo-open] .protomore::after { transform: translateY(2px) rotate(-135deg); }
+  :root[data-demo-open] .protomore__open { display: none; }
+  :root[data-demo-open] .protomore__shut { display: inline; }
+}
 .order--done .order__demo { font-size: var(--text-sm); padding: var(--space-sm) var(--space-md); background: var(--color-paper-2); border-left: 3px solid var(--color-accent); max-width: 70ch; }
 </style>
 </head>
@@ -803,6 +886,22 @@ window.PortalDemo = (function () {
     reset();
   });
 
+  // ---- полоса «Демо-версия» на телефоне: свёрнута в строку, «Как попробовать» её раскрывает, выбор помнится ----
+  try { if (localStorage.getItem("demo-bar") === "open") document.documentElement.setAttribute("data-demo-open", "1"); } catch (e) {}
+  function syncMore() {
+    var on = document.documentElement.hasAttribute("data-demo-open");
+    [].forEach.call(document.querySelectorAll("[data-demo-more]"), function (b) { b.setAttribute("aria-expanded", on ? "true" : "false"); });
+  }
+  document.addEventListener("DOMContentLoaded", syncMore);
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest("[data-demo-more]");
+    if (!b) return;
+    var on = !document.documentElement.hasAttribute("data-demo-open");
+    if (on) document.documentElement.setAttribute("data-demo-open", "1"); else document.documentElement.removeAttribute("data-demo-open");
+    try { localStorage.setItem("demo-bar", on ? "open" : "shut"); } catch (e) {}
+    syncMore();
+  });
+
   return {
     use: function (name) { return ready.then(function () { return name === "db" ? db : name === "assets" ? assets : name === "user" ? user : null; }); },
     blob: function (id) { return urls[id] || ""; }
@@ -811,7 +910,8 @@ window.PortalDemo = (function () {
 </script>
 <div class="protobar">
   <div class="container protobar__in">
-    <p class="modeline">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</p>
+    <p class="modeline"><span class="modeline__short">Демо-версия сайта</span><span class="modeline__full">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</span></p>
+    <button type="button" class="protomore" data-demo-more aria-expanded="false"><span class="protomore__open">Как попробовать</span><span class="protomore__shut">Свернуть</span></button>
     <a class="protolink" id="adminLink" href="katalog.html#admin" hidden>Админка</a>
     <a class="protolink" href="katalog.html#zayavki">Заявки менеджеру</a>
     <button type="button" class="protolink" data-demo-reset>Начать демо заново</button>
@@ -855,11 +955,16 @@ window.PortalDemo = (function () {
         <li class="nav__item"><a class="nav__link" href="#o-salone">О салоне</a></li>
         <li class="nav__item"><a class="nav__link" href="#kontakty">Контакты</a></li>
       </ul>
+      <div class="nav__call">
+        <a class="btn" href="tel:+79962203622">Позвонить: +7 (996) 220-36-22</a>
+        <p>Без выходных: будни с 10:00 до 18:00, суббота и воскресенье с 10:00 до 16:00. Димитровград, улица Гончарова, 11.</p>
+      </div>
     </nav>
 
     <div class="tools">
       <button type="button" class="seekbtn" data-seek aria-label="Поиск по каталогу" title="Поиск по каталогу ( / )"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.2 15.2 20.5 20.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
       <a class="tools__tel" href="tel:+79962203622">
+        <svg class="tools__ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6.6 3.5h2.6l1.4 4.1-2 1.4a12.5 12.5 0 0 0 6.4 6.4l1.4-2 4.1 1.4v2.6a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 4.6 5.6a2 2 0 0 1 2-2.1Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
         <b>+7 (996) 220-36-22</b>
         <span>позвонить в салон</span>
       </a>
@@ -879,7 +984,7 @@ window.PortalDemo = (function () {
         <a class="btn btn--outline" href="#kontakty">Как доехать</a>
       </div>
       <button type="button" class="seekfield" data-seek><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.2 15.2 20.5 20.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Найти в каталоге: коллекция, фабрика, артикул</span><kbd>/</kbd></button>
-      <p class="hero__note">Прототип главной. Объёмы взяты из вашего ТЗ и округлены, акции и работы демонстрационные.</p>
+      <p class="hero__note">Прототип главной. Число коллекций считается по каталогу, акции и работы демонстрационные.</p>
     </div>
 
     <div class="mat">
@@ -907,31 +1012,31 @@ window.PortalDemo = (function () {
           <span class="room__fig"><b>172</b><span>коллекции</span></span>
         </span>
       </a>
-      <a class="room mat lift" href="katalog.html#plitka">
+      <a class="room mat lift room--soon" href="katalog.html#plitka">
         <figure class="mat__fig"><img src="photos/k-plitka-1200.webp" srcset="photos/k-plitka-640.webp 640w, photos/k-plitka-1200.webp 1200w" alt="Ванная комната с плиткой под мрамор" width="1600" height="1226" sizes="(max-width: 480px) 90vw, (max-width: 720px) 45vw, (max-width: 1100px) 30vw, 18vw" loading="lazy" decoding="async"></figure>
         <span class="room__body">
           <span class="room__name">Плитка</span>
-          <span class="room__sub">Керамогранит и плитка: Alma Ceramica, Global Tile, LB, Kerama Marazzi.</span>
+          <span class="room__sub">Керамогранит и плитка: Global Tile, ЛБ Керамика, Artkera, Itaca.</span>
           <span class="room__fig"><b>Скоро</b><span>наполняем раздел</span></span>
         </span>
       </a>
-      <a class="room mat lift" href="katalog.html#poly">
+      <a class="room mat lift room--soon" href="katalog.html#poly">
         <figure class="mat__fig"><img src="photos/k-poly-1000.webp" srcset="photos/k-poly-640.webp 640w, photos/k-poly-1000.webp 1000w" alt="Ламинат под дуб, вид сверху" width="1000" height="1000" sizes="(max-width: 480px) 90vw, (max-width: 720px) 45vw, (max-width: 1100px) 30vw, 18vw" loading="lazy" decoding="async"></figure>
         <span class="room__body">
           <span class="room__name">Полы</span>
-          <span class="room__sub">Ламинат, кварцвинил и линолеум: Kastamonu, Tarkett, Egger.</span>
+          <span class="room__sub">Ламинат, кварцвинил и линолеум: Таркет, Кастамону, Laminext.</span>
           <span class="room__fig"><b>Скоро</b><span>наполняем раздел</span></span>
         </span>
       </a>
-      <a class="room mat lift" href="katalog.html#oboi">
+      <a class="room mat lift room--soon" href="katalog.html#oboi">
         <figure class="mat__fig"><img src="photos/k-oboi-1200.webp" srcset="photos/k-oboi-640.webp 640w, photos/k-oboi-1200.webp 1200w" alt="Стена с серыми обоями, столик с вазой" width="1369" height="1369" sizes="(max-width: 480px) 90vw, (max-width: 720px) 45vw, (max-width: 1100px) 30vw, 18vw" loading="lazy" decoding="async"></figure>
         <span class="room__body">
           <span class="room__name">Обои</span>
-          <span class="room__sub">Обои Grandeco, Marburg, Artsimple, Andrea Rossi.</span>
+          <span class="room__sub">Обои и фрески Marburg, Grandeco, Rasch, Art Simple.</span>
           <span class="room__fig"><b>Скоро</b><span>наполняем раздел</span></span>
         </span>
       </a>
-      <a class="room mat lift" href="katalog.html#santehnika">
+      <a class="room mat lift room--soon" href="katalog.html#santehnika">
         <figure class="mat__fig"><img src="photos/k-santehnika-1200.webp" srcset="photos/k-santehnika-640.webp 640w, photos/k-santehnika-1200.webp 1200w" alt="Душевой уголок с чёрным профилем" width="1200" height="1200" sizes="(max-width: 480px) 90vw, (max-width: 720px) 45vw, (max-width: 1100px) 30vw, 18vw" loading="lazy" decoding="async"></figure>
         <span class="room__body">
           <span class="room__name">Сантехника</span>
@@ -946,23 +1051,23 @@ window.PortalDemo = (function () {
     <section class="container sec" id="akcii" aria-labelledby="h-akcii">
       <div class="head">
         <h2 id="h-akcii">Что сейчас по акции</h2>
-        <p class="caption" id="akcii-note">Каждая строка ведёт в каталог с уже наложенным фильтром. Строки ниже демонстрационные.</p>
+        <p class="caption" id="akcii-note">Каждая строка ведёт в каталог, уже отфильтрованный по фабрике. Строки ниже демонстрационные.</p>
       </div>
       <div class="promos">
         <article class="promo">
           <h3>Двери Лорд со скидкой 15%</h3>
-          <p class="promo__till">до 30 ноября</p>
-          <a class="promo__go" href="katalog.html#mezhkomnatnye">Смотреть двери</a>
+          <p class="promo__till">до 31 декабря</p>
+          <a class="promo__go" href="katalog.html#mezhkomnatnye?brand=%D0%9B%D0%BE%D1%80%D0%B4">Смотреть двери</a>
         </article>
         <article class="promo">
-          <h3>Ламинат Кастамону, остатки склада</h3>
-          <p class="promo__till">до 15 декабря</p>
-          <a class="promo__go" href="katalog.html#poly">Смотреть полы</a>
+          <h3>Входные двери Торекс: замер бесплатно</h3>
+          <p class="promo__till">до 31 декабря</p>
+          <a class="promo__go" href="katalog.html#vhodnye">Смотреть входные двери</a>
         </article>
         <article class="promo">
-          <h3>Rasch: вторая коллекция в подарок</h3>
+          <h3>Двери Хамелеон: наличники в подарок к комплекту</h3>
           <p class="promo__till">до конца года</p>
-          <a class="promo__go" href="katalog.html#oboi">Смотреть обои</a>
+          <a class="promo__go" href="katalog.html#mezhkomnatnye?brand=%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD">Смотреть двери</a>
         </article>
       </div>
       <p class="promos__terms" id="akcii-terms">Организатор акций: <mark class="legal-fill">полное наименование ИП или ООО</mark>, Димитровград, ул. Гончарова, 11. Сроки указаны у каждой акции. Подробные условия, количество товара по акции, порядок и место получения скидки или подарка можно узнать у менеджера по телефону +7 (996) 220-36-22 и в салоне.</p>
@@ -1057,12 +1162,12 @@ window.PortalDemo = (function () {
   <section class="container sec" id="brendy" aria-labelledby="h-brendy">
     <div class="head">
       <h2 id="h-brendy">34 фабрики, с которыми работаем</h2>
-      <p class="caption">Список из вашего ТЗ и присланных каталогов. На сайте каждое имя ведёт в каталог, отфильтрованный по этой фабрике.</p>
+      <p class="caption">Список из вашего ТЗ и присланных каталогов. Фабрики, чьи коллекции уже есть в каталоге, ведут в него сразу с фильтром. Остальные можно посмотреть в салоне.</p>
     </div>
     <div class="facts">
       <section>
         <h3>Двери</h3>
-        <ul><li>Лорд</li><li>Зодчий</li><li>Аэлита</li><li>Андора</li><li>Лист</li><li>Адема</li><li>Энтро</li><li>Хорошие двери</li><li>Хамелеон</li><li>Торекс</li><li>Кова и TRX</li><li>Дорстон и Тайгер</li><li>Берсеркер</li><li>Мастино</li><li>Макрус</li></ul>
+        <ul><li><a href="katalog.html#mezhkomnatnye?brand=%D0%9B%D0%BE%D1%80%D0%B4">Лорд</a></li><li><a href="katalog.html#mezhkomnatnye?brand=%D0%97%D0%BE%D0%B4%D1%87%D0%B8%D0%B9">Зодчий</a></li><li>Аэлита</li><li><a href="katalog.html#mezhkomnatnye?brand=%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D0%B0">Андора</a></li><li>Лист</li><li><a href="katalog.html#mezhkomnatnye?brand=%D0%90%D0%B4%D0%B5%D0%BC%D0%B0">Адема</a></li><li>Энтро</li><li>Хорошие двери</li><li><a href="katalog.html#mezhkomnatnye?brand=%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD">Хамелеон</a></li><li><a href="katalog.html#vhodnye?brand=%D0%A2%D0%BE%D1%80%D0%B5%D0%BA%D1%81">Торекс</a></li><li>Кова и TRX</li><li>Дорстон и Тайгер</li><li>Берсеркер</li><li>Мастино</li><li>Макрус</li></ul>
       </section>
       <section>
         <h3>Плитка</h3>
@@ -1093,7 +1198,7 @@ window.PortalDemo = (function () {
         <dl class="contacts">
           <div>
             <dt>Адрес</dt>
-            <dd>Димитровград, улица Гончарова, 11</dd>
+            <dd><a href="https://yandex.ru/maps/?text=%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D0%B3%D1%80%D0%B0%D0%B4%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%93%D0%BE%D0%BD%D1%87%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%2C%2011" target="_blank" rel="noopener">Димитровград, улица Гончарова, 11</a></dd>
           </div>
           <div>
             <dt>Телефон</dt>
@@ -1108,9 +1213,9 @@ window.PortalDemo = (function () {
             <dd><a href="https://vk.ru/portaldd" target="_blank" rel="noopener">ВКонтакте</a></dd>
           </div>
         </dl>
-        <p class="fill" id="kontakty-fill">На сайте здесь встанет карта Яндекса с точкой на Гончарова, 11.</p>
         <div class="hero__act">
           <a class="btn" href="tel:+79962203622">Позвонить в салон</a>
+          <a class="btn btn--outline" href="https://yandex.ru/maps/?text=%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D0%B3%D1%80%D0%B0%D0%B4%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%93%D0%BE%D0%BD%D1%87%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%2C%2011" target="_blank" rel="noopener">Открыть на Яндекс Картах</a>
           <a class="btn btn--outline" href="https://vk.ru/portaldd" target="_blank" rel="noopener">Написать во ВКонтакте</a>
         </div>
       </div>
@@ -1167,7 +1272,8 @@ window.PortalDemo = (function () {
    Им пользуются обе страницы: каталог отдаёт свои данные сразу, главная подгружает их при первом открытии.
    o.load(): данные { items, sections, F, chips } или обещание их.
    o.href(item, vi): ссылка на коллекцию. o.pick(item, vi): открыть её на этой же странице, если можно.
-   o.cuts: показывать ли разделы с фильтрами; o.cut(sectionId, active): открыть такой раздел. */
+   o.cuts: показывать ли разделы с фильтрами; o.cut(sectionId, active): открыть такой раздел.
+   o.thumb(item, vi): фото для строки результата, адрес или обещание адреса. */
 window.PortalSeek = function (o) {
   "use strict";
 
@@ -1418,7 +1524,10 @@ window.PortalSeek = function (o) {
   function swatch(it, vi) {
     var sw = mk("span", "seek__sw"), sp = (data.chips || {})[it.s];
     var pic = o.thumb ? o.thumb(it, vi) : "";
-    if (pic) { sw.style.backgroundImage = 'url("' + pic + '")'; sw.setAttribute("data-photo", "1"); return sw; }
+    function put(u) { sw.style.background = ""; sw.style.backgroundImage = 'url("' + u + '")'; sw.removeAttribute("data-empty"); sw.setAttribute("data-photo", "1"); }
+    // обещание: фото ещё грузится (главная берёт обложки фабрики при первом её результате), пока стоит заглушка
+    if (pic && typeof pic.then === "function") { pic.then(function (u) { if (u) put(u); }, function () {}); pic = ""; }
+    if (pic) { put(pic); return sw; }
     var x = vi >= 0 && it.vars[vi].si != null ? it.vars[vi] : it.vars.filter(function (v) { return v.si != null; })[0];
     if (x && sp) {
       sw.style.backgroundImage = 'url("' + sp.file + '")';
@@ -1817,8 +1926,21 @@ window.PortalCookieDoc = "katalog.html#cookie";
 
   // ---- поиск по каталогу: данные подгружаются при первом открытии, коллекция открывается в каталоге ----
   var CAT = "katalog.html";
+  // фото в результатах: обложки коллекций лежат по фабрикам (lord/covers.json), берём файл фабрики, когда она впервые попала в выдачу
+  var covers = {};
+  function coversOf(dir) {
+    if (!covers[dir]) {
+      covers[dir] = fetch(dir + "/covers.json").then(function (r) { if (!r.ok) throw new Error("covers " + r.status); return r.json(); });
+      covers[dir].catch(function () { delete covers[dir]; });
+    }
+    return covers[dir];
+  }
   window.PortalSeek({
     load: function () { return fetch("x1/seek.json").then(function (r) { if (!r.ok) throw new Error("seek " + r.status); return r.json(); }); },
+    thumb: function (it) {
+      var dir = String(it.pack || "").split("/")[0];
+      return dir ? coversOf(dir).then(function (d) { return d[it.code] || ""; }) : "";
+    },
     home: CAT + "#katalog",
     cuts: false,
     href: function (it) { return CAT + "#" + it.s + "-" + it.code; },

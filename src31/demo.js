@@ -129,6 +129,22 @@ window.PortalDemo = (function () {
     reset();
   });
 
+  // ---- полоса «Демо-версия» на телефоне: свёрнута в строку, «Как попробовать» её раскрывает, выбор помнится ----
+  try { if (localStorage.getItem("demo-bar") === "open") document.documentElement.setAttribute("data-demo-open", "1"); } catch (e) {}
+  function syncMore() {
+    var on = document.documentElement.hasAttribute("data-demo-open");
+    [].forEach.call(document.querySelectorAll("[data-demo-more]"), function (b) { b.setAttribute("aria-expanded", on ? "true" : "false"); });
+  }
+  document.addEventListener("DOMContentLoaded", syncMore);
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest("[data-demo-more]");
+    if (!b) return;
+    var on = !document.documentElement.hasAttribute("data-demo-open");
+    if (on) document.documentElement.setAttribute("data-demo-open", "1"); else document.documentElement.removeAttribute("data-demo-open");
+    try { localStorage.setItem("demo-bar", on ? "open" : "shut"); } catch (e) {}
+    syncMore();
+  });
+
   return {
     use: function (name) { return ready.then(function () { return name === "db" ? db : name === "assets" ? assets : name === "user" ? user : null; }); },
     blob: function (id) { return urls[id] || ""; }
