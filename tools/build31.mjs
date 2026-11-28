@@ -8,14 +8,21 @@
 // Without them the pages can still be built: every picture is taken from the packs already built in <dir> (the repository
 // root), the packs come out the same, and only the pages, the search data and the texts change. A model with no photo in
 // those packs stops the build: new photos need the owner's computer.
-import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, copyFileSync, rmSync } from "node:fs";
-import { join, resolve, relative, isAbsolute } from "node:path";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, copyFileSync, rmSync, realpathSync } from "node:fs";
+import { join, resolve, sep, relative, isAbsolute } from "node:path";
 const root = process.argv[2];
 const R = (p) => readFileSync(join(root, p), "utf8");
 const flag = process.argv.indexOf("--packs");
 const PACKS = flag > 0 ? process.argv[flag + 1] : null;
 if (flag > 0 && !PACKS) throw new Error("--packs: name the folder with the built packs, the repository root: --packs .");
 const OUT = (process.argv[3] && process.argv[3] !== "--packs" ? process.argv[3] : null) || join(root, "site31");
+// the out dir is deleted whole first: never the project, a dir above it, one of its source dirs or a dir inside one,
+// nor any dir that holds sources or git (the door photos in web/ exist only on the owner's computer)
+const real = (p) => { const r = resolve(p); let x; try { x = realpathSync.native(r); } catch (e) { x = r; } return process.platform === "win32" ? x.toLowerCase() : x; };
+const within = (a, b) => { a = real(a); b = real(b); return a === b || a.startsWith(b.endsWith(sep) ? b : b + sep); };
+const KEEP = ["r31", "src31", "web", "tools", "photos", ".git"];
+if (within(root, OUT) || KEEP.some((d) => within(OUT, join(root, d))) || ["r31", "src31", "web", ".git"].some((d) => existsSync(join(OUT, d))))
+  throw new Error("will not delete " + OUT + ": it is the project, holds it or is part of it; give the build a dir of its own, e.g. _build/site31");
 // the out folder is wiped first: it must not hold the packs we read from
 if (PACKS) {
   const rel = relative(resolve(OUT), resolve(PACKS));

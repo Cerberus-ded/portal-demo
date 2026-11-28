@@ -175,18 +175,24 @@
    "img": "web/torex/kit/cyber-pro/03.webp",
    "w": 80,
    "h": 107
+  },
+  {
+   "img": "web/torex/kit/cyber-pro/04.webp",
+   "w": 236,
+   "h": 557,
+   "cap": "HOGO V05"
+  },
+  {
+   "img": "web/torex/kit/cyber-pro/07.webp",
+   "w": 118,
+   "h": 248,
+   "cap": "HOGO V07"
   }
  ],
  "base": [
   {
    "title": "Наружная отделка",
    "items": [
-    {
-     "img": "web/torex/kit/cyber-pro/04.webp",
-     "w": 236,
-     "h": 557,
-     "cap": "HOGO V05"
-    },
     {
      "img": "web/torex/kit/cyber-pro/05.webp",
      "w": 158,
@@ -203,12 +209,6 @@
   {
    "title": "Внутренняя/наружная отделка: цвета ПВХ",
    "items": [
-    {
-     "img": "web/torex/kit/cyber-pro/07.webp",
-     "w": 118,
-     "h": 248,
-     "cap": "HOGO V07"
-    },
     {
      "img": "web/torex/kit/cyber-pro/08.webp",
      "w": 76,
@@ -402,13 +402,13 @@
     },
     {
      "img": "web/torex/kit/cyber-pro/35.webp",
-     "w": 76,
+     "w": 75,
      "h": 92,
      "cut": 1
     },
     {
      "img": "web/torex/kit/cyber-pro/36.webp",
-     "w": 71,
+     "w": 83,
      "h": 92,
      "cut": 1
     },
@@ -728,7 +728,7 @@
    ],
    "texts": [
     "Внутренний рисунок RM-M10 (овальное зеркало)",
-    "Внутренний рисунок CBR-МM (большое зеркало) с покрытием РТ Шелк белый, ПВХ Бьянко, Ферро, Крема, Оскуро, Айвори"
+    "Внутренний рисунок CBR-MM (большое зеркало) с покрытием РТ Шелк белый, ПВХ Бьянко, Ферро, Крема, Оскуро, Айвори"
    ],
    "soon": false,
    "cat": "рисунок отделки"

@@ -5,6 +5,23 @@
 import io, os, re, shutil, sys
 
 SITE, HOME, OUT = sys.argv[1], sys.argv[2], sys.argv[3]
+
+
+# OUT is deleted whole before writing: never the project, a folder above it, the build it reads, one of the project's
+# source folders or a folder inside one, nor any folder that holds sources or git (the door photos in web/ exist only
+# on the owner's computer)
+def within(a, b):
+    a, b = os.path.normcase(os.path.realpath(a)), os.path.normcase(os.path.realpath(b))
+    return a == b or a.startswith(b.rstrip(os.sep) + os.sep)
+
+
+KEEP = ('r31', 'src31', 'web', 'tools', 'photos', '.git')
+if (any(within(p, OUT) for p in ('.', SITE, HOME))
+        or any(within(OUT, d) for d in KEEP)
+        or any(os.path.exists(os.path.join(OUT, d)) for d in ('r31', 'src31', 'web', '.git'))):
+    sys.exit('will not delete %s: it is the project, holds it or the build, or is part of it; '
+             'give the demo a folder of its own, e.g. _build/demo' % OUT)
+
 CAT = 'https://claude.ai/artifact/MTMYB5MvJyFsLYuVuPdNih'
 R = lambda p: io.open(p, encoding='utf-8').read()
 
