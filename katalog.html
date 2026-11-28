@@ -6,14 +6,31 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%231d1611%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-family=%22Georgia,serif%22 font-size=%2220%22 fill=%22%23f1ece4%22 text-anchor=%22middle%22%3E%D0%9F%3C/text%3E%3C/svg%3E">
 <title>Каталог салона Портал, Димитровград</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/manrope-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant-garamond-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 
 /* Shared by the homepage and the catalogue: tokens, type, controls, the header and its menu.
    Layout: a salon folder. Limewash room, cotton mats, hairline rules, one centred menu.
    The site has one theme, the light one the client picked. */
+/* Fonts from the site itself, not from Google: the visitor's address goes nowhere else (152-FZ). fonts/, SIL OFL 1.1.
+   Two subsets each, Cyrillic and Latin: the browser fetches only the one a page's text needs. */
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/cormorant-garamond-cyrillic-400-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/cormorant-garamond-cyrillic-500-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("fonts/cormorant-garamond-cyrillic-600-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-display: swap;
+  src: url("fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url("fonts/manrope-cyrillic-wght-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url("fonts/manrope-latin-wght-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 :root {
   color-scheme: light;
 
@@ -251,6 +268,9 @@ h3 { font-family: var(--font-body); font-weight: 600; font-size: var(--text-md);
 .tools__tel { display: grid; gap: 0; text-align: right; text-decoration: none; }
 .tools__tel b { font-size: var(--text-sm); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .tools__tel span { font-size: var(--text-xs); color: var(--color-muted); white-space: nowrap; }
+.tools__ico { display: none; }
+/* звонок в одно касание из меню на телефоне и планшете: на компьютере номер стоит в шапке */
+.nav__call { display: none; }
 .cart {
   display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 44px;
   padding: 0 var(--space-md); border: var(--rule-bar) solid var(--color-ink); border-radius: var(--radius-ctl);
@@ -426,10 +446,23 @@ html[data-seek] { overflow: hidden; scrollbar-gutter: stable; }
   .nav__split .nav__top { flex: 1 1 auto; justify-content: flex-start; }
   .nav__caret { width: 56px; min-height: 48px; }
   .burger { display: inline-flex; }
-  .tools__tel { display: none; }
+  /* планшет: номер в шапке становится кнопкой с трубкой, как лупа; сам номер остаётся для чтения с экрана */
+  .tools__tel {
+    position: relative; display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; flex: 0 0 auto;
+    border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl); color: var(--color-ink);
+    transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+  }
+  .tools__tel:hover { background: var(--color-accent-soft); border-color: var(--color-ink); }
+  .tools__tel b, .tools__tel span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .tools__ico { display: block; }
+  .nav__call { display: grid; gap: var(--space-xs); margin-top: var(--space-sm); padding: var(--space-md) var(--space-xs) 0; border-top: var(--rule-hair) solid var(--color-hair); }
+  .nav__call .btn { width: 100%; }
+  .nav__call p { font-size: var(--text-xs); color: var(--color-muted); line-height: 1.5; }
 }
 @media (max-width: 720px) {
   :root { --gutter: 20px; --gap-columns: 16px; }
+  /* на телефоне пятой кнопке в шапке места нет (360 px): позвонить можно из меню и с кнопок на странице */
+  .tools__tel { display: none; }
   /* on a phone the sticky header keeps only the name and the menu: the address and hours are on the page itself */
   .topbar__strip { display: none; }
 }
@@ -589,6 +622,8 @@ h2 { font-size: var(--text-title); max-width: 26ch; font-weight: 500; }
 }
 .sort select:hover { border-color: var(--color-ink-2); }
 .railtoggle { display: none; }
+/* пустой раздел (cat.js, renderEmpty): ни счётчика с сортировкой, ни кнопки и блока фильтров, только разделы и «Раздел наполняем» */
+.layout--empty .toolbar, .layout--empty .rail__block--filters { display: none; }
 
 .chips { display: flex; flex-wrap: wrap; gap: var(--space-xs); padding-top: var(--space-md); }
 .chips:empty { display: none; }
@@ -1315,6 +1350,22 @@ html:has(.viewer[open]) .askbar, body:has(#cartbox:not([hidden])) .askbar { disp
 button.protolink { background: transparent; font: inherit; font-size: var(--text-sm); font-weight: 600; cursor: pointer; }
 button.protolink:hover { background: var(--color-ink); color: var(--color-paper); }
 [data-demo-reset][data-armed] { background: var(--color-bad); border-color: var(--color-bad); color: var(--color-paper); }
+.protomore, .modeline__short, .protomore__shut { display: none; }
+@media (max-width: 720px) {
+  :root:not([data-demo-open]) .modeline__full, :root:not([data-demo-open]) .protobar .protolink { display: none; }
+  :root:not([data-demo-open]) .modeline__short { display: inline; }
+  :root:not([data-demo-open]) .protobar__in { flex-wrap: nowrap; justify-content: space-between; padding-block: var(--space-xs); }
+  :root:not([data-demo-open]) .modeline { flex: 0 1 auto; font-weight: 600; color: var(--color-ink); }
+  .protomore {
+    display: inline-flex; align-items: center; gap: var(--space-2xs); flex: 0 0 auto; min-height: 40px; padding: 0 var(--space-sm);
+    background: transparent; color: var(--color-ink); border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl);
+    font: inherit; font-size: var(--text-sm); font-weight: 600; white-space: nowrap; cursor: pointer;
+  }
+  .protomore::after { content: ""; width: 7px; height: 7px; border: solid currentColor; border-width: 0 1.6px 1.6px 0; transform: translateY(-2px) rotate(45deg); }
+  :root[data-demo-open] .protomore::after { transform: translateY(2px) rotate(-135deg); }
+  :root[data-demo-open] .protomore__open { display: none; }
+  :root[data-demo-open] .protomore__shut { display: inline; }
+}
 .order--done .order__demo { font-size: var(--text-sm); padding: var(--space-sm) var(--space-md); background: var(--color-paper-2); border-left: 3px solid var(--color-accent); max-width: 70ch; }
 </style>
 </head>
@@ -1451,6 +1502,22 @@ window.PortalDemo = (function () {
     reset();
   });
 
+  // ---- полоса «Демо-версия» на телефоне: свёрнута в строку, «Как попробовать» её раскрывает, выбор помнится ----
+  try { if (localStorage.getItem("demo-bar") === "open") document.documentElement.setAttribute("data-demo-open", "1"); } catch (e) {}
+  function syncMore() {
+    var on = document.documentElement.hasAttribute("data-demo-open");
+    [].forEach.call(document.querySelectorAll("[data-demo-more]"), function (b) { b.setAttribute("aria-expanded", on ? "true" : "false"); });
+  }
+  document.addEventListener("DOMContentLoaded", syncMore);
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest("[data-demo-more]");
+    if (!b) return;
+    var on = !document.documentElement.hasAttribute("data-demo-open");
+    if (on) document.documentElement.setAttribute("data-demo-open", "1"); else document.documentElement.removeAttribute("data-demo-open");
+    try { localStorage.setItem("demo-bar", on ? "open" : "shut"); } catch (e) {}
+    syncMore();
+  });
+
   return {
     use: function (name) { return ready.then(function () { return name === "db" ? db : name === "assets" ? assets : name === "user" ? user : null; }); },
     blob: function (id) { return urls[id] || ""; }
@@ -1459,7 +1526,8 @@ window.PortalDemo = (function () {
 </script>
 <div class="protobar">
   <div class="container protobar__in">
-    <p class="modeline">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</p>
+    <p class="modeline"><span class="modeline__short">Демо-версия сайта</span><span class="modeline__full">Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.</span></p>
+    <button type="button" class="protomore" data-demo-more aria-expanded="false"><span class="protomore__open">Как попробовать</span><span class="protomore__shut">Свернуть</span></button>
     <a class="protolink" id="inboxLink" href="#zayavki" hidden>Заявки менеджеру <b id="inboxN">0</b></a>
     <a class="protolink" id="adminLink" href="#admin" hidden>Админка</a>
     <button type="button" class="protolink" data-demo-reset>Начать демо заново</button>
@@ -1495,11 +1563,16 @@ window.PortalDemo = (function () {
         <li class="nav__item"><a class="nav__link" href="index.html#o-salone">О салоне</a></li>
         <li class="nav__item"><a class="nav__link" href="index.html#kontakty">Контакты</a></li>
       </ul>
+      <div class="nav__call">
+        <a class="btn" href="tel:+79962203622">Позвонить: +7 (996) 220-36-22</a>
+        <p>Без выходных: будни с 10:00 до 18:00, суббота и воскресенье с 10:00 до 16:00. Димитровград, улица Гончарова, 11.</p>
+      </div>
     </nav>
 
     <div class="tools">
       <button type="button" class="seekbtn" data-seek aria-label="Поиск по каталогу" title="Поиск по каталогу ( / )"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.2 15.2 20.5 20.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
       <a class="tools__tel" href="tel:+79962203622">
+        <svg class="tools__ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6.6 3.5h2.6l1.4 4.1-2 1.4a12.5 12.5 0 0 0 6.4 6.4l1.4-2 4.1 1.4v2.6a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 4.6 5.6a2 2 0 0 1 2-2.1Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
         <b>+7 (996) 220-36-22</b>
         <span>позвонить в салон</span>
       </a>
@@ -1537,7 +1610,7 @@ window.PortalDemo = (function () {
         <p class="rail__title">Разделы каталога</p>
         <div class="cats" id="cats"></div>
       </div>
-      <div class="rail__block">
+      <div class="rail__block rail__block--filters">
         <div class="rail__row">
           <p class="rail__title">Фильтры</p>
           <button type="button" class="rail__reset" id="reset">Сбросить</button>
@@ -1696,7 +1769,8 @@ window.PortalCookieDoc = "#cookie";
    Им пользуются обе страницы: каталог отдаёт свои данные сразу, главная подгружает их при первом открытии.
    o.load(): данные { items, sections, F, chips } или обещание их.
    o.href(item, vi): ссылка на коллекцию. o.pick(item, vi): открыть её на этой же странице, если можно.
-   o.cuts: показывать ли разделы с фильтрами; o.cut(sectionId, active): открыть такой раздел. */
+   o.cuts: показывать ли разделы с фильтрами; o.cut(sectionId, active): открыть такой раздел.
+   o.thumb(item, vi): фото для строки результата, адрес или обещание адреса. */
 window.PortalSeek = function (o) {
   "use strict";
 
@@ -1947,7 +2021,10 @@ window.PortalSeek = function (o) {
   function swatch(it, vi) {
     var sw = mk("span", "seek__sw"), sp = (data.chips || {})[it.s];
     var pic = o.thumb ? o.thumb(it, vi) : "";
-    if (pic) { sw.style.backgroundImage = 'url("' + pic + '")'; sw.setAttribute("data-photo", "1"); return sw; }
+    function put(u) { sw.style.background = ""; sw.style.backgroundImage = 'url("' + u + '")'; sw.removeAttribute("data-empty"); sw.setAttribute("data-photo", "1"); }
+    // обещание: фото ещё грузится (главная берёт обложки фабрики при первом её результате), пока стоит заглушка
+    if (pic && typeof pic.then === "function") { pic.then(function (u) { if (u) put(u); }, function () {}); pic = ""; }
+    if (pic) { put(pic); return sw; }
     var x = vi >= 0 && it.vars[vi].si != null ? it.vars[vi] : it.vars.filter(function (v) { return v.si != null; })[0];
     if (x && sp) {
       sw.style.backgroundImage = 'url("' + sp.file + '")';
@@ -2360,7 +2437,43 @@ window.PortalSeek = function (o) {
 
   // раздел с фильтрами, которые выбрал поиск: их ставим, когда раздел откроется
   var pendingActive = null;
+  // Фильтры в адресе: «mezhkomnatnye?brand=Лорд&style=Классика». Такую ссылку можно переслать, её ставят главная (фабрики)
+  // и акции, а при смене фильтров адрес раздела переписывается сам (без новой записи в истории).
+  function splitQuery(h) {
+    var q = h.indexOf("?");
+    if (q < 0) return { path: h, filters: null };
+    var filters = {};
+    h.slice(q + 1).split("&").forEach(function (pair) {
+      var eq = pair.indexOf("="), k = eq > 0 ? pair.slice(0, eq) : "", v = eq > 0 ? pair.slice(eq + 1) : "";
+      if (!k || !v) return;
+      filters[k] = filters[k] || [];
+      if (filters[k].indexOf(v) < 0) filters[k].push(v);
+    });
+    return { path: h.slice(0, q), filters: filters };
+  }
+  // только фильтры этого раздела: чужой или выдуманный ключ в адресе ничего не ломает
+  function filtersFor(id, filters) {
+    var sec = SECTIONS.filter(function (x) { return x.id === id; })[0], out = {};
+    if (sec) sec.facets.forEach(function (f) { if (filters[f.id]) out[f.id] = filters[f.id].slice(); });
+    return out;
+  }
+  function queryOf(sel) {
+    var out = [];
+    section().facets.forEach(function (f) { (sel[f.id] || []).forEach(function (v) { out.push(f.id + "=" + encodeURIComponent(v)); }); });
+    return out.length ? "?" + out.join("&") : "";
+  }
+  // сетка раздела: адрес повторяет выбранные фильтры
+  function syncHash() {
+    if (view !== "section" || openId || splitQuery(readHash()).path !== current) return;
+    var want = current + queryOf(active), plain;
+    try { plain = decodeURIComponent(want); } catch (e) { plain = want; }
+    if (readHash() === plain) return;
+    lastHash = plain;
+    try { history.replaceState(history.state, "", "#" + want); } catch (e) {}
+  }
   function apply(h) {
+    var sq = splitQuery(h);
+    h = sq.path;
     // старый вид адреса «plitka/КОД» тоже открывается
     var parts = h.split("/"), id = parts[0];
     if (parts.length < 2) {
@@ -2390,6 +2503,7 @@ window.PortalSeek = function (o) {
         current = id; active = {}; openFacets = {};
       }
       view = "section";
+      if (sq.filters && !parts[1]) pendingActive = filtersFor(id, sq.filters);
       if (pendingActive) { active = pendingActive; openFacets = {}; Object.keys(active).forEach(function (k) { openFacets[k] = true; }); }
       var it = parts[1] ? ITEMS.filter(function (x) { return x.s === id && x.code === parts[1]; })[0] : null;
       openId = it ? itemId(it) : null;
@@ -2431,7 +2545,8 @@ window.PortalSeek = function (o) {
       b.type = "button";
       b.setAttribute("aria-current", s.id === current ? "true" : "false");
       b.appendChild(text("span", null, s.name));
-      b.appendChild(text("em", null, n ? String(n) : "0"));
+      // пустой раздел: «скоро», а не ноль, который читается как пустой каталог
+      b.appendChild(text("em", null, n ? String(n) : (s.empty ? s.empty.tag : "0")));
       b.addEventListener("click", function () { goTo(s.id); });
       box.appendChild(b);
     });
@@ -2652,7 +2767,8 @@ window.PortalSeek = function (o) {
     if (!pool().length) {
       grid.hidden = true; empty.hidden = false;
       empty.appendChild(text("h2", null, "Раздел наполняем"));
-      empty.appendChild(text("p", null, SOON));
+      // SOON уже стоит под заголовком страницы: здесь только куда идти дальше
+      empty.appendChild(text("p", null, "Образцы стоят в салоне на Гончарова, 11. Позвоните, менеджер подскажет, что есть в наличии."));
       var act = el("div", "empty__act");
       var tel = text("a", "btn btn--outline", "Позвонить в салон");
       tel.href = "tel:+79962203622";
@@ -4472,10 +4588,17 @@ window.PortalSeek = function (o) {
   }
   function resetAll() { active = {}; renderAll(); }
 
+  // Пустой раздел: счётчику, сортировке и фильтрам нечего отбирать, остаются список разделов и «Раздел наполняем».
+  // Коллекция, добавленная в админке, раздел наполняет: renderAll вызывается снова, и всё возвращается.
+  function renderEmpty() {
+    $("browse").classList.toggle("layout--empty", view === "section" && !openId && !pool().length);
+  }
+
   function renderAll() {
     renderCart();
     renderCats();
     renderHead();
+    renderEmpty();
     renderSort();
     renderFacets();
     renderChips();
@@ -4484,6 +4607,7 @@ window.PortalSeek = function (o) {
     renderDetail();
     renderInbox();
     renderAdmin();
+    syncHash();
   }
 
   // ---- the catalogue drop panel and the small-screen menu ----

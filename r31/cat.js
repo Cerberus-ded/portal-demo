@@ -185,7 +185,43 @@
 
   // раздел с фильтрами, которые выбрал поиск: их ставим, когда раздел откроется
   var pendingActive = null;
+  // Фильтры в адресе: «mezhkomnatnye?brand=Лорд&style=Классика». Такую ссылку можно переслать, её ставят главная (фабрики)
+  // и акции, а при смене фильтров адрес раздела переписывается сам (без новой записи в истории).
+  function splitQuery(h) {
+    var q = h.indexOf("?");
+    if (q < 0) return { path: h, filters: null };
+    var filters = {};
+    h.slice(q + 1).split("&").forEach(function (pair) {
+      var eq = pair.indexOf("="), k = eq > 0 ? pair.slice(0, eq) : "", v = eq > 0 ? pair.slice(eq + 1) : "";
+      if (!k || !v) return;
+      filters[k] = filters[k] || [];
+      if (filters[k].indexOf(v) < 0) filters[k].push(v);
+    });
+    return { path: h.slice(0, q), filters: filters };
+  }
+  // только фильтры этого раздела: чужой или выдуманный ключ в адресе ничего не ломает
+  function filtersFor(id, filters) {
+    var sec = SECTIONS.filter(function (x) { return x.id === id; })[0], out = {};
+    if (sec) sec.facets.forEach(function (f) { if (filters[f.id]) out[f.id] = filters[f.id].slice(); });
+    return out;
+  }
+  function queryOf(sel) {
+    var out = [];
+    section().facets.forEach(function (f) { (sel[f.id] || []).forEach(function (v) { out.push(f.id + "=" + encodeURIComponent(v)); }); });
+    return out.length ? "?" + out.join("&") : "";
+  }
+  // сетка раздела: адрес повторяет выбранные фильтры
+  function syncHash() {
+    if (view !== "section" || openId || splitQuery(readHash()).path !== current) return;
+    var want = current + queryOf(active), plain;
+    try { plain = decodeURIComponent(want); } catch (e) { plain = want; }
+    if (readHash() === plain) return;
+    lastHash = plain;
+    try { history.replaceState(history.state, "", "#" + want); } catch (e) {}
+  }
   function apply(h) {
+    var sq = splitQuery(h);
+    h = sq.path;
     // старый вид адреса «plitka/КОД» тоже открывается
     var parts = h.split("/"), id = parts[0];
     if (parts.length < 2) {
@@ -215,6 +251,7 @@
         current = id; active = {}; openFacets = {};
       }
       view = "section";
+      if (sq.filters && !parts[1]) pendingActive = filtersFor(id, sq.filters);
       if (pendingActive) { active = pendingActive; openFacets = {}; Object.keys(active).forEach(function (k) { openFacets[k] = true; }); }
       var it = parts[1] ? ITEMS.filter(function (x) { return x.s === id && x.code === parts[1]; })[0] : null;
       openId = it ? itemId(it) : null;
@@ -256,7 +293,8 @@
       b.type = "button";
       b.setAttribute("aria-current", s.id === current ? "true" : "false");
       b.appendChild(text("span", null, s.name));
-      b.appendChild(text("em", null, n ? String(n) : "0"));
+      // пустой раздел: «скоро», а не ноль, который читается как пустой каталог
+      b.appendChild(text("em", null, n ? String(n) : (s.empty ? s.empty.tag : "0")));
       b.addEventListener("click", function () { goTo(s.id); });
       box.appendChild(b);
     });
@@ -477,7 +515,8 @@
     if (!pool().length) {
       grid.hidden = true; empty.hidden = false;
       empty.appendChild(text("h2", null, "Раздел наполняем"));
-      empty.appendChild(text("p", null, SOON));
+      // SOON уже стоит под заголовком страницы: здесь только куда идти дальше
+      empty.appendChild(text("p", null, "Образцы стоят в салоне на Гончарова, 11. Позвоните, менеджер подскажет, что есть в наличии."));
       var act = el("div", "empty__act");
       var tel = text("a", "btn btn--outline", "Позвонить в салон");
       tel.href = "tel:+79962203622";
@@ -1655,10 +1694,17 @@
   /*ADMIN*/
   function resetAll() { active = {}; renderAll(); }
 
+  // Пустой раздел: счётчику, сортировке и фильтрам нечего отбирать, остаются список разделов и «Раздел наполняем».
+  // Коллекция, добавленная в админке, раздел наполняет: renderAll вызывается снова, и всё возвращается.
+  function renderEmpty() {
+    $("browse").classList.toggle("layout--empty", view === "section" && !openId && !pool().length);
+  }
+
   function renderAll() {
     renderCart();
     renderCats();
     renderHead();
+    renderEmpty();
     renderSort();
     renderFacets();
     renderChips();
@@ -1667,6 +1713,7 @@
     renderDetail();
     renderInbox();
     renderAdmin();
+    syncHash();
   }
 
   // ---- the catalogue drop panel and the small-screen menu ----

@@ -29,6 +29,10 @@ shim = R('src31/demo.js')
 LINE = ('Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», '
         'добавьте акцию, работу или коллекцию в «Админке». Всё сохраняется только в этом браузере и никуда не отправляется.')
 RESET = '<button type="button" class="protolink" data-demo-reset>Начать демо заново</button>'
+# on a phone the bar folds into one line, «Демо-версия сайта» and a button that opens the rest (src31/demo.js remembers it)
+SHORT = '<span class="modeline__short">Демо-версия сайта</span><span class="modeline__full">' + LINE + '</span>'
+MORE = ('<button type="button" class="protomore" data-demo-more aria-expanded="false">'
+        '<span class="protomore__open">Как попробовать</span><span class="protomore__shut">Свернуть</span></button>')
 ICON = ('<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E'
         '%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%231d1611%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-family=%22Georgia,serif%22 '
         'font-size=%2220%22 fill=%22%23f1ece4%22 text-anchor=%22middle%22%3E%D0%9F%3C/text%3E%3C/svg%3E">')
@@ -36,6 +40,22 @@ EXTRA = '''<style>
 button.protolink { background: transparent; font: inherit; font-size: var(--text-sm); font-weight: 600; cursor: pointer; }
 button.protolink:hover { background: var(--color-ink); color: var(--color-paper); }
 [data-demo-reset][data-armed] { background: var(--color-bad); border-color: var(--color-bad); color: var(--color-paper); }
+.protomore, .modeline__short, .protomore__shut { display: none; }
+@media (max-width: 720px) {
+  :root:not([data-demo-open]) .modeline__full, :root:not([data-demo-open]) .protobar .protolink { display: none; }
+  :root:not([data-demo-open]) .modeline__short { display: inline; }
+  :root:not([data-demo-open]) .protobar__in { flex-wrap: nowrap; justify-content: space-between; padding-block: var(--space-xs); }
+  :root:not([data-demo-open]) .modeline { flex: 0 1 auto; font-weight: 600; color: var(--color-ink); }
+  .protomore {
+    display: inline-flex; align-items: center; gap: var(--space-2xs); flex: 0 0 auto; min-height: 40px; padding: 0 var(--space-sm);
+    background: transparent; color: var(--color-ink); border: var(--rule-bar) solid var(--color-rule); border-radius: var(--radius-ctl);
+    font: inherit; font-size: var(--text-sm); font-weight: 600; white-space: nowrap; cursor: pointer;
+  }
+  .protomore::after { content: ""; width: 7px; height: 7px; border: solid currentColor; border-width: 0 1.6px 1.6px 0; transform: translateY(-2px) rotate(45deg); }
+  :root[data-demo-open] .protomore::after { transform: translateY(2px) rotate(-135deg); }
+  :root[data-demo-open] .protomore__open { display: none; }
+  :root[data-demo-open] .protomore__shut { display: inline; }
+}
 .order--done .order__demo { font-size: var(--text-sm); padding: var(--space-sm) var(--space-md); background: var(--color-paper-2); border-left: 3px solid var(--color-accent); max-width: 70ch; }
 </style>
 '''
@@ -50,12 +70,12 @@ def page(src):
     return top + head + EXTRA + '</head>\n<body>\n<script>\n' + shim + '</script>\n' + body + '\n</body>\n</html>\n'
 
 def bar(s, links, what):
-    s2, n = re.subn(r'<p class="modeline">[^<]*</p>', '<p class="modeline">' + LINE + '</p>', s, count=1)
+    s2, n = re.subn(r'<p class="modeline">[^<]*</p>', '<p class="modeline">' + SHORT + '</p>', s, count=1)
     if n != 1:
         sys.exit(what + ': no modeline')
     j = s2.index('</p>', s2.index('<p class="modeline">')) + 4
     k = s2.index('  </div>\n</div>', j)
-    return s2[:j] + s2[j:k] + links + '\n' + s2[k:]
+    return s2[:j] + '\n    ' + MORE + s2[j:k] + links + '\n' + s2[k:]
 
 # ---- the catalogue ----
 cat = R(os.path.join(SITE, 'index.html')).replace('glavnaya.html', 'index.html')
@@ -86,6 +106,10 @@ used = set(re.findall(r'photos/(k-[a-z-]+-\d+\.webp)', home))
 os.makedirs(os.path.join(OUT, 'photos'))
 for f in sorted(used):
     shutil.copyfile(os.path.join('photos', f), os.path.join(OUT, 'photos', f))
+# the fonts: files of the site itself (src31/base.css), not Google's
+shutil.copytree(os.path.join(SITE, 'fonts'), os.path.join(OUT, 'fonts'))
+if 'fonts.googleapis.com' in home or 'fonts.googleapis.com' in cat:
+    sys.exit('a Google Fonts link is left')
 io.open(os.path.join(OUT, '.nojekyll'), 'w').write('')
 # README.md, CLAUDE.md and .claude/ live in the repository itself: the build does not write them
 size = sum(os.path.getsize(os.path.join(dp, f)) for dp, _, fs in os.walk(OUT) for f in fs)

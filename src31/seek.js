@@ -3,7 +3,8 @@
    Им пользуются обе страницы: каталог отдаёт свои данные сразу, главная подгружает их при первом открытии.
    o.load(): данные { items, sections, F, chips } или обещание их.
    o.href(item, vi): ссылка на коллекцию. o.pick(item, vi): открыть её на этой же странице, если можно.
-   o.cuts: показывать ли разделы с фильтрами; o.cut(sectionId, active): открыть такой раздел. */
+   o.cuts: показывать ли разделы с фильтрами; o.cut(sectionId, active): открыть такой раздел.
+   o.thumb(item, vi): фото для строки результата, адрес или обещание адреса. */
 window.PortalSeek = function (o) {
   "use strict";
 
@@ -254,7 +255,10 @@ window.PortalSeek = function (o) {
   function swatch(it, vi) {
     var sw = mk("span", "seek__sw"), sp = (data.chips || {})[it.s];
     var pic = o.thumb ? o.thumb(it, vi) : "";
-    if (pic) { sw.style.backgroundImage = 'url("' + pic + '")'; sw.setAttribute("data-photo", "1"); return sw; }
+    function put(u) { sw.style.background = ""; sw.style.backgroundImage = 'url("' + u + '")'; sw.removeAttribute("data-empty"); sw.setAttribute("data-photo", "1"); }
+    // обещание: фото ещё грузится (главная берёт обложки фабрики при первом её результате), пока стоит заглушка
+    if (pic && typeof pic.then === "function") { pic.then(function (u) { if (u) put(u); }, function () {}); pic = ""; }
+    if (pic) { put(pic); return sw; }
     var x = vi >= 0 && it.vars[vi].si != null ? it.vars[vi] : it.vars.filter(function (v) { return v.si != null; })[0];
     if (x && sp) {
       sw.style.backgroundImage = 'url("' + sp.file + '")';

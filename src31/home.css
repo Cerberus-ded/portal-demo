@@ -63,6 +63,18 @@ h3 { font-size: var(--text-lg); }
 .room__body > .room__sub { margin-bottom: var(--space-xs); flex: 1 1 auto; }
 .room__fig b { font-weight: 700; font-size: var(--text-lg); font-variant-numeric: tabular-nums lining-nums; }
 .room__fig span { font-size: var(--text-xs); color: var(--color-mat-ink-2); }
+/* A section still empty («Скоро», the build marks it): on a phone a short row under the full cards, not a whole screen of its own */
+@media (max-width: 720px) {
+  .rooms:has(.room--soon) { grid-template-columns: minmax(0, 1fr); }
+  .rooms:has(.room--soon) .room:not(.room--soon) .mat__fig { aspect-ratio: 4 / 3; }
+  .room.room--soon { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: var(--space-md); padding: var(--space-sm); }
+  .room--soon .mat__fig { flex: 0 0 auto; width: 88px; aspect-ratio: 1; }
+  .room--soon .room__body { padding-top: 0; gap: 2px; }
+  .room--soon .room__name { font-size: var(--text-xl); }
+  .room--soon .room__body > .room__sub { margin-bottom: 0; flex: 0 0 auto; }
+  .room--soon .room__fig { margin-top: 0; padding-top: var(--space-2xs); border-top: 0; }
+  .room--soon .room__fig b { font-size: var(--text-sm); }
+}
 
 /* ---- promotions: dated rows ---- */
 .promos { border-top: var(--rule-bar) solid var(--color-ink); }
@@ -143,6 +155,9 @@ h3 { font-size: var(--text-lg); }
 .facts ul { display: grid; gap: var(--space-2xs); }
 .facts li { font-size: var(--text-sm); color: var(--color-ink-2); }
 .facts .facts__todo { color: var(--color-muted); }
+/* фабрика с коллекциями в каталоге — ссылка на раздел с её фильтром; поле нажатия 40 px, строки списка не раздвигаются */
+.facts li a { display: inline-block; min-width: 40px; padding-block: 10px; margin-block: -10px; color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-rule); text-underline-offset: 3px; transition: color var(--dur-micro) var(--ease-out), text-decoration-color var(--dur-micro) var(--ease-out); }
+.facts li a:hover { color: var(--color-mat-accent); text-decoration-color: currentColor; }
 
 /* ---- the close ---- */
 .visit { display: grid; gap: var(--space-xl); }
@@ -155,10 +170,6 @@ h3 { font-size: var(--text-lg); }
 .contacts a { text-decoration: underline; text-underline-offset: 3px; }
 .contacts a:hover { text-decoration-thickness: 2px; }
 .visit .lead { font-size: var(--text-lead); color: var(--color-paper); opacity: 0.86; max-width: 52ch; }
-.fill {
-  font-size: var(--text-sm); color: var(--color-paper); opacity: 0.74;
-  border-left: 2px dashed currentColor; padding-left: var(--space-md); max-width: 60ch;
-}
 
 /* ---- footer ---- */
 .foot { border-top: var(--rule-hair) solid var(--color-rule); padding-block: var(--space-2xl) var(--space-xl); }

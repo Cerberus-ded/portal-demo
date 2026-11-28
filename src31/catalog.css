@@ -128,6 +128,8 @@ h2 { font-size: var(--text-title); max-width: 26ch; font-weight: 500; }
 }
 .sort select:hover { border-color: var(--color-ink-2); }
 .railtoggle { display: none; }
+/* пустой раздел (cat.js, renderEmpty): ни счётчика с сортировкой, ни кнопки и блока фильтров, только разделы и «Раздел наполняем» */
+.layout--empty .toolbar, .layout--empty .rail__block--filters { display: none; }
 
 .chips { display: flex; flex-wrap: wrap; gap: var(--space-xs); padding-top: var(--space-md); }
 .chips:empty { display: none; }
