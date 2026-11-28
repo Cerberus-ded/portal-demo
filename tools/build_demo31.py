@@ -24,6 +24,9 @@ if (any(within(p, OUT) for p in ('.', SITE, HOME))
 
 CAT = 'https://claude.ai/artifact/MTMYB5MvJyFsLYuVuPdNih'
 R = lambda p: io.open(p, encoding='utf-8').read()
+# The site's address: link previews (Open Graph) need absolute links. When the site moves to its own domain, change it here.
+SITE_URL = 'https://cerberus-ded.github.io/portal-demo/'
+OG_IMAGE = 'photos/og-portal-1200.jpg'     # 1200×630, the picture of a shared link in VK, MAX, Telegram
 
 shim = R('src31/demo.js')
 LINE = ('Демо-версия сайта салона «Портал». Попробуйте его и как покупатель, и как салон: оставьте заявку и откройте «Заявки менеджеру», '
@@ -60,13 +63,17 @@ button.protolink:hover { background: var(--color-ink); color: var(--color-paper)
 </style>
 '''
 
-def page(src):
+def page(src, path):
     i = src.index('<div class="protobar">')
     head, body = src[:i], src[i:]
     head = head.replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
     top = ('<!doctype html>\n<html lang="ru">\n<head>\n<meta charset="utf-8">\n'
            '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
-           '<meta name="robots" content="noindex, nofollow">\n' + ICON + '\n')
+           '<meta name="robots" content="noindex, nofollow">\n' + ICON + '\n'
+           '<meta property="og:url" content="' + SITE_URL + path + '">\n'
+           '<meta property="og:image" content="' + SITE_URL + OG_IMAGE + '">\n'
+           '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+           '<meta name="twitter:card" content="summary_large_image">\n')
     return top + head + EXTRA + '</head>\n<body>\n<script>\n' + shim + '</script>\n' + body + '\n</body>\n</html>\n'
 
 def bar(s, links, what):
@@ -80,13 +87,13 @@ def bar(s, links, what):
 # ---- the catalogue ----
 cat = R(os.path.join(SITE, 'index.html')).replace('glavnaya.html', 'index.html')
 cat, n = re.subn(r'\s*<a [^>]*data-owner[^>]*>[^<]*</a>', '', cat)
-cat = page(bar(cat, '    ' + RESET, 'catalogue'))
+cat = page(bar(cat, '    ' + RESET, 'catalogue'), 'katalog.html')
 
 # ---- the homepage: two photo sizes, links into katalog.html in the same tab ----
 home = R(HOME).replace(CAT, 'katalog.html')
 home, m = re.subn(r'\s*<a [^>]*data-owner[^>]*>[^<]*</a>', '', home)
 home, m2 = re.subn(r'\s*<p data-owner[^>]*>.*?</p>', '', home)
-home = page(bar(home, '    <a class="protolink" href="katalog.html#zayavki">Заявки менеджеру</a>\n    ' + RESET, 'homepage'))
+home = page(bar(home, '    <a class="protolink" href="katalog.html#zayavki">Заявки менеджеру</a>\n    ' + RESET, 'homepage'), '')
 if 'claude.ai' in home or 'claude.ai' in cat:
     sys.exit('a claude.ai address is left: ' + ('home' if 'claude.ai' in home else 'catalogue'))
 
@@ -106,6 +113,7 @@ used = set(re.findall(r'photos/(k-[a-z-]+-\d+\.webp)', home))
 os.makedirs(os.path.join(OUT, 'photos'))
 for f in sorted(used):
     shutil.copyfile(os.path.join('photos', f), os.path.join(OUT, 'photos', f))
+shutil.copyfile(OG_IMAGE, os.path.join(OUT, OG_IMAGE))
 # the fonts: files of the site itself (src31/base.css), not Google's
 shutil.copytree(os.path.join(SITE, 'fonts'), os.path.join(OUT, 'fonts'))
 if 'fonts.googleapis.com' in home or 'fonts.googleapis.com' in cat:

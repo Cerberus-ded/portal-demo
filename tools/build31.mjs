@@ -189,6 +189,10 @@ const FACTORIES = [
 ];
 
 const ITEMS = [];
+// описания коллекций от салона (r31/about.json) вместо текста с сайта фабрики: ключ — код коллекции, как в адресе каталога
+const ABOUT = existsSync(join(root, "r31/about.json")) ? JSON.parse(R("r31/about.json")) : {};
+delete ABOUT._;
+const aboutUsed = new Set();
 const b64 = (p) => "data:image/webp;base64," + readFileSync(p).toString("base64");
 let packBytes = 0, files = 0;
 for (const fab of FACTORIES) {
@@ -206,7 +210,9 @@ for (const fab of FACTORIES) {
     if (c.coat.length) f.coat = c.coat;
     const item = { s: fab.s || "mezhkomnatnye", brand: fab.brand, name: c.name, code: fab.tag + "-" + slug.toUpperCase(), pack: fab.dir + "/" + slug, cover: 0, url: c.url, f, vars };
     if (c.any) item.any = 1;
-    if (c.about) item.about = c.about;
+    const own = ABOUT[item.code];
+    if (own) aboutUsed.add(item.code);
+    if (own || c.about) item.about = own || c.about;
     if (c.specs.length) item.specs = c.specs;
     if (c.kit) {
       item.kit = 1;
@@ -253,6 +259,8 @@ for (const fab of FACTORIES) {
     packBytes += txt.length; files++;
   }
 }
+const aboutLost = Object.keys(ABOUT).filter((k) => !aboutUsed.has(k));
+if (aboutLost.length) throw new Error("r31/about.json: no such collection " + aboutLost.join(", "));
 const codes = ITEMS.map((i) => i.code);
 if (new Set(codes).size !== codes.length) throw new Error("duplicate collection codes");
 for (const fab of FACTORIES) {
